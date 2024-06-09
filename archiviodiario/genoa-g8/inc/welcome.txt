@@ -1,0 +1,36 @@
+<div class="note">August 13, 2038</div><div class="tit2">G-hate - 2001 in Europe</div><div class="ver">Una sorta di taccuino, g-hate. Un blocco appunti, un calendario del tutto soggettivo. <br>Un metodico cut&paste collettivo che narra di donne e uomini, nel tempo, verso Genova e oltre Genova. Una storia fatta di scampoli di storie, di emozioni catturate, di rabbia e di sogno.<br><br>G-hate &egrave; solo un punto di vista, per la causa, per la memoria, per la speranza. E una certezza: otto grandi non fanno una moltitudine.<br><br><b>&#149; <a href="/g-hate/welcome.php">G-hate - 2001 in Europe</a></b></div><br><br>
+
+
+<div class="note">August 10, 2038</div><div class="tit2">Traslochi</div><div class="ver"><a href="javascript:wsciattoprod('/archiviodiario/genoa-g8/traslochi.html')"><img src="../archiviodiario/genoa-g8/10_1.gif" width="150" height="217" border="0" alt="Click and zoom" align="left"></a>"Nella giornata di oggi la magistratura di Genova ha fatto eseguire il
+sequestro del sito www.ecn.org/netstrike, corrispondente al dominio 
+<a href="http://www.netstrike.it" target="netstrike"><b>www.netstrike.it</b></a>.<br><br>
+
+Si tratta di un sito di informazione sulla pratica del netstrike, il
+corteo telematico. Una forma di lotta virtuale praticata da anni
+dagli attivisti delle rete e perfettamente legale. <br>
+Il sito sequestrato era fisicamente ospitato sul server di Isole nella
+Rete, associazione che fornisce servizi internet a molte realt&agrave;, centri
+sociali, giornali, radio e gruppi della sinistra radicale italiana e
+non solo.<br><br>
+
+Ai nostri occhi questo atto non ha alcuna utilit&agrave; pratica per il
+magistrato che lo dispone, dal momento che le informazioni che ha
+acquisito sono di pubblico dominio come lo &egrave; stato per molti mesi il
+contenuto del sito, e dal momento che in genere gli atti di censura
+poliziesca in rete ottengono un effetto contrario a quello voluto.<br><br>
+
+Infatti gi&agrave; ora a poche ore dal sequestro il sito &egrave; visitabile su
+diversi mirror:<br>
+- <a href="http://www.italy.indymedia.org/netstrike.it" target="netstrike"><b>www.italy.indymedia.org/netstrike.it</b><br>
+- <b><a href="http://www.contrast.org/netstrike" target="netstrike">www.contrast.org/netstrike</a></b><br><br>
+L'unica spiegazione che abbiamo per il comportamento della magistratura
+genovese &egrave; che questa inutile operazione di censura sia un atto
+intimidatorio e di provocazione politica che ben si inquadra nel clima
+che regna oggi nel nostro paese.<br><br>
+
+Un clima di criminalizzazione della sinistra non istituzionale volto a
+cercare di far tacere ogni voce indipendente, di dissenso politico e
+sociale, di fronte al quale la nostra risposta non pu&ograve; che essere:
+non ci farete tacere mai.<br><br>
+-- <br>
+<b>Isole Nella Rete - www.ecn.org</b></div>

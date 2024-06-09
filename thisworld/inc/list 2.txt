@@ -1,0 +1,6 @@
+<div class="tw_links_tit_dx">mailinglist</div>
+<div class="tw_links_dx">
+acidlife(at)autistici.org &egrave; la mailinglist di acidlife. Per iscriverti e disiscriverti dalla mailinglist, <a href="https://www.autistici.org/mailman/listinfo/acidlife" target="new"  class="tw_links_cal">clicca qui</a>.</div><br>
+<div class="tw_links_tit_dx">reports</div>
+<div class="tw_links_dx">
+reports(at)acidlife.com &egrave; la newsletter di acidlife. Per iscriverti e disiscriverti <a href="http://acidlife.com/cgi-bin/mailman/listinfo/reports" target="new"  class="tw_links_cal">clicca qui</a>.</div>

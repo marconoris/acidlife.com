@@ -1,0 +1,17 @@
+<!--- Perche' questo file non e' html? --->
+
+Perche' teleportbox e' una sola pagina, questa e' solo una spiegazione, precisazioni
+che sono si disponibili, ma che, di fatto, non sono teleportbox.
+teleport e' l'unica pagina html con le uniche gif che ci vedete sopra,
+e' uguale per tutti e sta sempre nella dir teleportbox. E' se stesso 
+ripetuto in giro per la rete, e' il clone originale di un'idea.
+
+
+<!--- SCRIPT RUNDOM MIRROR SITE --->
+
+Cioe' la lista di tutti i siti che ospitano teleportbox. Chiunque puo' decidere
+di attivarlo, basta spedire una mail a TELEMAIL dalla home di teleportbox,
+e uno di noi spedira' lo zip con dentro tutto. Presto attiveremo una procedura
+automatica per prelevare, inserendosi automaticamente nelle javascript random,
+sia quella dei siti sia quella della posta (TELEMAIL).
+

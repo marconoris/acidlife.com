@@ -1,0 +1,27 @@
+<table width="100" align="right" cellspacing="2" cellpadding="2" border="0">
+<tr>
+    <td align="right" valign="top">
+<!---------- ARCHIVIODIARIO ---------->
+<? include ("http://www.acidlife.com/g-hate/luglio01/lugliomenu.txt"); ?><br>
+<? include ("http://www.acidlife.com/g-hate/agosto01/agostomenu.txt"); ?>
+<!---------- FINE ARCHIVIODIARIO ----------></td>
+</tr>
+<tr>
+    <td align="center" valign="top">
+<!---------- ARCHIVIODIARIO ---------->
+<!--
+<? include ("http://www.acidlife.com/archiviodiario/genoa-g8/genoa-related.txt"); ?>
+-->
+&nbsp;
+<!---------- FINE ARCHIVIODIARIO ----------></td>
+</tr>
+<tr>
+    <td align="center" valign="top">
+<!---------- ARCHIVIODIARIO ---------->
+&nbsp;
+<!---------- FINE ARCHIVIODIARIO ----------></td>
+</tr>
+<tr>
+    <td align="center" valign="top"><br>&nbsp;</td>
+</tr>
+</table>

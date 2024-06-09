@@ -1,0 +1,273 @@
+
+---------------------------
+AUTISTICI.ORG/INVENTATI.ORG
+" Questo mondo fa schifo "
+---------------------------
+* Newsletter Numero Zero *
+---------------------------
+
+ciao a tutt*
+questa e' una delle altre sperimentazioni di questa strana comunita' con
+cui avete deciso di avere a che fare.
+Una newsletter.
+il suo scopo principale e' tenervi informati di cosa combiniamo noi e
+progetti/creature affini e invitarvi a risponderci e a prendere
+iniziative da sviluppare insieme.
+
+----------------
+* Nuovi progetti
+* Il nuovo Mondo sara' una galera planetaria
+* Iniziative/azioni/novita'
+* Nuovi Ospiti
+* Come sostenerci
+* Problemi tecnici?
+* Contatti e note di fine pagina
+* english version: not yet implemented!
+
+------------------
+- Nuovi Progetti -
+
+----------------------
+(*) Vilipendio Records
+http://vilipendio.inventati.org
+Consorzio di distribuzione musicale.
+Lontani per scelta dai circuiti commerciali, cresce il luogo di incontro per
+le esperienze musicali liberate dai vincoli delle SIAE.
+Scarica e costruisciti il tuo cd.
+Partecipa al progetto; inserisici il tuo gruppo e la tua musica.
+
+-------------------
+(*) MirrorS project
+http://mirrors.autistici.org
+Ormai da anni la rete ha dismesso la facciata da selvaggio west, e sempre
+piu' si rivela per cio' che e': un'impresa commerciale, un territorio da
+controllare, un relativamente nuovo ed eccitante scenario per chi gioca a
+risiko con i nostri corpi, e come i piu' antichi trattati sulla guerra
+insegnano, la comunicazione e' un punto nodale della strategia militare.
+Mirror di progetti di crittografia, steganografia e qualsiasi cosa ci sembra
+utile salvaguardare dalla voglia di controllo dei controllori.
+
+------------
+(*) Copydown
+http://copydown.inventati.org
+Un portale del/sul no(c), una T.A.Z. di editoria, autoproduzioni free e non
+da plagiare, deturnare, mirrorare, plagiare, copiare, contaminare.
+Presto nuova veste grafica e nuovo sistema di upload (automatizzato)!
+
+--------------
+(*) Spazio FTP
+ftp://ftp.autistici.org - http://ftp.inventati.org
+Questo spazio ospita molto materiale legato a progetti musicali (vilipendio,
+mp38), video (completamente scaricabili) di Indymedia (e non solo), mirror
+di software in via di repressione...
+Nonche' tutto quello che riteniamo utile diffondere.
+Contattateci se avete progetti interessanti!
+Scaricate (download) tutto quello che volete!
+
+
+----------------------------------------------
+- Il nuovo Mondo sara' una galera planetaria -
+----------------------------------------------
+
+7 marzo 2001: la nuova legge sull'editoria estende ai siti che
+"fanno informazione" (dunque l'80% di quelli presenti in rete)
+l'obbligo di avere un direttore responsabile come gia' avviene
+con i periodici su carta stampata.
+
+15 Maggio 2001: l'on Caradonna cita a giudizio l'associazione
+"Isole nella Rete" per violazione del "diritto all'oblio"
+( art 657). Il sito del cs "la strada", ospitato su Isole,
+riportava il passato di picchiatore fascista del suddetto
+personaggio. Chiede la rimozione delle pagine ad un
+risarcimento di 250 milioni.
+
+18 Agosto 2001: in seguito alle vicende di genova ed alle dimostrazioni
+svoltesi anche in rete viene posto sotto sequestro il sito "Netstrike!"
+(www.netstrike.it) che riporta appuntamenti e istruzioni per partecipare
+alle omonime manifestazioni telematiche (assolutamente legali).
+Agosto 2001: proseguendo sulla strada della fantomatica illegalita'
+del netstrike vengono perquisiti e minacciati, a casa e sul posto
+di lavoro, due attivisti dell'hacklab di Milano (LOA) e di Torino (_TO).
+
+Settembre 2001: Alcuni ragazzi fiorentini, collaboratori di Indymedia,
+Inventati, Isole nella Rete e StampaClandestina subiscono
+perquisizioni e
+accuse pesantissime. L'obbiettivo e' di farli figurare coinvolti nella
+vicenda del pacco bomba al prefetto Achille Serra.
+
+Settembre 2001: in seguito al crollo delle Torri Gemelle gli USA
+invocano la crociata contro il terrorismo, la rete diviene un
+elemento destabilizzante per il fragile ordine mentale dei governanti
+occidentali.
+
+13 settembre: gli USA varano il Combacting Terrorism Act of 2001,
+una legge speciale che prevede l'installazione di Carnivore
+presso gli ISP (quelli che forniscono il collegamento ad internet)
+americani. Carnivore e' un software creato dall'FBI
+col fine di monitorare le connessioni che passano attraverso un
+provider. In caso di "grave pericolo nazionale", cosi dice la
+legge, sara' ora possibile porre sotto controllo per 48 ore le
+comunicazioni di un qualsiasi utente.
+
+19 settembre: il Consiglio d'Europa approva la Convenzione sul
+cybercrimine.
+
+1 ottobre 2001: varato il Patriotic Act of 2001, che ufficializza
+per 4 anni i provvedimenti abbozzati dal Combacting Terrorism Act.
+Ora tutto e' lecito, dalle intercettazioni telefoniche di massa,
+al controllo su internet, e tutto quanto raccolto risulta elemento
+probatorio in tribunale.
+
+Novembre-dicembre 2001: la stretta repressiva genera una blanda opposizione
+da parte dell'associazionismo e delle organizzazioni piu' sensibili
+alle tematiche relative alla privacy ed alla liberta' di informazione.
+Intanto in tutta europa si infittiscono i provvedimenti governativi
+che coinvolgono in qualche modo la rete, in Gran Bretagna, in Francia,
+in Germania sono varati provvedimenti atti ad aumentare il controllo
+su internet.
+
+16 Gennaio 2002: annunciato da squilli di trombe e fanfare mediatiche
+anche l'Italia puo' vantare il proprio posticino nella grande coalizione
+mondiale per la sicurezza. 6 ragazzi facenti parte della Hi-Tech Hate
+vengono fermati al termine delle indagini sugli attacchi informatici
+del dopo g8. L'indagine e' stata condotta dallo sceriffo della rete
+Rapetto, colonnello della GdF, vecchia conoscenza del digitale italiano.
+
+Dedicata a tutti questi signori.
+
+in culo a chi ci vuole bene...
+
+------------------------
+- novita' e iniziative -
+------------------------
+qualche news...
+
+* 01/01/2002
+        Nuova veste grafica della home di Inventati.org
+        ( http://www.inventati.org )
+* 31/01/2002
+        Netstrike contro il WEF (World Economic Forum)
+        ( http://www.geocities.com/net_strike_net/ )
+* 18/01/2002
+        Repressione nella spagna della comunicazione indipendente
+        ( http://www.sindominio.net )
+* 24/01/2002
+        I dipendenti di Virgilio in piazza.
+        ( http://www.clix.to/tutearancioni )
+        ( http://italy.indymedia.org/front.php3?article_id=35526&group=webcast)
+
+* 06/02/2002
+        Netstrike contro un giornale della destra Argentina!
+        ( http://nodo50.org/piquetevirtual/ )
+        ( http://www.netstrike.it )
+
+-------------------------
+- Qualche nuovo ospite -
+
+--------------
+(*) Muchocalor
+http://www.inventati.org/muchocalor
+1991: Live dei Mano Negra dal CSA Ex-Emerson Fireneze.
+Interamente scaricabile. Proponi altro materiale: copydown@inventati.org
+
+----------------
+(*) Internattiva
+http://www.inventati.org/internattiva
+InternAttiva - Politica internazionale e attivismo nel mondo.
+InternAttiva ospita contributi su e dall'estero, puntanto
+principalmente a notizie ed analisi non note in Italia.
+
+----------
+(*) Mp3(8)
+http://www.inventati.org/mp38
+Archivio di canzoni di lotta in formati liberati e liberanti.
+Metti a disposizione i tuoi vecchi dischi militanti! Upload per tutti nella
+sezione ftp (in formato .ogg - www.vorbis.com -)
+
+-------------
+(*) Interzona
+http://www.autistici.org/interzona
+Fumetti, animazione e...
+"La sensazione vibra sull'epidermide. SPazi fittizzzi in cui le parole
+radunandosiin frasi piu' o meno sgrammaticate si rincorrono e improno sulle
+retine dei netsurfers. La vita si diluisce nel font e si riproduce nei file
+temporanei dei vostri pc..."
+
+--------------
+(*) Ondaquadra
+http://www.autistici.org/ondaquadra
+Rivista hacara online...
+Il battito cardiaco del cyberspace!
+
+-----------------------------------------------
+l'elenco completo delle presenze lo trovate su:
+http://www.inventati.org/presenze.php
+http://www.autistici.org/presenze.php
+
+--------------------
+- Come sostenerci? -
+--------------------
+
+Conto n\260: 25033/1
+Presso: Banca Cariplo n\260133 Milano Italia
+Intestato a: Associazione Investici
+Abi: 03069
+Cab: 09533
+Causale: vedete un po' voi cosa vi suggerisce la coscienza! ;)
+
+Non e' irrilevante.
+
+---------------------
+- Problemi tecnici? -
+---------------------
+
+CI scusiamo con tutti coloro che utilizzano i nostri servizi. Dal giorno 6
+al giorno 7 ci sono stati alcuno problemi tencici che hanno causato, in
+qualche caso, la perdita di dati (posta, settaggi, modifiche recenti).
+Ce ne scusiamo nuovamente con tutt*. Ma viviamo in un mondo difficile e...
+
+Un altro mondo e' complicato!
+
+------------------
+- Contattateci ! -
+------------------
+
+per consigli, idee, progetti, insulti scrivete a:
+info@inventati.org
+info@autistici.org
+------------------
+
+Questa newsletter e' un regalo per tutti coloro che utilizzano
+servizi ospitati da Autistici.org/Inventati.org.
+
+Se non volete mai piu' ricevere quasta newsletter (che arriva con scadenze
+piacevolmente lunghe e irregolari), provate a chiedere.
+
+Potete riprodurre, rispedire, plagiare, fotocopiare, stracciare, forwardare
+a chiunque questi testi.
+
+-----------------
+Newsletter Numero Zero
+Data astrale Febbraio 2002
+Il collettivo di autistici.org/inventati.org
+http://www.autistici.org
+http://www.inventati.org
+
+------
+Links:
+------------------
+http://www.ecn.org
+--------------------------
+http://italy.indymedia.org
+---------------------
+http://www.tmcrew.org
+-----------------
+http://strano.net
+--------------------
+http://www.kyuzz.org
+
+_______________________________________________
+Newsletter mailing list
+Newsletter@paranoici.org
+http://www.paranoici.org/mailman/listinfo/newsletter
+

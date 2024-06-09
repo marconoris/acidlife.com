@@ -1,0 +1,47 @@
+<table width="100" cellspacing="1" cellpadding="1" border="0" class="note">
+<tr>
+    <td colspan="5"><div class="ver"><b>GIUGNO 2001</b></div></td>
+</tr>
+<tr>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/01.php">01</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/02.php">02</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/03.php">03</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/04.php">04</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/05.php">05</a></b></td>
+</tr>
+<tr>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/06.php">06</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/07.php">07</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/08.php">08</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/09.php">09</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/10.php">10</a></b></td>
+</tr>
+<tr>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/11.php">11</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/12.php">12</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/13.php">13</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/14.php">14</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/15.php">15</a></b></td>
+</tr>
+<tr>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/16.php">16</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/17.php">17</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/18.php">18</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/19.php">19</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/20.php">20</a></b></td>
+</tr>
+<tr>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/21.php">21</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/22.php">22</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/23.php">23</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/24.php">24</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/25.php">25</a></b></td>
+</tr>
+<tr>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/26.php">26</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/27.php">27</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/28.php">28</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/29.php">29</a></b></td>
+    <td><b><!a href="http://www.acidlife.com/g-hate/giugno01/30.php">30</a></b></td>
+</tr>
+</table>

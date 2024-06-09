@@ -1,0 +1,42 @@
+<div class="date">welcome to the net-psychopomp<br><a href="http://www.klov.com/W/Wizard_Of_Wor.html">Wizard of Wor VERSION</a> - <SCRIPT LANGUAGE="JavaScript">
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+var months=new Array(13);
+months[1]="January";
+months[2]="February";
+months[3]="March";
+months[4]="April";
+months[5]="May";
+months[6]="June";
+months[7]="July";
+months[8]="August";
+months[9]="September";
+months[10]="October";
+months[11]="November";
+months[12]="December";
+var time=new Date();
+var lmonth=months[time.getMonth() + 1];
+var date=time.getDate();
+var year=time.getYear();
+var hour=time.getHours();
+var minutes=time.getMinutes();
+var seconds=time.getSeconds();
+if (hour<10)
+ hour="0" + hour;
+if (minutes<10)
+ minutes="0" + minutes;
+if (seconds<10)
+ seconds="0" + seconds;
+// aggiunge 37
+year+=37;
+if (year < 2000)    // Y2K Fix, Isaac Powell
+year = year + 1900; // http://onyx.idbsu.edu/~ipowell
+
+document.write(date + " ");
+document.write(lmonth + " " + year +  " - " + hour + ":" + minutes + ":" +
+seconds);
+// End -->
+</SCRIPT></div><div class="quote"><SCRIPT LANGUAGE="JavaScript" src="/quotes.js"></script><br><span class="date_normal">Always underconstruction. For cooperation write to <a href="mailto:voiceXX@XXacidlife.com">voiceXX@XXacidlife.com</a><br><i>(remove X from address)</i></span></div><br>

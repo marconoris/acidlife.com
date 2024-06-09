@@ -1,0 +1,55 @@
+A:link {
+	color: #aaaaaa;
+	text-decoration: none;
+	font-size : 9px;
+
+}
+
+A:visited {
+	color: gray;
+	text-decoration: none;
+	font-size : 9px;
+}
+
+A:ACTIVE {
+	color: gray;
+	font-size : 9px;
+	text-decoration: none;
+}
+	
+A:hover {
+	color: #aaaaaa;
+	text-decoration: none;
+	font-weight : bold;
+}
+
+A.txt:link {
+	color: red;
+	text-decoration: none;
+	font-size : 9px;
+
+}
+
+A.txt:hover {
+	color: white;
+	text-decoration: none;
+	font-weight : bold;
+}
+		
+.txt {
+	color: #545454;
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 9px;
+	text-align : right;
+	margin-right : 4px;
+}
+.txt2 {
+	color: #545454;
+	font-family: Verdana, Arial, helvetica, sans-serif;
+	text-decoration: none;
+	font-size: 9px;
+	text-align : justify;
+	margin-right : 4px;
+}
+	

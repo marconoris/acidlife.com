@@ -1,0 +1,18 @@
+&nbsp;<br><script language="javascript">
+<!--
+numeroFrasi = 9;  // questo numero indica il numero massimo delle frasi. Lo puoi cambiare quasi a volontà.
+var frase = new Array(numeroFrasi);   
+frase[0]="<a href='http://www.acidlife.com/g-hate/images/index.php'><img src='http://www.acidlife.com/g-hate/images/map.jpg' width='394' height='236' border='0' alt='[deletia] - G-hate'></a>";
+frase[1]="<a href='http://www.acidlife.com/g-hate/images/index.php'><img src='http://www.acidlife.com/g-hate/images/wantu.jpg' width='394' height='236' border='1' alt='Bubbi - G-hate'></a>";
+frase[2]="<a href='http://www.acidlife.com/g-hate/images/index.php'><img src='http://www.acidlife.com/g-hate/images/empire.jpg' width='394' height='236' border='0' alt='[deletia] - The Empire Strikes Back'></a>";
+frase[3]="<a href='http://www.acidlife.com/g-hate/images/index.php'><img src='http://www.acidlife.com/g-hate/images/inferno.jpg' width='394' height='236' border='0' alt='Bubbi - Inferno'></a>";
+frase[4]="<a href='http://www.acidlife.com/g-hate/images/index.php'><img src='http://www.acidlife.com/g-hate/images/g-hate.jpg' width='394' height='236' border='0' alt='tsnuKitnA - I hate you now'></a>";
+frase[5]="<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0' width='394' height='236'><param name=movie value='cemetary.swf'><param name=quality value=high><embed src='cemetary.swf' quality=high pluginspage='http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash' type='application/x-shockwave-flash' width='394' height='236'></embed></object> ";
+frase[6]="<a href='http://www.acidlife.com/g-hate/images/index.php'><img src='http://www.acidlife.com/g-hate/images/revolution.jpg' width='394' height='236' border='1' alt='Lenny Nero - Revolution'></a>";
+frase[7]="<a href='http://www.acidlife.com/g-hate/images/index.php'><img src='http://www.acidlife.com/g-hate/images/g4.jpg' width='394' height='236' border='0' alt='[deletia] - The Titanium PowerBlock G8'></a>";
+frase[8]="<a href='http://www.acidlife.com/g-hate/images/index.php'><img src='http://www.acidlife.com/g-hate/images/bbb.jpg' width='394' height='236' border='0' alt='[stone] - BBB'></a>";
+
+qualeFrase =  Math.ceil(Math.random()*numeroFrasi)-1;
+document.write(frase[qualeFrase])
+// -->
+</script>

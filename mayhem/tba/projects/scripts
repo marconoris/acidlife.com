@@ -1,0 +1,31 @@
+# get TLD codes
+
+lynx -dump www.iana.org/cctld/cctld-whois.htm | \
+grep  "  -  " | cut -f2 -d. > TLDcodes
+
+# get Parent Pid of the current process
+
+cat /proc/self/status | grep PPid | cut -f2
+
+# how to detect hidden tasks using awk. (very slow version)
+# by xenion@acidlife.com ~ Dallachiesa Michele
+
+ps ax | cut -b1-5 | grep -v PID | awk "
+ {
+   for(old_pid=++pid;pid!=\$0;pid++)
+   if(system(\"cd /proc/\" pid \" > /dev/null 2> /dev/null\")!=1)
+    printf(\"hidden task (pid=%d)\n\", pid);
+ }"
+
+# remove C comments
+
+cat $1 |\
+indent -orig |\
+sed s'/\ \/\*.*\*\///' |\
+sed s'/\/\*.*//' |\
+sed s'/.*\*\///'|\
+sed s'/*\ .*//' |\
+sed s'/\/\/.*//' |\
+indent -sob |\
+indent -orig
+

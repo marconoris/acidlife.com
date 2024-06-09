@@ -1,0 +1,23 @@
+BODY {
+	background-color : #DDDFE5;
+	margin-bottom : 0;
+	margin-left : 0;
+	margin-right : 0;
+	margin-top : 0;
+}
+.arial7587B0 {
+	font-size : 9px;
+	font-family : Arial, Helvetica, sans-serif;
+	color : #7587B0;
+	text-transform : uppercase;
+	margin-left : 40px;
+	margin-top : 0px;
+}
+A, A:ACTIVE, A:FOCUS, A:LINK, A:VISITED {
+	color : #003399;
+	text-decoration : none;
+}
+A:HOVER {
+	text-decoration : overline;
+	color :black;
+}

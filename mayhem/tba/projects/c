@@ -1,0 +1,287 @@
+#!/bin/bash
+# 
+#  C script 2.0
+#
+# $Id: c,v 2.0 2002/02/16 21:02:00 xenion Exp $
+#
+# ---------------------------------------------------------------------------
+# No part of this project may be used to break the law, or to cause damage of
+# any kind. And I'm not responsible for anything you do with it.
+# ---------------------------------------------------------------------------
+# "THE BEER-WARE LICENSE" (by Poul-Henning Kamp, Revision 42):
+# <xenion@acidlife.com> wrote this file.  As long as you retain this notice
+# you can do whatever you want with this stuff. If we meet some day, and you
+# think this stuff is worth it, you can buy me a beer in return.
+# xenion ~ Dallachiesa Michele
+# ---------------------------------------------------------------------------
+
+#==============================================================================
+#-->  configure it
+#==============================================================================
+
+  CODER="xenion" # $Id..
+  BASE="$HOME/dev/base.c"
+
+  SOURCEPATH=$1
+  CFLAGS="-DLINUX -Wall" # -lncurses -Wall -lpthread
+  #CFLAGS="-c -I/usr/src/linux/include -O2 -Wall"
+
+  KEEP_ERROR_FILE="N" # Y/N, $SOURCEPATH.errors..
+
+  ENABLE_BACKUP="Y" # Y/N
+  BACKUP_DIR="$HOME/dev/backup-projects"
+
+  VERSION="2.0"
+
+#==============================================================================
+#-->  colors
+#==============================================================================
+
+
+COLOR_WHITE="\033[40m\033[1;37m"
+COLOR_LIGHT_GRAY="\033[40m\033[37m"
+COLOR_GRAY="\033[40m\033[1;30m"
+COLOR_BLACK="\033[40m\033[30m"
+COLOR_RED="\033[40m\033[31m"
+COLOR_LIGHT_RED="\033[40m\033[1;31m"
+COLOR_GREEN="\033[40m\033[32m"
+COLOR_LIGHT_GREEN="\033[40m\033[1;32m"
+COLOR_BROWN="\033[40m\033[33m"
+COLOR_YELLOW="\033[40m\033[1;33m"
+COLOR_BLUE="\033[40m\033[34m"
+COLOR_LIGHT_BLUE="\033[40m\033[1;34m"
+COLOR_PURPLE="\033[40m\033[35m"
+COLOR_PINK="\033[40m\033[1;35m"
+COLOR_CYAN="\033[40m\033[36m"
+COLOR_LIGHT_CYAN="\033[40m\033[1;36m"
+COLOR_RESET="\033[0m"
+
+#==============================================================================
+#-->  functions
+#==============================================================================
+
+
+  view_line()
+  {
+    echo ________________________________________________________________________________
+
+  }
+
+
+#
+# $1 - nomefile
+#
+# estrae l'id dal file. (se non c'e' l'id lo crea con version==0)
+# 
+
+  function get_id()
+  {
+    ID=`head -n 1 $1 | grep '// $Id: '`
+    if [ ${#ID} = 0 ]; 
+      then
+        ID="NO-ID" 
+    fi
+    echo $ID
+  }
+
+
+#
+# $1 - old id
+#
+# aggiorna data / ora / n^ versione 
+#
+
+  function updated_version_id()
+  {
+    VERSION=`echo $1 | cut -f4 -d" "`
+    VERSION=$[VERSION+1];
+    FILENAME=`echo $1 | cut -f3 -d" " | cut -f1 -d","`
+    DATE=`date "+%Y/%m/%d %k:%m:%S"`
+    ID="// \$Id: $FILENAME,v $VERSION $DATE $CODER Exp \$ //"
+    echo $ID
+  }
+
+  function help_notes()
+  {
+    clear
+    echo -ne "\n\n                   "
+    echo -ne "$COLOR_WHITE- -- --- ----]" 
+    echo -ne "$COLOR_LIGHT_RED C ScripT $VERSION "
+    echo -ne "$COLOR_WHITE[---- --- -- -\n\n"
+    echo -ne "$COLOR_RESET$COLOR_CYAN"
+    echo -ne "                                       "
+    echo -ne "by xenion@acidlife.com$COLOR_RESET\n\n"
+    echo -ne "                   usage  : $0 filename.c\n\n\n"
+
+    cat << EOF
+
+ ---------------------------------------------------------------------------
+ No part of this project may be used to break the law, or to cause damage of
+ any kind. And I'm not responsible for anything you do with it.
+ ---------------------------------------------------------------------------
+ "THE BEER-WARE LICENSE" (by Poul-Henning Kamp, Revision 42):
+ <xenion@acidlife.com> wrote this file.  As long as you retain this notice
+ you can do whatever you want with this stuff. If we meet some day, and you
+ think this stuff is worth it, you can buy me a beer in return.
+ xenion ~ Dallachiesa Michele
+
+EOF
+
+  }
+
+
+#
+# $1 - SOURCEFILE
+#
+# controlla che non sia presente + di 1 '.' 
+#
+
+  function check_binname()
+  {
+    ERR=`echo $1 | cut -f3 -d"."`
+
+    if [ ! ${#ERR} = 0 ] 
+      then
+        echo "$0: too many '.' in '$1'"   
+        exit 
+    fi 
+  }
+
+#==============================================================================
+#-->  start
+#==============================================================================
+
+#
+# se non sono presenti parametri, visualizza help ed esci
+#
+
+  if [ $# = 0 ]
+    then
+      help_notes
+      exit
+  fi
+
+#
+# SOURCEPATH non puo' contenere + di 1 '.', altrimenti non viene definito
+# correttamente il nome del file eseguibile
+#
+
+  check_binname $SOURCEPATH
+
+#
+# check esistenza BACKUP directory 
+#
+
+  if [ $ENABLE_BACKUP = "Y" ];
+    then
+      mkdir $BACKUP_DIR 2> /dev/null
+      if [ ! -d $BACKUP_DIR ]; 
+        then 
+          echo "$0: cannot create directory \`$BACKUP_DIR\`" 
+          exit 
+      fi
+  fi
+
+
+#
+# se il file non esiste ancora ci copia il BASE file (se esiste)
+#
+
+  if [ ! -e $SOURCEPATH ];
+    then
+      cat $BASE > $SOURCEPATH 2> /dev/null
+  fi
+
+ 
+  while [ 1 ]
+    do
+
+
+#
+# aggiorna l'id
+#
+
+      OLD_ID=`get_id $SOURCEPATH`
+
+      if [ "$OLD_ID" = "NO-ID" ];
+        then
+          IDNEW="// \$Id: $SOURCEPATH,v 0 `date "+%Y/%m/%d %k:%m:%S"` $CODER Exp \$ //"
+          mv $SOURCEPATH $SOURCEPATH.tmp
+          echo $IDNEW > $SOURCEPATH
+          cat $SOURCEPATH.tmp >> $SOURCEPATH
+          rm -f $SOURCEPATH.tmp
+          OLD_ID=$IDNEW
+      fi
+
+      NEW_ID=`updated_version_id "$OLD_ID"`
+      OLD_VERSION_NUMBER=`echo $OLD_ID | cut -f4 -d" "`
+      # echo old ID : $OLD_ID
+      # echo new ID : $NEW_ID
+      # echo old VN : $OLD_VERSION_NUMBER
+
+      FILELEN=`wc -l $SOURCEPATH | cut -b 1-8`
+      FILELEN=$[FILELEN-1];
+      tail -n $FILELEN $SOURCEPATH > $SOURCEPATH.tmp
+      echo $NEW_ID > $SOURCEPATH
+      cat $SOURCEPATH.tmp >> $SOURCEPATH
+
+      rm -f $SOURCEPATH.tmp
+
+      if [ $ENABLE_BACKUP = "Y" ];
+        then
+          cp $SOURCEPATH $BACKUP_DIR/$SOURCEPATH.tmp.backup.$OLD_VERSION_NUMBER
+      fi
+
+#
+# !?
+#
+
+      vi $SOURCEPATH
+
+#
+# compila $SOURCEPATH
+#
+
+      BINPATH=`echo $SOURCEPATH | cut -f1 -d"."`
+      COMPILE_LINE="cc $CFLAGS -o $BINPATH $SOURCEPATH"
+      clear
+      echo $COMPILE_LINE
+
+      $COMPILE_LINE > $SOURCEPATH.errors 2> $SOURCEPATH.errors
+
+      view_line 
+      echo 
+      if [ -s $SOURCEPATH.errors ] 
+        then
+          echo -e " * hem c'e' qualche errore"
+          echo
+          cat $SOURCEPATH.errors
+        else
+          echo -e " * waaaa nessun errore :)"
+          echo -e " * source   : $SOURCEPATH, `du -h $SOURCEPATH | cut -f1`"  
+          echo -e " * compiled : $BINPATH, `du -h $BINPATH | cut -f1`"
+         
+      fi
+
+      if [ $KEEP_ERROR_FILE != "Y" ];
+        then
+          rm -f $SOURCEPATH.errors 2> /dev/null
+      fi
+
+      x="boh"
+         
+      echo 
+      view_line
+      echo
+      echo  "(ctrl+C)   : esc"
+      echo  "invio      : reload"
+      echo  "indent     : indent"
+      echo 
+      read -p [---------]:\  x
+      echo
+
+    done
+
+#EOF
+
+

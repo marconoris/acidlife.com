@@ -1,0 +1,19 @@
+<br>
+ <table align="right" width="150" cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td rowspan="5" width="1" background="http://www.acidlife.com/xxx/pacco_gray.gif"><img src="http://www.acidlife.com/xxx/pacco_gray.gif" width="1" height="1" border="0" alt=""></td>
+	<td height="1" background="http://www.acidlife.com/xxx/pacco_gray.gif"><img src="http://www.acidlife.com/xxx/pacco_gray.gif" width="1" height="1" border="0" alt=""></td>
+    <td rowspan="5" width="1" background="http://www.acidlife.com/xxx/pacco_gray.gif"><img src="http://www.acidlife.com/xxx/pacco_gray.gif" width="1" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+    <td width="148" background="http://www.acidlife.com/xxx/pacco_gray2.gif" align="center"><div class="note2" align="center">MAYHEM</div></td>
+<tr>
+   <td height="1" background="http://www.acidlife.com/xxx/pacco_gray.gif"><img src="http://www.acidlife.com/xxx/pacco_gray.gif" width="1" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+    <td><div class="ver2">~ <a href="http://www.acidlife.com/mayhem/becks" target="_top">becks</a><br>~ <a href="http://www.acidlife.com/~dadaman" target="_top">dadaman</a><br>~ <a href="http://www.acidlife.com/mayhem/deletia" target="_top">[deletia]</a><br>~ <a href="http://www.acidlife.com/mayhem/freefred" target="_top">freefred</a><br>~ <a href="http://www.acidlife.com/~gurga" target="_top">gurga</a><br>~ <a href="http://www.acidlife.com/~sikkolo" target="_top">sikkolo</a><br>~ <a href="http://www.acidlife.com/~stone" target="_top">[stone]</a><br>~ <a href="http://www.acidlife.com/~thane" target="_top">thane</a><br>~ <a href="http://www.acidlife.com/~tyler" target="_top">tyler</a></div></td>
+</tr>
+<tr>
+   <td height="1" background="http://www.acidlife.com/xxx/pacco_gray.gif"><img src="http://www.acidlife.com/xxx/pacco_gray.gif" width="1" height="1" border="0" alt=""></td>
+</tr>
+</table>

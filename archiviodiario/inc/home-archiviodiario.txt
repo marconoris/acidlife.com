@@ -1,0 +1,34 @@
+<table width="150" align="right" cellspacing="2" cellpadding="2" border="0">
+<tr>
+    <td align="right" valign="top">
+<!---------- ARCHIVIO INDEX---------->
+<? include ("http://www.acidlife.com/archiviodiario/inc/menu-archivio.txt"); ?>
+<? include ("http://www.acidlife.com/archiviodiario/inc/menu-diario.txt"); ?>
+<!---------- FINE ARCHIVIO INDEX ----------></td>
+</tr>
+<tr>
+    <td align="right" valign="top">
+<!---------- PROJECTS ---------->
+<? include ("http://www.acidlife.com/inc/menu-projects.txt"); ?>
+<!---------- FINE PROJECTS ----------></td>
+</tr>
+<tr>
+    <td align="right" valign="top">
+<!---------- MAYHEM ---------->
+<? include ("http://www.acidlife.com/inc/menu-mayhem.txt"); ?>
+<!---------- FINE MAYHEM ----------></td>
+</tr>
+<tr>
+    <td align="right" valign="top">
+<!---------- DIMENSIONS ---------->
+ <? include ("http://www.acidlife.com/inc/menu-dimensions.txt"); ?>
+<!---------- FINE DIMENSIONS ----------></td>
+</tr>
+<tr>
+    <td align="center" valign="top">
+&nbsp;</td>
+</tr>
+<tr>
+    <td align="center" valign="top"><br><div align="center"><a href="http://punto-informatico.it/petizione.asp"><img src="http://www.acidlife.com/xxx/censura.png" width="120" height="60" border="0" alt="Censura? No, grazie. Firma anche tu la petizione."></a></div><br>&nbsp;</td>
+</tr>
+</table>

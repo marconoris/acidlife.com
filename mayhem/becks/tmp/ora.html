@@ -1,0 +1,119 @@
+<html>
+<head><title>
+  RSS
+ </title>
+<style type="text/css">
+<!-- 
+A:link { text-decoration: none; }
+-->
+</style>
+</head>
+
+<body bgcolor="#dee5f7" marginwidth="0" marginheight="0" link="#5e2d72" text="#000000">
+<font face="lucida,helvetica,sans-serif">
+<blockquote>
+<h1>
+  RSS
+ </h1>
+<p>
+
+	Le headlines degli articoli di <b>
+persone.softwarelibero.it</b>
+ sono
+disponibili in versione RSS <a href="/rss/articles.xml">
+qui</a>
+.
+</p>
+<p>
+ E' possibile usare il seguente script python per prelevare i dati e
+trasformarli in HTML, per utilizzarli nel proprio sito web:
+</p>
+<p>
+<pre>
+
+#!/usr/bin/env python
+# Copyright (c) 2000 Christopher R. Gabriel <cgabriel@firenze.linux.it>
+# Released under the GNU GPL License (see www.gnu.org for details)
+#
+# Fetch news headlines from persone.softwarelibero.org and
+# write them in an HTML format to _stdout_
+#
+# you need python installed, and, most important, the python-xml package,
+# available at
+# http://www.python.org/sigs/xml-sig/files/PyXML-0.5.3.tar.gz
+
+
+import urllib
+import re
+import string
+from xml.sax import saxlib
+from xml.sax import saxexts
+
+class PrintHeadline(saxlib.HandlerBase):
+
+    def __init__ (self, number):
+        self.inItem = 0
+        self.inTitle = 0
+        self.inLink = 0 
+        self.headlineLimit = number
+        self.headlineCount = 0
+
+    def startElement(self, name, attrs):
+        if (self.headlineCount >= self.headlineLimit): return
+        if name == 'item':
+            print "< li >"  
+            self.inItem = 1
+        if (name == 'title'):
+	    self.inTitle = 1 
+	    self.itemTitle = ''
+	if (name == 'link'):   
+	    self.inLink = 1    
+	    self.itemLink = '' 
+
+
+    def endElement(self, name):
+        if (self.headlineCount >= self.headlineLimit): return
+        if name == 'item':
+            print "< b > < a href='" + self.itemLink + "'>" + self.itemTitle + "< /a > < /b > < br > < /li >"
+            self.inItem = 0
+            self.headlineCount = self.headlineCount + 1
+	if name == 'title':
+	    self.inTitle = 0
+	if name == 'link':  
+	    self.inLink = 0 
+
+
+    def characters (self, ch, start, length):
+        if (self.headlineCount >= self.headlineLimit): return
+        if (self.inItem & self.inTitle):
+            self.itemTitle = self.itemTitle + ch[start:start+length]
+        if (self.inItem & self.inLink):
+	        self.itemLink = self.itemLink + ch[start:start+length]
+
+
+print "< p > < a href='http://persone.softwarelibero.org/' > Articoli di Persone! < /a >"
+
+
+feedfile = urllib.urlopen("http://persone.softwarelibero.org/rss/articles.xml")
+
+feedfile.readline();
+
+if __name__ == '__main__':
+    parser = saxexts.make_parser()
+    dh = PrintHeadline(5)
+    parser.setDocumentHandler(dh)
+    parser.parseFile(feedfile)   
+    parser.close()
+
+print "< /UL >"
+</pre>
+</p>
+</blockquote>
+<p align=center>[ <a href="/">Home</a>  |
+<a href="/article/">Articoli</a>  |
+<a href="/acct/">Account</a>  |
+<a href="/person/">Persone</a>  |
+<a href="/proj/">Progetti</a> ]
+</p></font>
+</body>
+</html>

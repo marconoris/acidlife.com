@@ -1,0 +1,9 @@
+			</td>
+			<td background="xxx/pacco03.jpg" width="1" height="100%"><img src="xxx/riga_03.jpg" width="1" height="410" border="0"></td>
+		</tr>
+	</table>
+
+
+
+</body>
+</html>

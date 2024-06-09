@@ -1,0 +1,193 @@
+
+<div class="npp_comm">&lt;!----------------- NOW: <SCRIPT LANGUAGE="JavaScript">
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+var months=new Array(13);
+months[1]="January";
+months[2]="February";
+months[3]="March";
+months[4]="April";
+months[5]="May";
+months[6]="June";
+months[7]="July";
+months[8]="August";
+months[9]="September";
+months[10]="October";
+months[11]="November";
+months[12]="December";
+var time=new Date();
+var lmonth=months[time.getMonth() + 1];
+var date=time.getDate();
+var year=time.getYear();
+var hour=time.getHours();
+var minutes=time.getMinutes();
+var seconds=time.getSeconds();
+if (hour<10)
+ hour="0" + hour;
+if (minutes<10)
+ minutes="0" + minutes;
+if (seconds<10)
+ seconds="0" + seconds;
+// aggiunge 37
+year+=37;
+if (year < 2000)    // Y2K Fix, Isaac Powell
+year = year + 1900; // http://onyx.idbsu.edu/~ipowell
+
+document.write(date + " ");
+document.write(lmonth + " " + year +  " - " + hour + ":" + minutes + ":" +
+seconds);
+// End -->
+</SCRIPT> -----------------&gt;</div>
+
+<div class="npp_title"><span class="npp_date">24.07.35</span>
+<a href="http://www.acidlife.com" class="npp_title_orange" target="new">Online acidlife.com</a></div>
+
+<div class="npp_title"><span class="npp_date">00.00.20</span>
+<a href="http://www.acidlife.com/~trash/_txt/catastrofe2020.pdf" class="npp_title_orange">Verso la catastrofe</a></div>
+
+<div class="npp_title"><span class="npp_date">11.03.04</span>
+<a href="http://www.google.it/search?hl=it&ie=UTF-8&oe=UTF-8&q=11-M+&lr=" class="npp_title_darkred" target="new">esp: cuatro atentados en Madrid</a></div>
+
+<div class="npp_title"><span class="npp_date">15.01.04</span>
+<a href="http://www.indymedia.org/en/2004/02/110379.shtml" class="npp_title_blue" target="new">European Day of Migrants Struggles </a></div>
+
+<div class="npp_title"><span class="npp_date">31.01.04</span>
+<a href="http://www.blogoltre.it/blog/archives/000348.html" class="npp_title_orange" target="new">ita: il crepuscolo dell'Italia</a></div>
+
+<div class="npp_title"><span class="npp_date">28.01.04</span>
+<a href="http://brasil.indymedia.org/pt/orange/2004/01/273197.shtml" class="npp_title_green" target="new">bra: ficais de trabalho escravo morrem em emboscada em minas gerais </a></div>
+
+<div class="npp_title"><span class="npp_date">28.01.04</span>
+<a href="http://www.google.it/search?sourceid=navclient&hl=it&ie=UTF-8&oe=UTF-8&q=labour+%2Buniversity" class="npp_title_green" target="new">labour +university</a></div>
+
+<div class="npp_title"><span class="npp_date">23.01.04</span>
+<a href="http://www.nuovimondimedia.it/modules.php?op=modload&name=News&file=article&sid=505&mode=thread&order=0&thold=0" class="npp_title_darkred" target="new">Mumbai: APPELLO DELL'ASSEMBLEA DEI MOVIMENTI SOCIALI</a></div>
+
+<div class="npp_title"><span class="npp_date">13.01.04</span>
+<a href="http://www.google.it/search?sourceid=navclient&hl=it&ie=UTF-8&oe=UTF-8&q=%22tom+hurndall%22" class="npp_title_green" target="new">tom hurndall</a></div>
+
+<div class="npp_title"><span class="npp_date">14.10.03</span>
+<a href="http://www.olfp.org/Lib_oct03.htm" class="npp_title_green" target="new">LIBERIA: A GOVERNEMENT FOR PEACE</a></div>
+
+<div class="npp_title" id="2k-inv2"><span class="npp_date">20.03.03</span>
+<a href="#" class="npp_title_darkred" target="new">start iraqi colonization </a></div>
+
+<div class="npp_title"><span class="npp_date">20.03.03</span>
+<a href="http://www.google.it/search?hl=it&ie=UTF-8&oe=UTF-8&q=world+%2Bpeace+%2Biraq+%2B10+million+%2Bno+war&lr=" class="npp_title_darkred" target="new">the world don't want iraqi war</a></div>
+
+<div class="npp_title" id="usa01"><span class="npp_date">04.02.03</span>
+<a href="http://www.acidlife.com/~trash/_txt/artigli_globali.txt" class="npp_title_orange" target="new">ITA: artigli globali</a></div>
+
+<div class="npp_title" id="pale1">
+<span class="npp_date">00.06.02</span><a href="hwww.stopthewall.com" class="npp_title_green" target="new">THE ISRAELIAN Apartheid Wall</a></div>
+
+<div class="npp_title" id="2k-inv1"><span class="npp_date">07.10.01</span><a href="http://www.guardian.co.uk/afghanistan/story/0,1284,557884,00.html" class="npp_title_darkred" target="new">start afghan colonization</a></div>
+
+<div class="npp_title"><span class="npp_date">11.09.01</span>
+<a href="http://www.guardian.co.uk/wtccrash/story/0,1300,550230,00.html" class="npp_title_darkred" target="new">USA: under attack!</a></div>
+
+<div class="npp_comm">&lt;!----------------- THIRD STOP -----------------&gt;</div>
+
+<div class="npp_title" id="genoa2"><span class="npp_date">20.07.01</span>
+<a href="http://www.piazzacarlogiuliani.org/" class="npp_title_darkred" target="new">carlo giuliani</a></div>
+
+<div class="npp_title" id="genoa"><span class="npp_date">20.07.01</span>
+<a href="http://italy.indymedia.org/news/2001/07/7517.php" class="npp_title_darkred" target="new">genoa g8</a></div>
+
+<div class="npp_comm">&lt;!----------------- SECOND STOP -----------------&gt;</div>
+
+<div class="npp_title" id="wall2"><span class="npp_date">09.11.89</span>
+<a href="http://www.dailysoft.com/berlinwall/history/fall-of-berlinwall.htm" class="npp_title_darkred" target="new">THE FALL OF THE BERLIN WALL</a></div>
+
+<div class="npp_title" id="wall2"><span class="npp_date">10.03.87</span>
+<a href="http://www.georgetown.edu/pdba/Constitutions/Haiti/haiti1987.html" class="npp_title_green" target="new">THE NEW Constitution of Haiti </a></div>
+
+<div class="npp_title"><span class="npp_date">26.08.78</span>
+<a href="http://www.anticlericale.net" class="npp_title_darkred" target="new">Pope John Paul I elevated to Papacy</a></div>
+
+<div class="npp_title"><span class="npp_date">00.06.78</span>
+<a href="http://europa.eu.int/" class="npp_title_green" target="new">First elections for the European Parliament</a></div>
+
+<div class="npp_title"><span class="npp_date">08.05.78</span>
+<a href="http://www.centroimpastato.it/" class="npp_title_green" target="new">ITA: ucciso dalla mafia Peppino Impastato</a></div>
+
+<div class="npp_title"><span class="npp_date">16.03.78</span>
+<a href="javascript:moro();" class="npp_title_green">ITA: ucciso Aldo Moro</a></div>
+
+<div class="npp_title"><span class="npp_date">15.06.77</span>
+<a href="http://www.vespito.net/historia/" class="npp_title_green" target="new">ESP: democracia</a></div>
+
+<div class="npp_title"><span class="npp_date">24.03.76</span>
+<a href="http://www.desaparecidos.org/arg/" class="npp_title_green" target="new">ARG: GOLPE MILITAR</a></div>
+
+<div class="npp_title" id="che2"><span class="npp_date">09.10.67</span>
+<a href="javascript:che();" class="npp_title_darkred">CHE GUEVARA's death</a></div>
+
+<div class="npp_title" id="che1"><span class="npp_date">03.10.65</span>
+<a href="#" class="npp_title_blue" target="new">CHE GUEVARA leave castro's governement</a></div>
+
+<div class="npp_comm">&lt;!----------------- FIRST STOP -----------------&gt;</div>
+
+<div class="npp_title" id=wall1><span class="npp_date">13.08.61</span>
+<a href="http://www.dailysoft.com/berlinwall/" class="npp_title_darkred" target="new">THE BERLIN WALL</a></div>
+
+<div class="npp_title" id="cuba1"><span class="npp_date">01.01.60</span>
+<a href="#" class="npp_title_blue" target="new">The Cuban revolution</a></div>
+
+<div class="npp_title" id="cuba1"><span class="npp_date">14.09.59</span>
+<a href="http://it.wikipedia.org/wiki/14_settembre" class="npp_title_darkred" target="new">La sonda sovietica Luna 2 si schianta sulla Luna, diventando il primo manufatto umano a raggiungerla</a></div
+
+<div class="npp_title"><span class="npp_date">23.10.56</span>
+<a href="http://www.google.it/search?sourceid=navclient&hl=it&ie=UTF-8&oe=UTF-8&q=1956+%2Boctober+%2Bhungary" class="npp_title_green" target="new">Starting the rebellion put down in Communist Hungary</a></div>
+
+<div class="npp_title"><span class="npp_date">07.05.54</span>
+<a href="http://directory.google.com/Top/Society/History/By_Time_Period/Twentieth_Century/Wars_and_Conflicts/Vietnam_War/?tc=1" class="npp_title_green" target="new">Vietnam split at 17th parallel after French defeated</a></div>
+
+<div class="npp_title"><span class="npp_date">10.02.47</span>
+<a href="http://www.cronologia.it/storia/a1947aa.htm" class="npp_title_green" target="new">TREATY OF PEACE WITH ITALY</a></div>
+
+<div class="npp_title"><span class="npp_date">02.06.46</span>
+<a href="http://www.cronologia.it/storia/italia/italia002.htm" class="npp_title_green" target="new">ita: vince la repubblica</a></div>
+
+<div class="npp_title" id="atomic2"><span class="npp_date">09.08.45</span>
+<a href="http://www.google.it/search?hl=it&ie=UTF-8&oe=UTF-8&q=bomb+%2BNagasaki+%2Bpeace&lr=" class="npp_title_darkred" target="new">USA NUCLEAR BOMBING OF NAGASAKI</a></div>
+
+<div class="npp_title" id="atomic1"><span class="npp_date">06.08.45</span>
+<a href="http://www.google.it/search?sourceid=navclient&hl=it&ie=UTF-8&oe=UTF-8&q=bomb+%2Bhiroshima+%2Bofficial" class="npp_title_darkred" target="new">USA NUCLEAR BOMBING OF HIROSHIMA</a></div>
+
+<div class="npp_title"><span class="npp_date">26.06.45</span>
+<a href="http://www.onu.org" class="npp_title_darkred" target="new">ONU</a></div>
+
+
+<div class="npp_title"><span class="npp_date">25.04.45</span>
+<a href="javascript:resistenza()" class="npp_title_green">ITA: liberazione</a></div>
+
+<div class="npp_title" id="hit2"><span class="npp_date">30.04.45</span>
+<a href="http://www.remember.org" class="npp_title_darkred" target="new">THE FALL OF HITLER</a></div>
+
+<div class="npp_title" id="split1"><span class="npp_date">04.02.45</span>
+<a href="http://www.google.it/search?hl=it&ie=UTF-8&oe=UTF-8&q=yalta+%2B1945+%2Bworld&lr=" class="npp_title_darkred" target="new">YALTA SPLIT</a></div>
+
+<div class="npp_title" id="2mw1"><span class="npp_date">06.06.44</span>
+<a href="#" class="npp_title_darkred" target="new">D-DAY</a></div>
+
+<div class="npp_title"><span class="npp_date">08.09.43</span>
+<a href="http://www.anpi.it/militari/8settembre.htm" class="npp_title_green" target="new">ita: armistizio</a></div>
+
+<div class="npp_title"><span class="npp_date">01.09.39</span>
+<a href="#" class="npp_title_darkred"  target="new">World War II: Nazi Germany attacks Poland, beginning the war.</a></div>
+
+<div class="npp_title"><span class="npp_date">18.07.36</span>
+<a href="http://www.guerracivil.org/" class="npp_title_green" target="new">esp: guerra civil</a></div>
+
+<div class="npp_title" id="hit1"><span class="npp_date">07.12.24</span>
+<a href="http://www.google.it/search?hl=it&ie=UTF-8&oe=UTF-8&q=hitler&btnG=Cerca+con+Google&lr=" class="npp_title_green" target="new">THE RISE OF HITLER</a></div>
+
+<div class="npp_title"><span class="npp_date">07.11.17</span>
+<a href="http://www.1917.com/" class="npp_title_green" target="new">RUS: REVOLUTION</a></div>
+<div class="npp_comm">&lt;!----------------- START -----------------&gt;</div>
+<br>
+<div class="date_normal">Always underconstruction. For cooperation write to <a href="mailto:voiceXX@XXacidlife.com">voiceXX@XXacidlife.com</a><br><i>(remove X from address)</i></div><br>

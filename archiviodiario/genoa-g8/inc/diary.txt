@@ -1,0 +1,19 @@
+<br>
+ <table align="right" width="150" cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td rowspan="5" width="1" background="http://www.acidlife.com/xxx/pacco_gray.gif"><img src="http://www.acidlife.com/xxx/pacco_gray.gif" width="1" height="1" border="0" alt=""></td>
+	<td height="1" background="http://www.acidlife.com/xxx/pacco_gray.gif"><img src="http://www.acidlife.com/xxx/pacco_gray.gif" width="1" height="1" border="0" alt=""></td>
+    <td rowspan="5" width="1" background="http://www.acidlife.com/xxx/pacco_gray.gif"><img src="http://www.acidlife.com/xxx/pacco_gray.gif" width="1" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+    <td width="148" background="http://www.acidlife.com/xxx/pacco_gray2.gif" align="center"><div class="note2" align="center">STREETCLEANER</div></td>
+<tr>
+   <td height="1" background="http://www.acidlife.com/xxx/pacco_gray.gif"><img src="http://www.acidlife.com/xxx/pacco_gray.gif" width="1" height="1" border="0" alt=""></td>
+</tr>
+<tr>
+    <td><div class="ver2">~ <a href="http://www.acidlife.com/archiviodiario/genoa-g8/nero_01.php">Intro</a><br><br>~ <a href="http://www.acidlife.com/archiviodiario/genoa-g8/nero_02.php">Gio 12 luglio 2001</a><br>~ <a href="http://www.acidlife.com/archiviodiario/genoa-g8/nero_03.php">Ven 13 luglio 2001</a><br>~ <a href="http://www.acidlife.com/archiviodiario/genoa-g8/nero_04.php">Lun 16 luglio 2001</a><br>~ <a href="http://www.acidlife.com/archiviodiario/genoa-g8/nero_05.php">Mer 18 luglio 2001</a><br>~ <a href="http://www.acidlife.com/archiviodiario/genoa-g8/nero_06.php">Sab 21 luglio 2001</a><br><br>~ <a href="mailto:acidlife@autistici.org">Contact Swan</a></div></td>
+</tr>
+<tr>
+   <td height="1" background="http://www.acidlife.com/xxx/pacco_gray.gif"><img src="http://www.acidlife.com/xxx/pacco_gray.gif" width="1" height="1" border="0" alt=""></td>
+</tr>
+</table>

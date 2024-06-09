@@ -1,0 +1,53 @@
+section: misc
++url   :http://www.cise.ufl.edu/~ppadala/ncurses/NCURSES_HOWTO/
++url   :http://www.linux.ie/pipermail/social/2001-September/001765.html
++url   :http://sunsite.iisc.ernet.in/virlib/linux/sl_unleash/ewtoc.html
++url   :http://docs.linux.cz/c-faq_comp.unix.programmer/faq_toc.html
++url   :http://www.big.net.au/~silvio/
++url   :http://www.bitchx.it/
++url   :http://www.olografix.org/nembokid/
++url   :http://www.olografix.org/usi/
++url   :http://oswd.org/
+
+section: Kernel Hacking
++url   :http://quaff.port5.com/syscall_list.html
++url   :http://home.earthlink.net/~jknapka/linux-mm/vmoutline.html
++url   :http://packetstorm.decepticons.org/9908-exploits/linux_stealth_module.txt
++url   :http://www.scs.ch/~frey/linux/memorymap.html
++url   :http://linuxclub.il.eu.org/syscall/
++url   :http://linuxkernel.to/module/
++url   :http://www.cab.u-szeged.hu/local/linux/doc/khg/khg.html
++url   :http://mail.nl.linux.org/kernelnewbies/
++url   :http://linuxassembly.org/
++url   :http://www.tux.org/lkml/
++url   :http://starship.python.net/crew/gandalf/rtlinux/luz.cs.nmt.edu/%257Etobor/jwz/section.html
++url   :http://www.linuxdoc.org/LDP/lkmpg/node20.html
++url   :http://www.cs.unm.edu/~jotto/linux/linux.html
++url   :http://uranus.it.swin.edu.au/~jn/linux/kernel.htm
++url   :http://linuxassembly.org/syscall.html
++url   :http://linuxkernel.to/module/
++url   :http://kernelbook.sourceforge.net/
++url   :http://www.l-u-c-y.co.uk/Security/platforms/unix/abuse_kernel.htm
++url   :http://www.vicenza.linux.it/pipermail/lugvi-fans/2001-January.txt
++url   :http://newdata.box.sk/raven/lkm.html
++url   :http://netfilter.samba.org/unreliable-guides/kernel-hacking/
++url   :http://www.linuxdoc.org/LDP/lkmpg/mpg.html
+
+section: c C Ccc CcCC CCcCcc cCc cc
++url   :http://www.ecst.csuchico.edu/~beej/guide/net/html/ 
++url   :http://www.cscene.org/ 
++url   :http://www.accu.org/
++url   :http://kbs.cs.tu-berlin.de/~jutta/c/
++url   :http://www.cm.cf.ac.uk/Dave/C/CE.html
++url   :http://www.ioccc.org/
++url   :http://code.box.sk/c/
++url   :http://www.eskimo.com/~scs/C-faq/top.html
++url   :http://www.bitafterbit.com/english/c/links/
+
+section: security
++url   :http://lsd-pl.net
++url   :http://www.team-teso.net/
++url   :http://www.w00w00.org/
++url   :http://s0ftpj.org/
++url   :http://www.packetstormsecurity.com
+

@@ -1,0 +1,3711 @@
+2001-12-19 10:56  carstenklapp
+
+	* locale/: de/LC_MESSAGES/phpwiki.mo, de/LC_MESSAGES/phpwiki.php,
+	es/LC_MESSAGES/phpwiki.mo, es/LC_MESSAGES/phpwiki.php,
+	nl/LC_MESSAGES/phpwiki.mo, po/de.po, po/es.po, po/it.po, po/nl.po,
+	po/phpwiki.pot, po/sv.po: yet-another set of xgettext updates
+
+2001-12-19 10:54  carstenklapp
+
+	* templates/: browse.html, editpage.html: joined a few text
+	fragments for improved localization-ability & slightly simplify php
+	code in html templates
+
+2001-12-19 09:43  carstenklapp
+
+	* doc/INSTALL.Mac_OS_X: [no log message]
+
+2001-12-19 09:43  carstenklapp
+
+	* doc/INSTALL.MacOSX: RenameNitpick
+
+2001-12-19 09:36  carstenklapp
+
+	* locale/de/LC_MESSAGES/phpwiki.php, locale/po/de.po,
+	locale/po/phpwiki.pot, lib/plugin/PageHistory.php: [no log message]
+
+2001-12-19 08:28  carstenklapp
+
+	* locale/: de/LC_MESSAGES/phpwiki.php, po/de.po, po/es.po,
+	po/it.po, po/nl.po, po/phpwiki.pot, po/sv.po: [no log message]
+
+2001-12-19 08:04  carstenklapp
+
+	* lib/WikiDB/backend/PearDB.php: PearDB broke during sprintf
+	fine-tuning--fixed.
+
+2001-12-19 07:07  carstenklapp
+
+	* lib/: plugin/_BackendInfo.php, plugin/BackLinks.php,
+	plugin/LikePages.php, WikiDB/backend/cvs.php,
+	WikiDB/backend/dbaBase.php, WikiDB/backend/PearDB.php,
+	WikiDB/dba.php, ziplib.php: sprintf fine-tuning for gettext
+
+2001-12-19 04:57  carstenklapp
+
+	* locale/: de/LC_MESSAGES/phpwiki.mo, de/LC_MESSAGES/phpwiki.php,
+	nl/LC_MESSAGES/phpwiki.mo, nl/LC_MESSAGES/phpwiki.php, po/de.po,
+	po/es.po, po/it.po, po/nl.po, po/phpwiki.pot, po/sv.po: sync'd po
+	files with last gettextification
+
+2001-12-19 04:55  carstenklapp
+
+	* lib/loadsave.php: gettext-ified a bunch of strings in here. (I
+	think this was the last one, all PhpWiki strings are _("done") now,
+	whew!)
+
+2001-12-19 03:57  carstenklapp
+
+	* locale/: de/LC_MESSAGES/phpwiki.mo, nl/LC_MESSAGES/phpwiki.mo,
+	po/de.po, po/es.po, po/it.po, po/nl.po, po/phpwiki.pot, po/sv.po:
+	Re[make]d locale to add new strings (some database error messages
+	were recently gettext-ified).
+
+2001-12-19 03:54  carstenklapp
+
+	* lib/WikiDB/: backend/cvs.php, backend/dba.php,
+	backend/dbaBase.php, backend/PearDB.php, dba.php: gettext-ified
+	error messages with sprintf(_("%s"),$v)
+
+2001-12-19 01:22  carstenklapp
+
+	* doc/INSTALL.pgsql: troubleshooting tip, note about schema file
+	with latest pgsql
+
+2001-12-19 00:24  carstenklapp
+
+	* locale/: po/de.po, de/LC_MESSAGES/phpwiki.php: fixed string typo
+	which inadvertantly broke the search plugins (VolltextsuchE u.
+	TitelsuchE)
+
+2001-12-19 00:21  carstenklapp
+
+	* locale/de/pgsrc/: Volltextsuche, Titelsuche: fixed line endings
+
+2001-12-19 00:16  carstenklapp
+
+	* schemas/psql.sql: suggested alternate username of 'www' in
+	addition to 'nobody' or 'apache' in comments
+
+2001-12-19 00:07  dairiki
+
+	* lib/diff.php: Fix Carsten's example translation problem using new
+	__sprintf() function.
+
+2001-12-19 00:06  dairiki
+
+	* locale/make-php-trans.awk: Quote '$'s in translated strings.
+
+2001-12-19 00:05  dairiki
+
+	* lib/stdlib.php, locale/Makefile: New functions __printf,
+	__sprintf, __vsprintf.	These are localized versions of printf, et.
+	al.   They differ from PHP's built-in printf functions in that:  1.
+	The pass the format string through gettext().	2. They support
+	argument reordering ("%2$s").
+
+2001-12-18 23:54  carstenklapp
+
+	* locale/: de/LC_MESSAGES/phpwiki.mo, de/LC_MESSAGES/phpwiki.php,
+	po/de.po: fixed Titelsuch (was incorrectly translated as
+	Volltextsuch)
+
+2001-12-18 23:52  carstenklapp
+
+	* locale/de/pgsrc/: SeiteFinden, WieManWikiBenutzt: fixed line
+	ending translation
+
+2001-12-18 23:23  carstenklapp
+
+	* locale/de/pgsrc/: PhpWikiAdministration, PhpWikiSystemverwalten:
+	moved PhpWikiAdministration to PhpWikiSystemverwalten
+
+2001-12-18 23:21  carstenklapp
+
+	* locale/de/pgsrc/Protokoll: moved to SeiteProtokoll
+
+2001-12-18 23:20  carstenklapp
+
+	* pgsrc/UserPreferences: TypoFix
+
+2001-12-18 23:09  carstenklapp
+
+	* locale/de/pgsrc/: BenutzerEinstellungen, EditiereText,
+	FrischeSeiten, G%E4steBuch, Geringe%C4nderungen, GleicheSeiten,
+	GuterStil, MeistBesucht, SeitenErzeugen, StartSeite,
+	TextFormatierungsRegeln: minor updates and format changes
+
+2001-12-18 23:02  carstenklapp
+
+	* locale/de/pgsrc/SeiteProtokoll: new page to replace
+	/locale/de/pgsrc/Protokol
+
+2001-12-18 23:01  carstenklapp
+
+	* locale/de/pgsrc/PhpWikiSystemverwalten: new page to replace
+	/locale/de/pgsrc/PhpWikiAdministration
+
+2001-12-18 23:00  carstenklapp
+
+	* pgsrc/TextFormattingRules: minor reformatting
+
+2001-12-18 22:46  carstenklapp
+
+	* templates/editpage.html: quiet inclusion of TextFormattingRules.
+	/locale/de/templates can be removed from 1.3 (but not for the other
+	languages until their translations have been updated.)
+
+2001-12-18 22:41  carstenklapp
+
+	* locale/: de/LC_MESSAGES/phpwiki.mo, de/LC_MESSAGES/phpwiki.php,
+	po/de.po: minor corrections
+
+2001-12-18 20:54  carstenklapp
+
+	* phpwiki.css: reformatting & quiet-ed IncludePage text (of
+	TextFormattingRules)
+
+2001-12-18 18:19  carstenklapp
+
+	* locale/de/LC_MESSAGES/phpwiki.php: quick fix for a wrong file
+	committed in my last commit
+
+2001-12-18 18:12  carstenklapp
+
+	* locale/: de/LC_MESSAGES/phpwiki.mo, de/LC_MESSAGES/phpwiki.php,
+	po/de.po, po/phpwiki.pot: o Changed charset from 8859-1 to
+	iso-8859-1 (to satisfy complaint from GNU Emacs 20.7)  o removed
+	fuzzies for testing (but more translation fine-tuning still needed)
+	 o Fixed a few latin1 characters which weren't properly converted
+	during the last commit (my last save must have defaulted back to
+	Mac-Roman from Latin-1)o Un-inverted the left and right
+	german-style quotes (D'oh!)
+
+2001-12-18 13:47  dairiki
+
+	* lib/: transform.php, plugin/RecentChanges.php: Linkify WikiWords
+	(& bracket links & URLs) in RecentChanges summaries.
+
+2001-12-18 04:17  carstenklapp
+
+	* templates/editpage.html: hack to allow SignIn on Edit screen
+
+2001-12-18 03:02  carstenklapp
+
+	* locale/de/LC_MESSAGES/phpwiki.php: [no log message]
+
+2001-12-18 02:58  carstenklapp
+
+	* locale/de/pgsrc/: Protokoll, BenutzerEinstellungen, DebugInfo,
+	Geringe%C4nderungen: [no log message]
+
+2001-12-18 02:57  carstenklapp
+
+	* locale/de/pgsrc/: EditiereText, FrischeSeiten, GleicheSeiten,
+	MeistBesucht, SeiteFinden, StartSeite, TextFormatierungsRegeln,
+	Titelsuche, Volltextsuche: New German pages
+
+2001-12-18 02:32  carstenklapp
+
+	* locale/po/de.po: [no log message]
+
+2001-12-18 01:36  carstenklapp
+
+	* lib/plugin/RecentChanges.php: extract(args) Hack to change
+	heading between RecentChanges and RecentEdits to match the Page's
+	title rather than simply RecentChanges. (It was not so bad in
+	english but in other languages it could be confusing to have a
+	conflicting PageTitle and Page Heading with RecentChanges and
+	RecentEdits.)
+
+2001-12-18 01:28  carstenklapp
+
+	* lib/diff.php: Added visual separators between "Other diffs:"
+	list. (An extra leading comma still needs to be fixed)
+
+2001-12-18 01:26  carstenklapp
+
+	* locale/: de/LC_MESSAGES/phpwiki.mo, de/LC_MESSAGES/phpwiki.php,
+	po/de.po: Additional German translations.
+
+2001-12-18 01:24  carstenklapp
+
+	* locale/po/: es.po, it.po, nl.po, phpwiki.pot, sv.po: [no log
+	message]
+
+2001-12-17 22:23  carstenklapp
+
+	* locale/: es/LC_MESSAGES/phpwiki.mo, es/LC_MESSAGES/phpwiki.php,
+	it/LC_MESSAGES/phpwiki.mo, it/LC_MESSAGES/phpwiki.php,
+	nl/LC_MESSAGES/phpwiki.mo, nl/LC_MESSAGES/phpwiki.php, po/de.po,
+	po/es.po, po/it.po, po/nl.po, po/phpwiki.pot, po/sv.po,
+	sv/LC_MESSAGES/phpwiki.mo, sv/LC_MESSAGES/phpwiki.php: Gettext
+	Makefile & phpwiki.pot updated with new string lists, all
+	LC_MESSAGES regenerated--as a result the new strings will have to
+	be translated for all the languages. (Only the German strings have
+	been mostly completed).
+
+2001-12-17 22:16  carstenklapp
+
+	* locale/de/LC_MESSAGES/: phpwiki.mo, phpwiki.php: More German
+	translations.
+
+2001-12-17 18:03  carstenklapp
+
+	* locale/Makefile: Added new directories to translation Makefile:
+	plugins, WikiDB & WikiDB/backend. Removed /admin, I understand this
+	is no longer used in 1.3.
+
+2001-12-17 11:49  dairiki
+
+	* pgsrc/TextFormattingRules: Titled the Synopsis section so that
+	templates/editpage.html can find it.
+
+2001-12-17 11:41  dairiki
+
+	* phpwiki.css: Style fixes for TextFormattingRules Synopsis on
+	templates/editpage.html.
+
+2001-12-17 11:41  dairiki
+
+	* templates/editpage.html: Include the 'Synopsis' section of
+	TextFormattingRules, rather than just the first 6 lines.
+
+2001-12-17 11:40  dairiki
+
+	* lib/plugin/IncludePage.php: Added plugin argument 'section',
+	which allows one to include a particular named section of a file.
+
+2001-12-17 11:13  dairiki
+
+	* lib/plugin/RecentChanges.php:  Colon (':') not allowed is CSS
+	class names.
+
+2001-12-16 21:08  dairiki
+
+	* lib/config.php: (pcre_fix_posix_classes): Fix test for working
+	posix character classes.  Carsten reports that on Mac OS X,
+	character class seem to work with ASCII chars, but they don't ever
+	work with the international characters.  This fix activates the
+	kluge/workaround in that case.
+
+2001-12-16 14:35  dairiki
+
+	* lib/plugin/LikePages.php: Fix to split words at certain
+	punctuation, so that e.g. LikePages for 'Calendar:2001-10-02' finds
+	'Calendar'.
+
+2001-12-16 14:35  dairiki
+
+	* lib/TextSearchQuery.php: New convenience class
+	NullTextSearchQuery: a TextSearchQuery which doesn't match
+	anything.
+
+2001-12-16 14:04  dairiki
+
+	* lib/plugin/RecentChanges.php: Brackets back inside bold (Carsten
+	has recanted his preference for non-bold brackets :-) ).  Lowercase
+	time (AM -> am).
+
+2001-12-16 13:33  dairiki
+
+	* doc/README.coding, lib/WikiPlugin.php, lib/diff.php,
+	lib/loadsave.php, lib/main.php, lib/stdlib.php,
+	lib/plugin/BackLinks.php, lib/plugin/Calendar.php,
+	lib/plugin/FullTextSearch.php, lib/plugin/HelloWorld.php,
+	lib/plugin/IncludePage.php, lib/plugin/LikePages.php,
+	lib/plugin/MostPopular.php, lib/plugin/PageHistory.php,
+	lib/plugin/RecentChanges.php, lib/plugin/TitleSearch.php,
+	lib/plugin/_BackendInfo.php, lib/plugin/text2png.php: Refactor
+	$WikiPlugin::name and $WikiPlugin::description stuff.
+	
+	It is best if all calls to gettext have constant, double-quoted
+	strings as their arguments.  (Otherwise xgettext won't find the
+	strings for translation.)
+	
+	Also, a few other gettext cleanups.
+
+2001-12-16 13:05  carstenklapp
+
+	* locale/de/: LC_MESSAGES/phpwiki.php,
+	pgsrc/TextFormatierungsRegeln: Die erste 6 Zeile von dieser Seite
+	wird aufgezeigt beim TextEditeren. (Moved TextFormattingRules from
+	Edit page template to TFR page).
+
+2001-12-16 11:56  carstenklapp
+
+	* templates/message.html: gettext _ typo
+
+2001-12-16 11:52  carstenklapp
+
+	* lib/plugin/IncludePage.php, pgsrc/TextFormattingRules,
+	templates/editpage.html: Moved the TextFormattingRules from the
+	editpage template to the actual TFR page. The IncludePage plugin is
+	now used to insert the first 6 lines of the TFR page for reference.
+	This eliminates any requirement to modify the templates when
+	localizing for another language, and allows for easy online
+	customization (the TFR page is still locked by default).
+
+2001-12-16 11:51  dairiki
+
+	* locale/de/pgsrc/GaesteBuch: Deleted, per Carsten's request.
+
+2001-12-16 11:47  dairiki
+
+	* lib/: diff3.php, difflib.php: Added three-way diff engine. 
+	(Beginning of support for MergeConflictingEdits.)
+
+2001-12-16 10:49  carstenklapp
+
+	* pgsrc/TextFormattingRules: Restored previous revision with
+	correct line-endings (and resaved in new mime format).
+
+2001-12-16 06:54  carstenklapp
+
+	* templates/: editpage.html, message.html: Wiki logo now links to
+	correct HomePage with non-english Wikis.
+
+2001-12-16 06:52  carstenklapp
+
+	* lib/plugin/FullTextSearch.php, lib/WikiPlugin.php,
+	locale/de/pgsrc/GleicheSeiten, locale/de/pgsrc/Titelsuche,
+	locale/de/pgsrc/Volltextsuche: Updated plugins for a more complete
+	localized experience.
+
+2001-12-16 06:49  carstenklapp
+
+	* locale/de/LC_MESSAGES/phpwiki.php: More German translations.
+	Grouped strings into categories for easier changes in the future.
+
+2001-12-16 06:48  carstenklapp
+
+	* locale/de/pgsrc/SandKiste: Upgrading text to take advantage of
+	full ISO charset.
+
+2001-12-16 06:47  carstenklapp
+
+	* locale/de/pgsrc/WieManWikiBenutzt: typo fixes
+
+2001-12-16 06:46  carstenklapp
+
+	* templates/browse.html: Wiki logo now links to correct HomePage
+	with non-english Wikis.
+
+2001-12-16 04:28  carstenklapp
+
+	* locale/de/LC_MESSAGES/phpwiki.php: [no log message]
+
+2001-12-16 02:43  carstenklapp
+
+	* locale/de/: LC_MESSAGES/phpwiki.php, pgsrc/EditiereText,
+	pgsrc/FrischeSeiten, pgsrc/G%E4steBuch, pgsrc/GuterStil,
+	pgsrc/KonvertiereLeerzeichenZuTabs, pgsrc/MeistBesucht,
+	pgsrc/PhpWiki, pgsrc/PhpWikiAdministration, pgsrc/SandKiste,
+	pgsrc/SeiteFinden, pgsrc/SeitenErzeugen, pgsrc/StartSeite,
+	pgsrc/TextFormatierungsRegeln, pgsrc/WieManWikiBenutzt,
+	pgsrc/WikiTechnik, pgsrc/WikiWikiWeb: Additional German
+	translations. Neue Seiten: FrischeSeiten, MeistBesucht, SeiteFinden
+	fŸr 1,3-style Plugins.Die Universum fŸhrt tendenziell nach dem
+	Chaos. Die Universum fŸhrt tendenziell nach Wiki.
+
+2001-12-16 02:33  carstenklapp
+
+	* lib/plugin/MostPopular.php: minor update to enable localization
+
+2001-12-15 22:25  carstenklapp
+
+	* locale/de/LC_MESSAGES/phpwiki.php: Recommitting my previous
+	German updates to the phpwiki.php locale file (with the correct ISO
+	translation enabled in my CVS!)
+
+2001-12-15 20:06  carstenklapp
+
+	* locale/de/LC_MESSAGES/phpwiki.php: [no log message]
+
+2001-12-15 19:33  carstenklapp
+
+	* locale/de/LC_MESSAGES/phpwiki.php: Added some translations for
+	RecentChanges plugin. Changed accented vowels back to html entities
+	for php with broken or no gettext function.
+
+2001-12-15 12:03  dairiki
+
+	* lib/plugin/RecentChanges.php: Upon Carsten's suggestion, moved
+	the summary brackets outside of the <b>.
+	
+	I think I liked it better the old way.	Does anyone else have an
+	opinion?
+
+2001-12-15 06:42  carstenklapp
+
+	* phpwiki.css: Lightened up the background color of included text
+	(still ugly but not SO UGLY). Now the same bgcolor as .diff .added.
+
+2001-12-15 06:28  carstenklapp
+
+	* lib/WikiPlugin.php: Plugin description "tooltip" is now localized
+	if a translation is present. (Also restored plugin name to its
+	previous unlocalized state--my code was unexpectedly incomplete; so
+	it will have to wait.)
+
+2001-12-15 05:54  carstenklapp
+
+	* lib/plugin/_BackendInfo.php, lib/plugin/BackLinks.php,
+	lib/plugin/Calendar.php, lib/plugin/FullTextSearch.php,
+	lib/plugin/HelloWorld.php, lib/plugin/LikePages.php,
+	lib/plugin/MostPopular.php, lib/plugin/PageHistory.php,
+	lib/plugin/RecentChanges.php, lib/plugin/text2png.php,
+	lib/plugin/TitleSearch.php, lib/WikiPlugin.php,
+	templates/browse.html: Moved description from html template into
+	plugins.
+
+2001-12-15 00:33  carstenklapp
+
+	* phpwiki-heavy.css, phpwiki.css: Moved the inverse "?" formatting
+	to phpwiki-heavy.css, it renders incorrectly as white-on-white in
+	OmniWeb4.
+
+2001-12-14 21:41  dairiki
+
+	* phpwiki.css: Adjustements of style for diff output.
+
+2001-12-14 21:40  dairiki
+
+	* lib/diff.php: Back off to word-level diffs rather than
+	character-level diffs in changed blocks of text.  (It's much
+	cleaner when there are major changes within a block.)
+
+2001-12-14 21:39  dairiki
+
+	* lib/difflib.php: New class MappedDiff to support trailing-space
+	insentive diffs (and the like).
+
+2001-12-14 21:36  dairiki
+
+	* lib/plugin/PageHistory.php: Use GET instead of POST for diff form
+	action.  (There are no side effects of viewing a diff, so POST is
+	not really appropriate.)
+
+2001-12-14 18:01  dairiki
+
+	* lib/plugin/RecentChanges.php: Fix <wiki:history> link in RSS.
+
+2001-12-14 17:20  dairiki
+
+	* lib/WikiDB/backend/PearDB.php: SF bug #492511: Don't assume
+	DB:isManip() exists.
+
+2001-12-14 17:17  dairiki
+
+	* lib/loadsave.php: Fix typo/bug.
+
+2001-12-14 16:00  dairiki
+
+	* pgsrc/RecentChanges: Add link to RecentEdits.
+
+2001-12-14 15:32  dairiki
+
+	* lib/plugin/RecentChanges.php: Fix typo.
+
+2001-12-14 15:29  dairiki
+
+	* phpwiki-heavy.css, phpwiki.css: Minor adjustments to style for
+	RSS and link icons.
+
+2001-12-14 15:28  dairiki
+
+	* lib/main.php, lib/pageinfo.php, lib/plugin/PageHistory.php,
+	pgsrc/PageHistory, templates/browse.html: New PageHistory plugin
+	replaces action=info and lib/pageinfo.php.
+
+2001-12-14 15:24  dairiki
+
+	* lib/plugin/RecentChanges.php: Big refactor/cleanup in part to
+	allow for code sharing with the (forthcoming) PageHistory plugin.
+
+2001-12-14 15:22  dairiki
+
+	* lib/plugin/TitleSearch.php: Remove obsolete FIXME note.
+
+2001-12-14 15:16  dairiki
+
+	* lib/RssWriter.php: Modified semantics.  RssWriter now writes its
+	output directly (like ZipWriter) rather than returning it in a
+	string.
+
+2001-12-14 15:15  dairiki
+
+	* lib/: diff.php, difflib.php: Added a few comments.
+
+2001-12-14 15:13  dairiki
+
+	* lib/WikiPlugin.php: Bug fix.
+
+2001-12-13 15:10  dairiki
+
+	* lib/pageinfo.php: JavaScript cleanup.
+
+2001-12-13 13:29  dairiki
+
+	* lib/: diff.php, pageinfo.php: Experiment with more compact diff
+	selection: single column of checkboxes instead of two columns of
+	radio boxes.
+
+2001-12-13 11:48  dairiki
+
+	* phpwiki-heavy.css, phpwiki.css: Tune-ups for diff output: bolder
+	colors, NS4 cleanup.
+
+2001-12-13 03:22  carstenklapp
+
+	* index.php, lib/FileFinder.php: Permanently added Mac OS X pear
+	path as this is unlikely to change in the near future.Also added a
+	sample error message which would indicate when the include_path
+	needs to be defined.
+
+2001-12-13 00:10  dairiki
+
+	* phpwiki.css, lib/diff.php, lib/difflib.php: Refactor diff code: 
+	o Code clean-up and refactor.	o Split the PhpWiki-independent
+	part of the code into lib/difflib.php.	 o New CSS-formatted
+	unified diff output replaces old table-heavy format.   o Add
+	character-level diffs.
+	
+	Issues:  o New CSS-formatted diffs are very ugly in NS4 (and
+	probably other	  oldish browsers.)  o Character-level diffs may be
+	overkill.  Maybe back off to	word-level diffs?
+
+2001-12-13 00:06  dairiki
+
+	* lib/ErrorManager.php: Fix typo.
+
+2001-12-12 18:51  dairiki
+
+	* lib/: stdlib.php, transform.php: Bug fix: empty square brackets
+	lead to "Fatal Database Error" and other problems.
+
+2001-12-12 18:38  dairiki
+
+	* lib/transform.php: Fix "Lists nested too deep in
+	SetHTMLOutputMode" bug (again).
+
+2001-12-12 11:58  dairiki
+
+	* templates/browse.html: Add link to RecentChanges.
+
+2001-12-12 00:12  carstenklapp
+
+	* lib/: ziplib.php, ziplib.php: sf #482938 Content-Disposition
+	parameter
+
+2001-12-11 17:45  dairiki
+
+	* phpwiki.css, images/rss.png, lib/Request.php,
+	lib/plugin/RecentChanges.php: Set RSS channel title from new config
+	var WIKI_NAME.	Added "RSS" icon (which links to RSSified
+	RecentChanges) to the HTML version of RecentChanges.
+
+2001-12-11 17:41  dairiki
+
+	* index.php, lib/config.php, lib/Template.php, lib/display.php,
+	templates/browse.html: Name the wiki (SF task #34142).
+	
+	New config define: WIKI_NAME, which is used to generate a KEYWORDS
+	meta tag, and also for the channel title in RSS output.
+
+2001-12-11 13:42  dairiki
+
+	* lib/WikiUser.php: Fix MonsterCookie bug.  (See
+	http://phpwiki.sf.net/wiki/BadRequest.)
+
+2001-12-11 13:41  dairiki
+
+	* lib/Request.php: Delete debugging cruft.
+
+2001-12-11 13:21  dairiki
+
+	* lib/: loadsave.php, ziplib.php: Delete ctime() and rfc1123date()
+	from lib/ziplib.php in favor of CTime() and Rfc2822DateTime() in
+	lib/stdlib.php.
+
+2001-12-11 13:16  dairiki
+
+	* lib/stdlib.php: Rename Rfc822DateTime() to Rfc2822DateTime(). 
+	(Also fix it.) Add CTime().  Remove debugging cruft.
+
+2001-12-11 12:47  dairiki
+
+	* lib/: interwiki.php, stdlib.php: Refactor external link icon
+	code.
+
+2001-12-11 10:47  dairiki
+
+	* lib/config.php: SF bug #422780 & task #31712: International
+	characters in wiki words.  Updated $WikiNameRegexp so that it
+	should work with all ISO-8859-1 languages.
+
+2001-12-11 00:51  carstenklapp
+
+	* lib/diff.php, phpwiki.css: Moved some diff colouring to css.
+	Appearance looks identical to previous non-css method of colouring
+	in: IE5, Mozilla (and presumably NS6), iCab, Opera, OmniWeb.
+
+2001-12-10 15:53  carstenklapp
+
+	* templates/: browse.html, editpage.html: Added table summary
+	attribute for non-visual browsers.
+
+2001-12-08 11:30  dairiki
+
+	* lib/plugin/RecentChanges.php: SF Bug #489544: Change strftime %P
+	to %p.	(%P is a GNU extension to the POSIX strftime spec, and is
+	not supported on all systems.)
+	
+	  '%p' expands to 'AM' or 'PM'
+	  '%P', when supported, expands to 'am' or 'pm'
+	
+	The lowercase version (%P) is much prettier to my eyes, but I
+	guess, in this case the cost of portability is ugliness.  (Is it
+	worth some hackage to restore the lower case am/pm?)
+
+2001-12-08 11:02  dairiki
+
+	* lib/WikiDB/backend/mysql.php: Significant bug fix: not all
+	changes showing up in RecentChanges.
+
+2001-12-07 18:52  carstenklapp
+
+	* lib/interwiki.map: Added php-function and php-lookup.
+
+2001-12-07 17:28  dairiki
+
+	* lib/plugin/RecentChanges.php: Change plugin arg syntax from
+	'rss=1' to 'format=rss'.
+
+2001-12-07 17:15  dairiki
+
+	* lib/: RssWriter.php, plugin/RecentChanges.php: Add support for
+	generation of RSSified RecentChanges.
+
+2001-12-07 17:14  dairiki
+
+	* lib/stdlib.php: TimezoneOffset, Iso8601DateTime, Rfc822DateTime:
+	New functions to support RSS generation.
+
+2001-12-07 17:13  dairiki
+
+	* lib/main.php: Ensure the 'action' argument in $request is set.
+
+2001-12-07 16:29  dairiki
+
+	* lib/logger.php: Obsolete.  This code is now in lib/Request.php.
+
+2001-12-07 12:39  dairiki
+
+	* lib/diff.php: Fix for PHP warning: "lib/diff.php:197: Notice[8]:
+	Undefined index: ..."
+
+2001-12-07 01:57  carstenklapp
+
+	* phpwiki.css: Note re: invisible ? in OmniWeb4 (MacOSX)
+
+2001-12-07 00:37  carstenklapp
+
+	* index.php: InterWiki link-icon added.
+
+2001-12-07 00:26  carstenklapp
+
+	* images/interwiki.png, index.php, lib/interwiki.php: InterWiki
+	link-icon added.
+
+2001-12-06 17:44  carstenklapp
+
+	* lib/interwiki.map: Category:Category links to the
+	CategoryCategory page, yet this page won't show up in the
+	back-links listing of CategoryCategory.
+
+2001-12-06 17:11  carstenklapp
+
+	* index.php: typo URL_LINK_ICONS
+
+2001-12-06 17:09  carstenklapp
+
+	* images/https.png: [no log message]
+
+2001-12-06 16:53  carstenklapp
+
+	* lib/interwiki.map: Additions from list at
+	"http://usemod.com/intermap.txt" December 5, 2001.
+
+2001-12-06 16:13  carstenklapp
+
+	* index.php: New icon for unknown link protocols, a hollow arrow (a
+	question mark could be confused with unknown-WikiWords).
+
+2001-12-06 16:03  carstenklapp
+
+	* images/: http.png, mailto.png, zapg.png: Tweaks to linkicons.
+
+2001-12-06 15:44  dairiki
+
+	* lib/WikiUser.php: Kludgy patch to close a potential security
+	hole.  (I think a carefully constructed cookie could be used to log
+	in (as admin, even) without a password.)
+	
+	I'll work on a longer term fix...
+
+2001-12-06 14:15  dairiki
+
+	* index.php, phpwiki.css, lib/stdlib.php: Cleaned up the external
+	URL link icon code a bit.
+
+2001-12-06 13:41  dairiki
+
+	* lib/transform.php: Add parentheses to the list of punctuation not
+	allowed in un-bracketed InterWiki links.
+
+2001-12-06 13:36  dairiki
+
+	* lib/interwiki.php: Don't urlencode page name for use as link
+	text.
+
+2001-12-06 13:29  dairiki
+
+	* lib/stdlib.php: Fix broken switch statement (which cause my PHP
+	to segfault ?!?)
+
+2001-12-06 13:26  dairiki
+
+	* lib/plugin/IncludePage.php: Detect and bail upon recursive
+	inclusions.  Add rudimentary error reporting.  Gettextify.
+
+2001-12-06 13:25  dairiki
+
+	* phpwiki.css: Added Joe Edelman's suggested styles for his
+	IncludePage plugin.
+
+2001-12-06 12:31  dairiki
+
+	* doc/: INSTALL.Mac OS X, INSTALL.Mac_OS_X: Renamed Mac OS X notes.
+	 (Filenames with spaces tend to give some unix utilities gas...)
+
+2001-12-06 12:27  dairiki
+
+	* images/: phpwiki-heavy.css, phpwiki.css: I think these are cruft
+	now, so I'm deleting them.
+
+2001-12-06 03:15  carstenklapp
+
+	* index.php: Added unobtrusive hook for upcoming theme support.
+
+2001-12-06 01:24  carstenklapp
+
+	* lib/stdlib.php: Cleaned up linkimage code.
+
+2001-12-05 20:26  carstenklapp
+
+	* lib/plugin/text2png.php: [no log message]
+
+2001-12-05 19:21  carstenklapp
+
+	* lib/plugin/text2png.php: text2png plug now really works! (accepts
+	a text= argument, and does cache the image in /image/$lang/ instead
+	of redrawing each time)
+
+2001-12-04 18:49  carstenklapp
+
+	* schemas/mysql.sql: Converted tabs to spaces, mysql doesn't like
+	tabs :-(
+
+2001-12-04 18:17  carstenklapp
+
+	* lib/stdlib.php, locale/de/templates/browse.html,
+	locale/es/templates/browse.html, locale/it/templates/browse.html,
+	locale/nl/templates/browse.html, templates/browse.html: Fixed page
+	title, now uses SPLIT_PAGE to prevent editing the wrong page (Bug
+	introduced Dec 2&3).
+
+2001-12-04 16:32  carstenklapp
+
+	* lib/stdlib.php: Removed split_pagename for the page's <h1> until
+	a better solution can be found. This was causing the page name to
+	incorrectly always be stored in the database with a space (%20) in
+	the name, instead of just outputting the split page name in the
+	html.
+
+2001-12-04 00:59  carstenklapp
+
+	* lib/plugin/Calendar.php: [no log message]
+
+2001-12-03 18:37  carstenklapp
+
+	* lib/stdlib.php: Linkimages now show for unbracketed urls.
+	Optimized linkimage code.
+
+2001-12-03 18:33  carstenklapp
+
+	* lib/stdlib.php: Linkicons now work for unbracketed links.
+	Optimized Linkicon code.
+
+2001-12-03 18:12  carstenklapp
+
+	* lib/stdlib.php: Linkimages now show for unbracketed urls.
+	Optimized linkimage code.
+
+2001-12-03 04:18  carstenklapp
+
+	* INSTALL.Mac OS X, doc/INSTALL.Mac OS X: typos & minor adj.
+
+2001-12-03 03:58  carstenklapp
+
+	* doc/INSTALL.Mac OS X: Added ProjectBuilder info, hint about
+	libphp4.so and logging instructions.
+
+2001-12-03 03:56  carstenklapp
+
+	* INSTALL.Mac OS X: Added ProjectBuilder info, hint about
+	libphp.so, and logging instructions.
+
+2001-12-02 23:08  wainstead
+
+	* doc/: INSTALL.mSQL, INSTALL.mysql, INSTALL.pgsql: Updated the
+	names of the sql files.
+
+2001-12-02 23:05  wainstead
+
+	* schemas/: minisql.sql, mysql.sql, psql.sql, schema.minisql,
+	schema.mysql, schema.psql: Renamed these files with .sql extensions
+	for two reasons: the naming was redundant (schemas/schema.mysql)
+	and the .sql extension will let text editors with syntax
+	highlighting and other goodies recognize the files (like Emacs and
+	vim).
+
+2001-12-02 22:18  joe_edelman
+
+	* lib/WikiDB/backend/PearDB.php: Fixed a typo in get_all_pages()
+	that was preventing zip dumps from working.
+
+2001-12-02 22:07  carstenklapp
+
+	* doc/INSTALL.Mac OS X: Added/changed info specific to wiki 1.3
+	branch pertinent to Mac OS X.
+
+2001-12-02 21:42  carstenklapp
+
+	* INSTALL.Mac OS X: removed text referring to Wiki 1.3 branch
+
+2001-12-02 21:37  carstenklapp
+
+	* INSTALL.Mac OS X: Installation notes specific to Mac OS X 10.1 or
+	greater.
+
+2001-12-02 21:37  carstenklapp
+
+	* INSTALL.Mac OS X: file INSTALL.Mac OS X was initially added on
+	branch release-1_2-branch.
+
+2001-12-02 17:12  carstenklapp
+
+	* images/: https.png, https.png: [no log message]
+
+2001-12-02 17:12  carstenklapp
+
+	* images/https.png: file https.png was initially added on branch
+	release-1_2-branch.
+
+2001-12-02 16:36  carstenklapp
+
+	* lib/config.php: //define("USE_LINK_ICONS", 1); this turns on url
+	indicator icons, inserted before embedded links to indicate the
+	type of link.//define("DATA_PATH", "/wiki"); define this to point
+	to the url which contains your /images directory.
+	//define("autosplit_wikiwords", 1); option to automatically split
+	WikiWords by inserting spaces for all WikiWords everywhere in a
+	document.
+
+2001-12-02 16:30  carstenklapp
+
+	* lib/stdlib.php: bug fix, missing } after adding USE_LINK_ICONS
+
+2001-12-02 02:53  carstenklapp
+
+	* index.php, lib/stdlib.php: //define("autosplit_wikiwords", 1);
+	option to automatically split WikiWords by inserting spaces for all
+	WikiWords everywhere in a document.
+
+2001-12-02 02:39  carstenklapp
+
+	* lib/: config.php, stdlib.php: //define("USE_LINK_ICONS", 1); this
+	turns on url indicator icons, inserted before embedded links to
+	indicate the type of link.//define("autosplit_wikiwords", 1);
+	option to automatically split WikiWords by inserting spaces for all
+	WikiWords everywhere in a document.
+
+2001-12-02 02:37  carstenklapp
+
+	* images/: ftp.png, http.png, mailto.png:
+	//define("USE_LINK_ICONS", 1) this turns on url indicator icons,
+	inserted before embedded links to indicate the type of link.
+
+2001-12-01 22:32  carstenklapp
+
+	* images/ftp.png, images/http.png, images/mailto.png, index.php,
+	lib/stdlib.php: //define("USE_LINK_ICONS", 1) this turns on url
+	indicator icons, inserted before embedded links to indicate the
+	type of link.
+
+2001-12-01 21:52  joe_edelman
+
+	* lib/stdlib.php: Oops.  This is undoing a previous & unnecessary
+	patch I didn't mean to check in.
+
+2001-12-01 21:34  joe_edelman
+
+	* lib/WikiUser.php: A patch necessary to support
+	plugin/UserPage.php.  The problem was that WikiUser() was checking
+	the http auth status and resetting the session/cookie auth data on
+	every single pageload, which made it impossible for another auth
+	solution to compete.  With this patch they both work.  Feel free to
+	refactor it.
+
+2001-12-01 21:31  joe_edelman
+
+	* lib/plugin/UserPage.php: This is an alternative sign-in scheme
+	that uses a Plugin page instead of HTTP authentication.  This is
+	just a first draft, but it works.  For now it can exist side by
+	side with the HTTP auth methods built into WikiUser.  To set it up
+	on your system, do this:
+	
+	1) Create a new page called "UserPage" which contains:
+	
+		<?plugin UserPage?>
+	
+	2) Modify your templates so that, if there is no one logged on, the
+	various edit buttons point to something like
+	"${BROWSE}UserPage&edit=${PAGEURL}" (or use a <?plugin-link
+	UserPage?> tag) instead of "${ACTION}edit".  You can replace the
+	"SignOn" link with a link to UserPage, too.
+	
+	UserPage is a copy of the "clublet" wikis sign-on scheme.  Check
+	out <http://why.clublet.com>.
+	
+	Soon UserPage will also serve as a mechanism for setting hidden
+	email addresses and other UserPreferences.
+	
+	KNOWN ISSUES	    needs gettext()ification	    UnknownWikiWord
+	links still go directly to edit
+	
+	COMING SOON	   email address collection	   distinction
+	between new and returning users (based on Page metadata)
+
+2001-12-01 21:12  joe_edelman
+
+	* lib/plugin/IncludePage.php: My IncludePage plugin.  Docs at
+	phpwiki:IncludePage.  A cheap substitute for PageAlias, partial
+	locks, and weblog summary pages.
+
+2001-12-01 20:59  joe_edelman
+
+	* lib/stdlib.php: [no log message]
+
+2001-12-01 17:01  wainstead
+
+	* doc/: CREDITS, DBLIB.txt, HISTORY, INSTALL.flatfile,
+	INSTALL.mSQL, INSTALL.mysql, INSTALL.pgsql, README.coding: moved
+	these from the root dir.
+
+2001-12-01 17:00  wainstead
+
+	* CREDITS, DBLIB.txt, HISTORY, INSTALL.flatfile, INSTALL.mSQL,
+	INSTALL.mysql, INSTALL.pgsql, README.coding: Moved these into doc/.
+
+2001-12-01 16:55  wainstead
+
+	* INSTALL: Updated some of the info; pointed to the doc/ directory
+	for other files.
+
+2001-12-01 09:53  carstenklapp
+
+	* pgsrc/TextFormattingRules: Added example of alternate text for
+	inline image.
+
+2001-12-01 09:51  carstenklapp
+
+	* locale/de/templates/editpage.html: minor changes to
+	TextFormattingRulesadditional German translations
+
+2001-12-01 09:49  carstenklapp
+
+	* locale/: es/templates/editpage.html, it/templates/editpage.html,
+	nl/templates/editpage.html, sv/templates/editpage.html: minor
+	changes to TextFormatting reference
+
+2001-12-01 08:06  carstenklapp
+
+	* lib/removepage.php, locale/nl/LC_MESSAGES/phpwiki.php,
+	locale/po/de.po, locale/po/es.po, locale/po/it.po, locale/po/nl.po,
+	locale/po/phpwiki.pot, locale/po/sv.po: Moved hyperlink in
+	delete-page confirmation to clarify.
+
+2001-12-01 08:01  carstenklapp
+
+	* templates/editpage.html: minor rewording of TextFormatting
+	reference
+
+2001-12-01 05:01  carstenklapp
+
+	* lib/plugin/text2png.php: New text2png WikiPlugin. Doesn't accept
+	any arguments yet, just dumps a png image file in the same dir as
+	index.php. Requires PHP to be compiled with support for GD version
+	1.6 or later.<?plugin text2png ?>
+
+2001-11-29 13:03  dairiki
+
+	* lib/: Request.php, WikiUser.php: Fix bugs in access logging code.
+
+2001-11-29 03:43  carstenklapp
+
+	* images/vanilla.php: [no log message]
+
+2001-11-28 22:09  dairiki
+
+	* locale/: de/LC_MESSAGES/phpwiki.mo, de/LC_MESSAGES/phpwiki.php,
+	es/LC_MESSAGES/phpwiki.mo, es/LC_MESSAGES/phpwiki.php,
+	it/LC_MESSAGES/phpwiki.mo, it/LC_MESSAGES/phpwiki.php,
+	nl/LC_MESSAGES/phpwiki.mo, nl/LC_MESSAGES/phpwiki.php, po/it.po,
+	po/nl.po, po/phpwiki.pot, po/sv.po, sv/LC_MESSAGES/phpwiki.mo,
+	sv/LC_MESSAGES/phpwiki.php: Re-make in locale (to update .po and
+	.mo files).
+
+2001-11-28 22:08  dairiki
+
+	* locale/translate.sh: Obsolete.  Use the Makefile instead.
+
+2001-11-28 22:04  dairiki
+
+	* locale/Makefile: Fix so that xgettext scans templates, too, for
+	strings to translate.  Also add -k_ flag to xgettext so that it
+	recognizes _("") as an alias for gettext("").
+
+2001-11-28 22:01  dairiki
+
+	* locale/po/: es.po, de.po: Extracted a few translated phrases from
+	the (now obsolete) translated templates.  (All the .po files (&
+	pgsrc) still need a lot of work.)
+
+2001-11-28 22:00  dairiki
+
+	* lib/config.php: Make _("string") an alias for gettext("string").
+
+2001-11-28 21:59  dairiki
+
+	* lib/Template.php, templates/browse.html, templates/editpage.html:
+	Language independent templates.
+	
+	Support for get-textification of strings within templates.
+	
+	  $_("string")
+	     [ -> htmlspecialchars(gettext("string")) ]
+	
+	  <tag attrib=_("string") [...]>
+	     [ ->
+	       <tag attrib="<?php echo htmlspecialchars(gettext("string"));
+	?>"
+		    [...] >
+	     ]
+	
+	  <?plugin{-form,-link,} PluginName arg=_("string") [...]?>
+	     [ ->
+	       <?plugin PluginName arg="<?php echo gettext("string"); ?>"
+		    [...] ?>
+	     ]
+
+2001-11-28 17:16  carstenklapp
+
+	* themes/default/config.php: [no log message]
+
+2001-11-28 15:12  dairiki
+
+	* index.php, lib/stdlib.php: Revert to working version until theme
+	support becomes functional.
+
+2001-11-28 13:55  dairiki
+
+	* locale/: de/LC_MESSAGES/phpwiki.mo, de/LC_MESSAGES/phpwiki.php,
+	es/LC_MESSAGES/phpwiki.mo, es/LC_MESSAGES/phpwiki.php,
+	it/LC_MESSAGES/phpwiki.mo, it/LC_MESSAGES/phpwiki.php,
+	nl/LC_MESSAGES/phpwiki.mo, nl/LC_MESSAGES/phpwiki.php, po/de.po,
+	po/es.po, po/it.po, po/nl.po, po/phpwiki.pot, po/sv.po,
+	sv/LC_MESSAGES/phpwiki.mo, sv/LC_MESSAGES/phpwiki.php,
+	sv/pgsrc/Framsida, sv/pgsrc/HurManAnv%e4nderWiki,
+	sv/pgsrc/L%e4ggaTillSidor, sv/pgsrc/MerOmMekanismerna,
+	sv/pgsrc/PhpWikiAdministration, sv/pgsrc/Senaste%c4ndringar,
+	sv/pgsrc/Textformateringsregler, sv/pgsrc/WikiWikiWeb,
+	sv/templates/editpage.html: Patches to Swedish translations from
+	Jon Åslund <d98-jas@nada.kth.se>
+	
+	Rebuilt .po/.mo files (i.e. ran locale/translate.sh).
+
+2001-11-26 17:43  dairiki
+
+	* lib/main.php: Fix SF bug #484557: "Fatal error: Call to a member
+	function on a non-object in lib/main.php on line 205" when trying
+	to set user preferences.
+
+2001-11-26 17:37  dairiki
+
+	* lib/WikiUser.php: Fix typos in getPreferences.
+
+2001-11-26 17:00  dairiki
+
+	* lib/loadsave.php: Fix my last fix: minor cleanup of file load
+	diagnostics.
+
+2001-11-26 04:25  riessen
+
+	* lib/WikiDB/backend/cvs.php, tests/unit_test_backend_cvs.php:
+	implemented the most_recent and most_popular functions, and minor
+	refactorings
+
+2001-11-26 01:28  carstenklapp
+
+	* templates/.htaccess: server needs access to subdirectories of
+	templates for theme files (css and images).
+
+2001-11-26 01:26  carstenklapp
+
+	* images/phpwiki.css: moving style sheets and images to subfolder
+	in templates for "theme module"
+
+2001-11-26 01:26  carstenklapp
+
+	* images/phpwiki-heavy.css: Moving images & style sheets for "theme
+	modules".
+
+2001-11-26 01:23  carstenklapp
+
+	* lib/stdlib.php: CSS & images now stored in a folder within
+	templates according to global $theme.
+
+2001-11-26 01:23  carstenklapp
+
+	* index.php: Signature, logo & css settings moved to
+	/templates/theme, to allow for themes and and a step towards
+	simplifying various paths (VIRTUAL_PATH, DATA_PATH) & http server
+	directives.
+
+2001-11-26 01:18  carstenklapp
+
+	* images/vanilla.php: Start of "theme module" support.
+
+2001-11-21 15:01  dairiki
+
+	* lib/WikiCallback.php: New class: WikiAnonymousCb
+
+2001-11-21 14:49  dairiki
+
+	* lib/WikiDB/backend/PearDB.php: Fix typo/bug in
+	PearDB::text_search.
+	
+	Change calling conventions for ErrorManager::pushErrorHandler() and
+	ErrorManager::setFatalHandler().  Now these take a WikiCallback
+	instead of the Pear style callback specification.
+	
+	Change argument semantics for TextSearchQuery::makeSqlClause.  Now
+	takes a WikiCallback.
+
+2001-11-21 14:48  dairiki
+
+	* lib/TextSearchQuery.php: Change argument semantics for
+	TextSearchQuery::makeSqlClause.  Now takes a WikiCallback.
+
+2001-11-21 14:46  dairiki
+
+	* lib/: DbaDatabase.php, ErrorManager.php, Template.php,
+	prepend.php, WikiDB/backend/pgsql.php: Change calling conventions
+	for ErrorManager::pushErrorHandler() and
+	ErrorManager::setFatalHandler().  Now these take a WikiCallback
+	instead of the Pear style callback specification.
+
+2001-11-21 14:44  dairiki
+
+	* lib/WikiCallback.php: Classes for callbacks.
+
+2001-11-21 12:58  dairiki
+
+	* lib/loadsave.php: Typo fix.
+
+2001-11-17 11:39  dairiki
+
+	* lib/Request.php: Fix file upload bug.
+
+2001-11-16 19:49  dairiki
+
+	* lib/WikiDB/backend/: PearDB.php, mysql.php: For maximum
+	portability, use old fashioned comma join instead of "INNER JOIN
+	... USING(...)" and "INNER JOIN ... ON ...".
+	
+	Fix for older MySQL's which don't support the "CASE WHEN ... END"
+	syntax.  The fix is complicated by the fact that Postgres doesn't
+	support MySQL's "IF(,,)" syntax.
+
+2001-11-16 17:59  dairiki
+
+	* lib/transform.php: Hack/fix to get proper nesting of lists and
+	list items. (Lists are allowed to contain list items but not other
+	lists.	List items are allowed to contain sub lists.)
+
+2001-11-16 16:02  dairiki
+
+	* lib/transform.php: Fix regexp so that punctuation does not get
+	included in the rhs of interwiki links (without the use of square
+	brackets, that is.)
+
+2001-11-15 21:53  wainstead
+
+	* lib/msql.php: Removed debug output; improved error messages.
+	pages with backslashes are not being saved to the archive due to a
+	primary key violation.
+
+2001-11-15 21:42  wainstead
+
+	* lib/msql.php: Fixed bug where page titles with apostrophes caused
+	a sql error.
+
+2001-11-15 20:22  wainstead
+
+	* lib/msql.php: Fixed a bug with InitBackLinkSearch. Although I
+	completely rewrote it, it turned out to be just a scope issue, and
+	an ampersand would probably have fixed the original code. This
+	implemetation is slightly more efficient at the cost of a small
+	amount of memory.
+
+2001-11-14 20:20  dairiki
+
+	* lib/pgsql.php: More addslashes() bugs.
+
+2001-11-14 16:25  dairiki
+
+	* templates/: browse.html, editpage.html, message.html: Another
+	XHTML fix.
+
+2001-11-14 16:05  dairiki
+
+	* lib/diff.php, lib/editpage.php, lib/savepage.php, lib/stdlib.php,
+	lib/transform.php, templates/browse.html, templates/editpage.html,
+	templates/message.html: XHTML fixes.  At this point, PhpWiki's
+	output is almost valid XHTML.  (Most of these changes are based on
+	patches by Tara/Steph.)
+
+2001-11-14 13:50  dairiki
+
+	* lib/interwiki.map: Add new entries collected by Adam Shand.  Add
+	new entry: RFC
+	
+	BUG note:  The entry for Category will only work when USE_PATH_INFO
+	is set.  When USE_PATH_INFO is false, the following entry will, I
+	think, work:	Category index.php?pagename=Category
+
+2001-11-14 13:48  dairiki
+
+	* lib/interwiki.php: Add support for '%s' (which gets replaced by
+	rhs of interwiki link) in interwiki map URLs.  (This is needed for
+	the new RFC entry in interwiki.map.)
+
+2001-11-14 12:54  dairiki
+
+	* lib/transform.php: Change regexp for InterWiki links to accept
+	non-WikiWord right hand sides.	(Suggested by Adam Shand.)
+
+2001-11-14 12:42  dairiki
+
+	* admin/loadserial.php, lib/setupwiki.php, lib/loadsave.php: When
+	loading pages from a directory, ignore file names starting with
+	'.'.  (Based on SF patch #480195 by Carsten Klapp.)
+
+2001-11-14 12:15  dairiki
+
+	* UPGRADING: Warn about zip-dump bug in 1.2.0 and 1.2.1.
+
+2001-11-14 12:07  dairiki
+
+	* index.php: Fix typo.
+
+2001-11-14 10:36  dairiki
+
+	* index.php: Add note about making sure the path to PEAR code is in
+	include_path.
+
+2001-11-14 10:29  dairiki
+
+	* lib/main.php: Comment out the not yet implemented action=xmldump
+	code.
+
+2001-11-09 23:56  dairiki
+
+	* phpwiki.css, lib/plugin/Calendar.php: First crack at calendar
+	plugin based on ideas from Gary Benson.
+
+2001-11-09 15:36  dairiki
+
+	* UPGRADING: Updated notes on how to move an older PhpWiki to a new
+	1.3.x wiki.
+
+2001-11-09 13:58  dairiki
+
+	* index.php: Address SF bug #480064: "relative" vs "absolute" URLs
+	(in comments).
+
+2001-11-09 12:58  dairiki
+
+	* lib/main.php, pgsrc/MagicPhpWikiURLs: Fix SF bug #480061: Example
+	search forms on MagicPhpWikiURLs were broken.
+
+2001-11-09 12:08  dairiki
+
+	* locale/sv/pgsrc/: G%e4stboken, Gästboken, HurManAnv%e4nderWiki,
+	HurManAnvänderWiki, L%e4ggaTillSidor, LäggaTillSidor,
+	MestPopul%e4r, MestPopulär, S%f6kEfterSida, Sandl%e5dan, Sandlådan,
+	Senaste%c4ndringar, SenasteÄndringar, SökEfterSida: Renamed pgsrc
+	files whose filenames contained non-ascii characters.  These files
+	seemed to be giving certain CVS clients (Mac OS X) gas.
+	
+	Note that there is nothing wrong with non-ASCII characters in
+	wiki-page names --- it's just that the wiki-page name should be
+	urlencode()ed for use as a file name.
+	
+	(See SF bug #479256.)
+
+2001-11-09 12:08  dairiki
+
+	* locale/sv/pgsrc/Senaste%c4ndringar: file Senaste%c4ndringar was
+	initially added on branch release-1_2-branch.
+
+2001-11-09 11:56  dairiki
+
+	* locale/sv/pgsrc/: G%e4stboken, Gästboken, HurManAnv%e4nderWiki,
+	HurManAnvänderWiki, L%e4ggaTillSidor, LäggaTillSidor,
+	MestPopul%e4r, MestPopulär, S%f6kEfterSida, Sandl%e5dan, Sandlådan,
+	SökEfterSida: Renamed pgsrc files whose filenames contained
+	non-ascii characters.  These files seemed to be giving certain CVS
+	clients (Mac OS X) gas.
+	
+	Note that there is nothing wrong with non-ASCII characters in
+	wiki-page names --- it's just that the wiki-page name should be
+	urlencode()ed for use as a file name.
+
+2001-11-09 11:25  dairiki
+
+	* index.php: Add comment: setting $LANG to '' will cause systems
+	default language to be used.
+
+2001-11-09 11:23  dairiki
+
+	* lib/loadsave.php: Encode leading '.' in filenames for both zip
+	dumps and dumps to directories.  (See SF bug #478449).
+
+2001-11-09 11:22  dairiki
+
+	* lib/config.php: Comment out putenv(LANG) which causes trouble
+	when PHP's safe_mode is enabled.  I hope this putenv() is not
+	really necessary --- I don't think it is.
+
+2001-11-09 10:36  dairiki
+
+	* lib/config.php: Fix SF bug #424811: putenv(LANG) fails when
+	safe_mode is on.
+
+2001-11-08 23:50  dairiki
+
+	* INSTALL.mysql: Documentation fixes based on SF patch #479791 by
+	Carsten Klapp.
+
+2001-11-08 22:13  dairiki
+
+	* INSTALL.mysql, lib/config.php: SF patch #479791 by Carsten Klapp:
+	Improvements to the mysql installation documentation.
+
+2001-11-08 18:15  dairiki
+
+	* lib/config.php: Fix SF bug #420986: Fix PHP "Warning: Passing
+	locale category name as string is deprecated...."
+
+2001-11-08 17:39  dairiki
+
+	* lib/config.php: Fixes based on SF patch #479769: Sse https:
+	rather than http: in the autogenerated $ScriptUrl when mod_ssl is
+	in use.
+
+2001-11-08 17:20  dairiki
+
+	* lib/stdlib.php: Applied SF patch #479753 from Carsten Klapp:
+	Eliminate trailing commans in the LinkRelatedpages section at the
+	bottom of each page.
+
+2001-11-08 14:07  dairiki
+
+	* lib/interwiki.map: Merge changes from
+	http://usemod.com/intermap.txt
+
+2001-11-08 14:06  dairiki
+
+	* pgsrc/LikePages: Update plugin args for latest version.
+
+2001-11-08 11:35  dairiki
+
+	* .htaccess, lib/.htaccess, locale/.htaccess, pgsrc/.htaccess,
+	schemas/.htaccess, templates/.htaccess: Added RCS $Id$ tags.
+
+2001-11-08 11:26  dairiki
+
+	* .htaccess: New file.
+	
+	For people with (suitably configured) apache servers, this sets
+	some of PHP's configuration variables to safer values. In
+	particular, register_globals and allow_url_fopen are turned off.
+
+2001-11-08 11:02  dairiki
+
+	* admin/removepage.php, lib/main.php, lib/removepage.php: Move
+	admin/removepage.php to lib/removepage.php.
+	
+	(Removepage.php was the only file in admin/ which was part of the
+	main phpwiki app.)
+
+2001-11-08 11:00  dairiki
+
+	* lib/.htaccess, locale/.htaccess, pgsrc/.htaccess,
+	schemas/.htaccess, templates/.htaccess: For security add .htaccess
+	files to subdirectories.
+	
+	For people with (suitably configured) apache web servers, these
+	will deny direct web access to the files in the subdirectories:
+	lib, locale, pgsrc, schemas, and templates.
+
+2001-11-08 10:47  dairiki
+
+	* pgsrc/ConvertSpacesToTabs: This is obsolete.	Deleted.
+
+2001-11-08 06:01  riessen
+
+	* lib/WikiDB/cvs.php, lib/WikiDB/backend/cvs.php,
+	tests/unit_test_backend_cvs.php: extended the functionality of the
+	cvs backend, extended the unit test for the backend. have yet to
+	start on th
+
+2001-11-07 21:01  dairiki
+
+	* pgsrc/RecentEdits: New page.	This one show all recent edits.
+
+2001-11-07 18:19  dairiki
+
+	* lib/: db_filesystem.php, dbalib.php, dbmlib.php: Fix the backlink
+	code which I just broke.
+
+2001-11-07 17:27  wainstead
+
+	* UPGRADING: Added note about creating a HomePage before making a
+	zip dump.
+
+2001-11-07 16:42  dairiki
+
+	* lib/: fullsearch.php, search.php: Fix SF bug #445108: Empty
+	search string results in phpwiki error.
+
+2001-11-07 16:12  dairiki
+
+	* lib/WikiDB/backend/PearDB.php: Fix quoting of search expressions.
+	 (Searches for words containing '%', '\', or '_' were broken prior
+	to this fix.)
+
+2001-11-07 15:32  dairiki
+
+	* lib/ziplib.php: Minor fixage: preg_quote does not quote '/' by
+	default.
+
+2001-11-07 15:30  dairiki
+
+	* lib/: db_filesystem.php, dbalib.php, dbmlib.php, fullsearch.php,
+	msql.php, mssql.php, mysql.php, pgsql.php, search.php: Cleanups of
+	quoting details in the searches.  This fixes, among other thing, SF
+	bug #456863.
+	
+	Depending on the backend searches for pages and/or page names
+	containing '/', '\', '%', and/or '_' all failed in some way or
+	another.
+	
+	The fixes to lib/dbmlib.php are untested, but parallel those in
+	lib/dbalib.php, so should be okay.
+	
+	The fixes in lib/pgsql.php, lib/msql.php, and lib/mssql.php are
+	also untested.	They more or less parallel tested fixes in
+	lib/mysql.php, but it would probably be good if someone could test
+	them.
+
+2001-11-07 13:58  dairiki
+
+	* lib/: msql.php, mssql.php, pgsql.php: Fix SF bug #462168: hit
+	count broken for pages with apostrophes in their names.
+	
+	These fixes are untested, but they are entirely analogous to
+	similar fixes in mysql.php (which I have tested).  Barring typos on
+	my part, I think they're unlikely to cause problems.
+
+2001-11-07 13:54  dairiki
+
+	* lib/mysql.php: Fix SF bug #462168: hit count broken for pages
+	with apostrophes in their names.
+
+2001-11-07 13:52  dairiki
+
+	* lib/savepage.php: Fix yet another magic_quote_gpc bug.
+
+2001-11-06 22:23  wainstead
+
+	* INSTALL, lib/config.php, lib/dbalib.php: Added a new constant,
+	DBM_FILE_TYPE, defaulting to 'gdbm'. It's defined in config.php and
+	used in dbalib.php. INSTALL now notes the setting of this constant,
+	and how a blank page can occur the first time the user tries to
+	view PhpWiki.
+
+2001-11-06 15:43  dairiki
+
+	* lib/db_filesystem.php: Fix encoding of page names '.' and '..'. 
+	Ensure RetrievePage() sets $pagehash[pagename].
+
+2001-11-06 15:43  dairiki
+
+	* lib/: dbalib.php, dbmlib.php: Ensure RetrievePage() sets
+	$pagehash[pagename].
+
+2001-11-06 15:41  dairiki
+
+	* lib/display.php: Fix handling of pages with '.' and/or '_' in
+	their names.
+
+2001-11-06 15:41  dairiki
+
+	* admin/: dumpserial.php, zip.php: Fix SF bug #478449: (encoding of
+	page names like '..')
+
+2001-11-06 12:13  dairiki
+
+	* lib/ErrorManager.php: Fix typo.
+
+2001-11-03 22:46  dairiki
+
+	* lib/: msql.php, pgsql.php: Fix bug reported by Roger Goun
+	<roger@bcah.com>: Wrap RCS $Id$ in call to rcs_id().  (In some
+	cases (admin.php) we must not emit any output until we've set some
+	HTTP headers.)
+
+2001-11-03 22:43  dairiki
+
+	* lib/mssql.php: Add RCS $Id$.
+
+2001-11-02 00:17  wainstead
+
+	* lib/mssql.php: Newer version fixes a bug in InsertPage().
+
+2001-11-02 00:15  wainstead
+
+	* INSTALL.mssql: Cleaned it up and added some hints.
+
+2001-11-02 00:11  wainstead
+
+	* lib/config.php: Added config code contributed by Andrew Pearson
+	for support for MS SQL Server. Untested.
+
+2001-11-02 00:07  wainstead
+
+	* admin/translate_mysql.pl: file translate_mysql.pl was initially
+	added on branch release-1_2-branch.
+
+2001-11-02 00:07  wainstead
+
+	* lib/mssql.php: file mssql.php was initially added on branch
+	release-1_2-branch.
+
+2001-11-02 00:07  wainstead
+
+	* INSTALL.mssql: file INSTALL.mssql was initially added on branch
+	release-1_2-branch.
+
+2001-11-02 00:07  wainstead
+
+	* INSTALL.mssql, admin/translate_mysql.pl, lib/mssql.php: Missed
+	these but they will be in the 1.2.2 release. Code for Microsoft SQL
+	Server.
+
+2001-10-29 16:08  dairiki
+
+	* lib/config.php: Fixes based on SF Patch #471014.  Detect when
+	protocol is https rather than http, and adjust SERVER_URL
+	appropriately.
+
+2001-10-29 15:43  dairiki
+
+	* lib/FileFinder.php: (Slightly modified) SF Patch #473466 by
+	<ax@condat.de>.  Fixes to work on windows systems where the path
+	separator is ';' rather than ':'.
+
+2001-10-29 14:34  dairiki
+
+	* pgsrc/TitleSearch: Explicitly set auto_redirect=0 in TitleSearch
+	form.
+
+2001-10-29 14:31  dairiki
+
+	* lib/: fullsearch.php, search.php: Title and full-text searches
+	are now handled by plug-ins.
+
+2001-10-29 13:41  dairiki
+
+	* lib/stdlib.php: Fix SF bug #473493: Need to include
+	lib/template.php before calling GeneratePage().  (Patch from Steven
+	Murdoch.)
+
+2001-10-29 13:24  dairiki
+
+	* lib/pageinfo.php: Fix SF Bug #473499: Diff from page history
+	always diffs HomePage when USE_PATH_INFO is false.  (Patch from
+	Steven Murdoch.)
+
+2001-10-29 12:58  dairiki
+
+	* lib/WikiDB.php: Fix SF bug #468595: Can not unlock pages.
+
+2001-10-29 12:57  dairiki
+
+	* lib/WikiDB/backend/PearDB.php: Cleanup to get rid of PHP warning.
+
+2001-10-29 12:56  dairiki
+
+	* admin/removepage.php: Fix SF bug #475757: Can not remove pages. 
+	(Patch by Steven Murdoch).
+
+2001-10-01 17:58  riessen
+
+	* tests/unit_test_backend_cvs.php: unit test for the cvs backend
+	class
+
+2001-10-01 17:55  riessen
+
+	* lib/WikiDB/backend/cvs.php: initial implementation of a cvs
+	backend ...
+
+2001-09-28 10:28  riessen
+
+	* lib/WikiDB/: cvs.php, backend/cvs.php: first skeleton version of
+	the cvs
+
+2001-09-21 17:57  wainstead
+
+	* lib/pgsql.php: Fixed bug: BackLinkSearchNextMatch needed the
+	address of $res. It was not incrementing $res[row] so it formed an
+	infinite loop and phpwiki would just time out.
+
+2001-09-21 15:59  dairiki
+
+	* lib/savepage.php: Patch by Gary Benson <gary@inauspicious.org>: 
+	Remove empty date headers when updating RecentChanges.
+
+2001-09-21 15:15  dairiki
+
+	* lib/transform.php: Efficiency patch from Gary Benson
+	<gary@inauspicious.org>: don't compute MostPopular list unless it's
+	needed.
+
+2001-09-21 10:41  dairiki
+
+	* lib/WikiDB/backend/PearDB.php: Fix the fix: fun with regexps. 
+	(minor).
+
+2001-09-20 21:04  wainstead
+
+	* tests/maketest.pl: Updated assert_text. I think the version of
+	httpunit I developed against was different in its output.
+
+2001-09-20 17:33  wainstead
+
+	* tests/AAD_FindText.inputs: Simple test to verify text appears in
+	the source of a page.
+
+2001-09-20 16:55  wainstead
+
+	* tests/: AAA_GetHomePage.inputs, AAB_EditSandBox.inputs,
+	AAC_MakeAutoTestPage.inputs: Three simple tests.
+
+2001-09-20 16:53  wainstead
+
+	* tests/maketest.pl: Given an input file, generate a Java source
+	file.
+
+2001-09-20 16:52  wainstead
+
+	* tests/makemakebuild.pl: This Perl script generates a Makefile and
+	a build.xml for ant, based on the available input files in the
+	tests directory.
+
+2001-09-20 15:09  dairiki
+
+	* lib/WikiDB/backend/PearDB.php: _pear_notice_filter: Another minor
+	fix (this time for windows.)
+
+2001-09-20 14:26  dairiki
+
+	* lib/FileFinder.php: Workaround for apparent bug in some versions
+	of PHP (notably the PHP 4.0.6 which is on SourceForge's project web
+	server.)
+
+2001-09-20 14:25  dairiki
+
+	* lib/WikiDB/backend/PearDB.php: _pear_notice_filter(): minor fix.
+
+2001-09-19 15:20  dairiki
+
+	* lib/WikiDB/backend/PearDB.php: Search some standard locations for
+	PEAR library code if DB.php is not found in PHP's include_path.
+	
+	Added some workarounds for a bug in the PEAR DB code which ships
+	with PHP 4.0.6.
+	
+	(I have now tested the MySQL backend with PEAR code from PHP
+	4.0.4pl1, PHP 4.0.5 and PHP 4.0.6.  Only the 4.0.6 code is buggy.  
+	With the new fixes, all three versions seem to work fine.  The bug
+	is reported to be fixed in the CVS version of the PHP source code.)
+
+2001-09-19 15:16  dairiki
+
+	* lib/: FileFinder.php, config.php: New file lib/FileFinder.php
+	with utility code to help find source files.
+
+2001-09-19 15:12  dairiki
+
+	* index.php: Added note about the possible need to set
+	session.save_path.
+
+2001-09-18 23:54  wainstead
+
+	* lib/msql.php: msql is not likely to be supported by DB.php, the
+	demand is minimal, msql is going throught a revision anyway, etc.
+	etc.
+
+2001-09-18 23:44  wainstead
+
+	* index.php: Oops. I changed the directory for dbm files and
+	committed it by accident. Careless.
+
+2001-09-18 23:24  wainstead
+
+	* index.php, admin/removepage.php, admin/wiki_dumpHTML.php,
+	admin/wiki_port1_0.php, admin/wiki_rebuilddbms.php,
+	lib/DbaListSet.php, lib/Template.php, lib/display.php,
+	lib/fullsearch.php, lib/logger.php, lib/msql.php, lib/search.php,
+	lib/WikiDB/SQL.php, lib/WikiDB/backend.php,
+	lib/WikiDB/backend/dumb/BackLinkIter.php,
+	lib/WikiDB/backend/dumb/MostPopularIter.php,
+	lib/plugin/BackLinks.php, lib/plugin/HelloWorld.php: Updated the
+	"emacs local variables" blocks.
+
+2001-09-18 22:58  dairiki
+
+	* lib/WikiDB/backend/PearDB.php: Minor cleanup.
+
+2001-09-18 22:58  dairiki
+
+	* lib/: Request.php, loadsave.php, ziplib.php: Fixed a couple bugs
+	having to do with file uploads, and zip archive unzipping.
+
+2001-09-18 22:36  wainstead
+
+	* lib/interwiki.php: Added new local variables list; reformatted
+	leading whitespace.
+
+2001-09-18 22:27  wainstead
+
+	* lib/config.php: Testing latest Local Variables setting. I
+	stripped all leading white space and then did an indent-region.
+
+2001-09-18 17:26  wainstead
+
+	* INSTALL: Updated info for posting patches, bugs and getting
+	support.
+
+2001-09-18 17:20  wainstead
+
+	* INSTALL: Added a CVS id tag.
+
+2001-09-18 15:19  dairiki
+
+	* lib/plugin/: BackLinks.php, FullTextSearch.php, HelloWorld.php,
+	LikePages.php, MostPopular.php, RecentChanges.php, TitleSearch.php,
+	_BackendInfo.php: Jeff's hacks II, continued:
+	
+	More new files which I neglected to add during the previous commit.
+
+2001-09-18 15:16  dairiki
+
+	* DBLIB.txt, INSTALL, INSTALL.flatfile, INSTALL.mSQL,
+	INSTALL.mysql, INSTALL.pgsql, README, UPGRADING, index.php,
+	phpwiki-heavy.css, phpwiki.css, admin/lockpage.php,
+	admin/removepage.php, admin/wiki_port1_0.php,
+	lib/ArchiveCleaner.php, lib/DbaDatabase.php, lib/DbaListSet.php,
+	lib/DbaPartition.php, lib/ErrorManager.php,
+	lib/PhpWikiDatabase.php, lib/Request.php, lib/Template.php,
+	lib/TextSearchQuery.php, lib/WikiDB.php, lib/WikiPlugin.php,
+	lib/WikiUser.php, lib/config.php, lib/db_filesystem.php,
+	lib/dbalib.php, lib/dbmlib.php, lib/diff.php, lib/display.php,
+	lib/editpage.php, lib/fullsearch.php, lib/interwiki.php,
+	lib/loadsave.php, lib/main.php, lib/msql.php, lib/mysql.php,
+	lib/pageinfo.php, lib/pgsql.php, lib/prepend.php, lib/savepage.php,
+	lib/search.php, lib/stdlib.php, lib/transform.php,
+	lib/userauth.php, lib/ziplib.php, lib/WikiDB/SQL.php,
+	lib/WikiDB/backend.php, lib/WikiDB/dba.php,
+	lib/WikiDB/backend/PearDB.php, lib/WikiDB/backend/dba.php,
+	lib/WikiDB/backend/dbaBase.php, lib/WikiDB/backend/mysql.php,
+	lib/WikiDB/backend/pgsql.php,
+	lib/WikiDB/backend/dumb/AllRevisionsIter.php,
+	lib/WikiDB/backend/dumb/BackLinkIter.php,
+	lib/WikiDB/backend/dumb/MostPopularIter.php,
+	lib/WikiDB/backend/dumb/MostRecentIter.php,
+	lib/WikiDB/backend/dumb/TextSearchIter.php, pgsrc/BackLinks,
+	pgsrc/DebugInfo, pgsrc/FindPage, pgsrc/FullTextSearch,
+	pgsrc/LikePages, pgsrc/MostPopular, pgsrc/PhpWikiAdministration,
+	pgsrc/RecentChanges, pgsrc/ReleaseNotes, pgsrc/TitleSearch,
+	pgsrc/WikiPlugin, schemas/schema.mysql, schemas/schema.psql,
+	templates/README, templates/browse.html, templates/editpage.html,
+	templates/message.html: Jeff's hacks II.
+	
+	This is a major change, to say the least.  Some highlights:   o
+	Completely new database API.
+	
+	    WARNING: all database schemas (currently MySQL, Postgres and
+	DBA
+	    support is working) use completely revised schema, so you must
+	    start this new code with a new blank database...
+	
+	  o WikiPlugins
+	  o New template engine.
+	
+	In addition, some more incremental changes:   o Cascading Style
+	Sheets reworked.    o Expanded syntax for text search: e.g. "wiki
+	OR wacky AND NOT page".    o PhpWiki should now work with
+	register_globals off. (Security issue.)    o Edit preview button.  
+	 (and probably more, which I'm forgetting about now.)
+	
+	Much of this code is still in a state of flux (particularly the new
+	template engine code, and to a lesser extent the API for the
+	plugins.) Feel free to play and hack on this, just be warned that
+	some of it may still change quite a bit...
+	
+	See pgsrc/ReleaseNotes for a few more notes.
+	
+	And feel free to post questions or comments either publicly on
+	<phpwiki-talk@lists.sourceforge.net>, or privately, to
+	<dairiki@dairiki.org>.
+
+2001-09-18 14:20  dairiki
+
+	* pgsrc/TextFormattingRules: Merged back some stuff which
+	inadvertently (I think) got tossed during the last edit.
+
+2001-09-17 01:02  wainstead
+
+	* pgsrc/FrontPage: Added link in FrontPage to
+	PhpWikiAdministration.
+
+2001-09-16 17:31  wainstead
+
+	* pgsrc/HomePage: Mispelled Administer.
+
+2001-09-16 17:30  wainstead
+
+	* pgsrc/HomePage: Added link to PhpWikiAdministration. This is
+	really for the person who first installs PhpWiki, because we've
+	gotten a lot of questions about this. I would think most people
+	will remove this link when they personalize the HomePage, so
+	putting it here should be fine.
+
+2001-08-26 23:55  wainstead
+
+	* INSTALL.flatfile: updated my email address.
+
+2001-08-26 13:11  wainstead
+
+	* pgsrc/PhpWikiAdministration: Had to revert... the phpwiki:
+	placeholder inserts index.phpadmin.php as a result. This is good
+	enough for now.
+
+2001-08-26 13:07  wainstead
+
+	* pgsrc/PhpWikiAdministration: Correction... made proper link to
+	admin.php.
+
+2001-08-26 13:03  wainstead
+
+	* pgsrc/PhpWikiAdministration: Added line pointing to (but not
+	linking to) the admin.php page.
+
+2001-08-26 13:00  wainstead
+
+	* pgsrc/TextFormattingRules: Fixed some bugs in the page source in
+	the "Emphasis" section.
+
+2001-08-26 12:44  wainstead
+
+	* pgsrc/RecentChanges: Added PhpWikiAdministration to
+	RecentChanges... this list should be dynamic however. For that
+	matter I'd rather have a totally automated RecentChanges like
+	UseMod does.
+
+2001-08-26 12:43  wainstead
+
+	* pgsrc/TextFormattingRules: Fixed bug in the page source; the
+	"Emphasis" section was not rendering correctly.
+
+2001-08-18 01:09  dairiki
+
+	* UPGRADING.readme, lib/db_filesystem.php: Fix SF bug #227748.
+	
+	When using the flat-file back end, page names with slashes in them
+	didn't work.  We fix this by urlencoding '%' '/' '\\' and ':' when
+	they occur in page names.
+	
+	WARNING: If any pages currently in your flat-file database contain
+	any of those characters in their titles, this change will make them
+	invisible to PhpWiki.  You should back them up before upgrading,
+	and restore them after upgrading.
+
+2001-08-17 23:57  dairiki
+
+	* UPGRADING.readme: file UPGRADING.readme was initially added on
+	branch release-1_2-branch.
+
+2001-08-17 23:57  dairiki
+
+	* UPGRADING.readme, lib/mysql.php, schemas/schema.mysql,
+	schemas/update.mysql.1.2.0-1.2.1: Fixed SF Bug #233898.  (MySQL
+	backend insensitive to case in page names.)
+	
+	Note that this involves a change to the MySQL schema.  A convenient
+	mysql script, schemas/update.mysql.1.2.0-1.2.1, is provided which
+	can be used to update your schema in-place.
+
+2001-08-17 23:57  dairiki
+
+	* schemas/update.mysql.1.2.0-1.2.1: file update.mysql.1.2.0-1.2.1
+	was initially added on branch release-1_2-branch.
+
+2001-08-17 22:38  dairiki
+
+	* lib/db_filesystem.php: Attempt to fix SF bug #413446.
+	
+	I think this bug was due to using PHP's file() function to slurp in
+	the files (as an array of lines).  The files, being serialized
+	data, consist of only one (sometimes very long) line.  I think (at
+	least in some PHPs) this make the file() function unhappy.
+	
+	Fixed to use fread() rather than file().  Also make sure to open
+	files in 'binary' mode.
+
+2001-08-17 22:05  dairiki
+
+	* lib/db_filesystem.php: Remove debugging output cruft which should
+	never have made it to the CVS repository in the first place.
+
+2001-08-17 21:50  dairiki
+
+	* lib/stdlib.php: Fixed SF Bug #414789
+	
+	URLs like http://a.com/WikiWord were getting recognized as
+	WikiWords by ExtractWikiPageLinks, therefore resulting in erroneous
+	entries in the links table of those backends which have one.
+
+2001-08-17 21:30  dairiki
+
+	* lib/stdlib.php: Fix SF bug #418267.
+	
+	Deeply nested lists resulted in a "Stack bounds exceeded in
+	SetHTMLOutputMode" fatal error.  Now we just clamp the nesting
+	depth to 10 (eleven leading '*'s are treated as if there were only
+	ten of them.)
+
+2001-08-17 20:35  dairiki
+
+	* DBLIB.txt, index.php, lib/backlinks.php, lib/db_filesystem.php,
+	lib/dbalib.php, lib/dbmlib.php, lib/mysql.php, lib/pgsql.php,
+	locale/de/templates/browse.html, locale/es/templates/browse.html,
+	locale/it/templates/browse.html, locale/nl/templates/browse.html,
+	locale/sv/templates/browse.html, templates/browse.html: Added real
+	back-link searches.  The pgsql and msql backends are completely
+	untested at this point, but they "should work".  (I.e.: they're
+	probably broken now.)
+
+2001-08-17 20:35  dairiki
+
+	* lib/backlinks.php: file backlinks.php was initially added on
+	branch release-1_2-branch.
+
+2001-08-17 20:34  dairiki
+
+	* lib/msql.php: Added real back-link searches.	The pgsql and msql
+	backends are completely untested at this point, but they "should
+	work".	(I.e.: they're probably broken now.)
+	
+	The msql back-link search is a bit buggy, and will not find links
+	if they are split between two records ("lines") in the page store. 
+	(The proper remedy for this is to implement the links table in the
+	msql back end.)
+
+2001-08-14 17:41  dairiki
+
+	* lib/userauth.php: (WikiUser::getPreferences): More fixes to
+	address PHP warnings.
+
+2001-08-12 19:57  wainstead
+
+	* lib/stdlib.php: Undefined links will now have a question mark at
+	the start instead of at the end of the link; this idea comes from
+	the book The Wiki Way and it's supposed to be a bit clearer to the
+	user.
+
+2001-08-09 12:21  dairiki
+
+	* lib/userauth.php: Fix for PHP warning: "argument passed to
+	unserialize() is not an string".
+
+2001-07-20 13:40  dairiki
+
+	* index.php, lib/userauth.php, templates/browse.html: Added support
+	for bogo-logins.  One can now "login" using any WikiWord as a user
+	ID.  (Unless logging in as the admin user, any password will work.)
+	
+	Currently, the sole effect of logging in is that the the logged-in
+	user ID is recorded as the author of any page edits.  Thus,
+	"logging in" allows one to control the author which appears in
+	RecentChanges and the page info display.
+
+2001-07-20 13:29  wainstead
+
+	* lib/PhpWikiDatabase.php: Initial file for an abstract base class.
+	For now I copy/pasted the methods suggested in WikiDatabase
+	(http://phpwiki.sourceforge.net/phpwiki/index.php) as a starting
+	point, though there were a few that were undecided and I left those
+	out.
+	
+	At least for now the class can support retrievePage() and
+	insertPage() and a few other basic methods, so rudimentary work can
+	start.
+	
+	The flowerbox reads:
+	
+	/*  * Abstract base class for the database used by PhpWiki.   *
+	This should be extended by classes for DB/dbx, dba and	 * flat
+	file.	*/
+
+2001-07-18 00:59  uckelman
+
+	* lib/pgsql.php, schemas/schema.psql: Changed PostgreSQL db library
+	and schema to work with versioning, maybe.
+
+2001-07-18 00:56  uckelman
+
+	* lib/mysql.php: More cosmetic changes... wow did I not follow
+	formating conventions the first time around.
+
+2001-07-17 21:06  uckelman
+
+	* lib/mysql.php: Minor cosmetic changes (removed some hard tabs).
+
+2001-07-17 17:35  dairiki
+
+	* locale/es/templates/browse.html: Fix link to BuscarPagina. 
+	(Reported by Aníbal Rojas <ard@valhallaproject.com>.)
+	
+	Note the BuscarPagina should probably (I think) be renamed to
+	BuscarPágina.  (PaginaPrincipal, as well as other pages probably
+	need to have accents added as well.)
+
+2001-07-17 11:58  dairiki
+
+	* schemas/schema.mysql: Bug fix: ..._wikilinks => ..._links.
+
+2001-07-15 12:03  wainstead
+
+	* lib/pgsql.php: Updated the table names.
+
+2001-07-15 11:49  wainstead
+
+	* INSTALL.mysql: Changed one line: lib/config.php to index.php.
+
+2001-07-15 11:47  wainstead
+
+	* lib/mysql.php: Fixed the table names. Here is an example of
+	duplicate information, where the table names are stored both in
+	schema.mysql and mysql.php. Of course I failed to notice this and
+	the nightly build was broken. Task #34376.
+
+2001-07-11 23:49  wainstead
+
+	* index.php: Added a comment regarding the table name prefix as a
+	precaution to admins who set up alpha versions of 1.3.
+
+2001-07-11 23:25  wainstead
+
+	* schemas/schema.psql: Oops: fixed a typo just now.
+	
+	Updated table names so all are prefaced with 'phpwiki_'. This is
+	not tested with Postgresql yet though.
+
+2001-07-11 23:24  wainstead
+
+	* schemas/schema.psql: Updated table names so all are prefaced with
+	'phpwiki_'. This is not tested with Postgresql yet though.
+
+2001-07-11 23:21  wainstead
+
+	* index.php, schemas/schema.mysql: I changed the table names in the
+	schema so all are prefaced with phpwiki_.  I updated index.php
+	(where the config info is) as well; seems to test OK.
+
+2001-07-07 13:44  wainstead
+
+	* lib/search.php: Got fooled by an IF with no braces.
+
+2001-07-07 13:34  wainstead
+
+	* lib/search.php: Reformatted the code by hand to PEAR standards.
+	Well, mostly by hand. php-mode doesn't like variable assignments
+	that span several lines like:
+	
+	     $html = "<P><B>"
+		   . sprintf(gettext ("Searching for \"%s\" ....."),
+		     htmlspecialchars($searchterm))
+		   . "</B></P>\n";
+	
+	I have to indent this by hand.
+
+2001-06-26 14:16  uckelman
+
+	* admin/wiki_port1_0.php: Changed call to InsertPage to
+	ReplaceCurrentPage.
+
+2001-06-26 14:15  uckelman
+
+	* admin/lockpage.php: Changed call to InsertPage to
+	ReplaceCurrentPage.  Added $version to RetrievePage call.
+
+2001-06-26 14:14  uckelman
+
+	* templates/editpage.html: Removed EditCopy link.  Removed minor
+	edit code, but I will be adding it back Real Soon(tm).	Added ###IF
+	!CURRENT### block to notify user when editing an archived page. 
+	Added ###CURRENT_VERSION### to handle concurrent edit checking.
+
+2001-06-26 14:13  uckelman
+
+	* templates/browse.html: Edited footer links slightly to allow for
+	page versioning.
+
+2001-06-26 14:08  uckelman
+
+	* lib/: editpage.php, loadsave.php, savepage.php, stdlib.php:
+	lib/editpage.php - Added $version to RetrievePage calls.  - Removed
+	EditCopy, since it's no longer needed.
+	
+	lib/loadsave.php - Changed call to InsertPage to
+	ReplaceCurrentPage.  - Changed call to SaveCopyToArchive to
+	SavePageToArchive.  - Added $version to RetrievePage calls.
+	
+	lib/savepage.php - Changed call to InsertPage to
+	ReplaceCurrentPage.  - Changed call to SaveCopyToArchive to
+	SavePageToArchive.  - All old versions of pages are now saved to
+	archive.  - Added $version to RetrievePage calls.
+	
+	lib/stdlib.php - Changed call to InsertPage to ReplaceCurrentPage. 
+	- Added $version to RetrievePage call.	- Added $WikiPageStore as
+	global in GeneratePage.  - Added CURRENT as _iftoken. This is
+	needed so users can edit from archived pages, but still be
+	prevented from completing their edit if the current page version
+	changes while they are editing. VERSION doesn't work for this
+	anymore, since the version being edited might not be CURRENT.
+
+2001-06-26 14:04  uckelman
+
+	* lib/display.php: Added $version to RetrievePage call.  Added code
+	to determine which pagestore to check when displaying pages, since
+	user could be requesting something from the archive.
+
+2001-06-26 14:03  uckelman
+
+	* lib/diff.php: Added $version to RetrievePage calls.  Changed to
+	recognize $ver1 and $ver2 in URLs to allow diffs of aribtrary page
+	versions.
+
+2001-06-26 14:02  uckelman
+
+	* lib/pageinfo.php: This is a near total rewrite of this file. It
+	is responsible for displaying all of the radio buttons and version
+	listing now.
+
+2001-06-26 14:01  uckelman
+
+	* lib/mysql.php: Lots of changes here: - Added $clobber as argument
+	to InsertPage. If $clobber, then use 'replace '; otherwise use
+	'insert'i. Pages going into the current store should clobber, but
+	pages going into the archive should not. (Assuming that an
+	unlimited number of pages are kept. I still need to implement
+	archive limiting...) - Created function ReplaceCurrentPage.  -
+	Moved link updating from InsertPage to ReplaceCurrentPage.  -
+	Renamed SaveCopyToArchive to SavePageToArchive.  - Created function
+	RetrievePageVersions. Returns an arary of page hashes that contains
+	all versions of the specified page.  - Added $version as argument
+	to RetrievePage. It needs to know which version to get. Version 0
+	(zero)is magic, and always refers to the current version.  -
+	Created function GetMaxVersionNumber. This is used mostly to
+	determine which version to get for the diffs against current pages.
+	 - Created function IsVersionInWiki.  - Created function
+	IsVersionInArchive.  - Created function SelectStore. Given a page
+	name and a version, this function returns the store where that page
+	resides.
+
+2001-06-26 13:51  uckelman
+
+	* schemas/schema.mysql: Changed primary key to (pagename, version)
+	in table archive to allow muliple pages with the same name.
+
+2001-06-26 13:23  wainstead
+
+	* README.coding: Added bit about following the PEAR coding
+	standards; provided link; made sure the Wiki formatting was
+	correct.
+
+2001-06-22 17:52  wainstead
+
+	* README.coding: Corrected the URL for php-mode. I use the one from
+	ontosys.com, but there is another from sourceforge.
+
+2001-06-22 17:35  wainstead
+
+	* README.coding: Added bit about Emacs mode, where to get it, how
+	to add it to your .emacs file, and a request for Vim info.
+
+2001-06-22 17:27  wainstead
+
+	* lib/dbalib.php: Same as dbmlib.php: ran indent-region on whole
+	buffer, corrected missed spots, untabify.
+
+2001-06-22 17:24  wainstead
+
+	* lib/dbmlib.php: Converted white space only; I ran indent-region
+	on the whole buffer in Emacs while in PHP mode; then I hunted
+	through the file for any inconsistencies (there were a couple),
+	then ran untabify on the whole buffer. This is largely what the
+	code style should look like.
+
+2001-06-13 20:41  dairiki
+
+	* locale/es/pgsrc/: NotasDeLiberacion, PaginaPrincipal: Added
+	missing page 'NotasDeLiberacion' containing a pointer to the
+	English 'ReleaseNotes'.
+
+2001-06-13 20:41  dairiki
+
+	* locale/es/pgsrc/NotasDeLiberacion: file NotasDeLiberacion was
+	initially added on branch release-1_2-branch.
+
+2001-06-13 20:39  dairiki
+
+	* locale/de/templates/browse.html, locale/it/templates/browse.html,
+	locale/nl/templates/browse.html, locale/sv/templates/browse.html,
+	templates/browse.html: Deleted extraneous <form> tag (which was
+	only emitted in admin mode).
+
+2001-06-13 20:38  dairiki
+
+	* locale/es/templates/browse.html: The line-breaks in the file were
+	screwed up somehow.  They're now fixed, as suggested by Aníbal
+	Rojas <ard@valhallaproject.com>.
+	
+	Also, deleted extraneous <form> tag (which was only emitted in
+	admin mode).
+
+2001-05-31 13:48  dairiki
+
+	* locale/: nl/LC_MESSAGES/phpwiki.mo, nl/LC_MESSAGES/phpwiki.php,
+	po/de.po, po/es.po, po/it.po, po/phpwiki.pot, po/sv.po: Re-make
+	*.{po,mo} files.
+
+2001-05-31 13:46  dairiki
+
+	* locale/: nl/pgsrc/GebruikersVoorkeuren,
+	nl/pgsrc/HoeWikiTeGebruiken, nl/pgsrc/MeerOverTechnieken,
+	nl/pgsrc/PaginasToevoegen, nl/pgsrc/PhpWiki,
+	nl/pgsrc/PhpWikiBeheer, nl/pgsrc/ThuisPagina,
+	nl/pgsrc/ToverPhpWikiURLs, nl/pgsrc/UitgaveNoten,
+	nl/pgsrc/VoorPagina, nl/pgsrc/WabiSabi, nl/pgsrc/ZoekPagina,
+	nl/templates/browse.html, nl/templates/editpage.html,
+	nl/templates/message.html, po/nl.po: Dutch translation updates by
+	Jan Nieuwenhuizen <janneke@gnu.org>.
+
+2001-05-31 13:45  dairiki
+
+	* pgsrc/: FindPage, HomePage: Missing periods added by Jan
+	Nieuwenhuizen <janneke@gnu.org>.
+
+2001-05-31 13:45  dairiki
+
+	* pgsrc/MagicPhpWikiURLs: Documentation fix (phpwiki: URLs) (per
+	request by Jan).
+
+2001-05-31 13:43  dairiki
+
+	* lib/: loadsave.php, stdlib.php, userauth.php: Gettext()ification
+	of more strings, by Jan Nieuwenhuizen <janneke@gnu.org> (with a few
+	fixes by me.)
+
+2001-05-31 13:41  dairiki
+
+	* lib/logger.php: Minor fix to cleanup "Undefined variable: time"
+	notice.
+
+2001-05-31 13:39  dairiki
+
+	* index.php, lib/config.php: Revert $LANG back to being a global
+	rather than an environment variable (as per patches from Jan
+	Nieuwenhuizen <janneke@gnu.org>.)
+	
+	Use constants LC_ALL (&c) rather than literal "LC_ALL" as first
+	argument to setlocale().
+	
+	Define constants LC_ALL and LC_CTYPE if needed (for PHP < 4.0.5).
+
+2001-05-31 13:35  dairiki
+
+	* README.coding: New file: beginnings of coding style notes.
+
+2001-05-21 13:28  dairiki
+
+	* CREDITS, locale/Makefile, locale/translate.sh,
+	locale/it/LC_MESSAGES/phpwiki.mo,
+	locale/it/LC_MESSAGES/phpwiki.php,
+	locale/it/pgsrc/AggiungerePagine,
+	locale/it/pgsrc/AmministrazioneDiPhpWiki,
+	locale/it/pgsrc/BuonStile, locale/it/pgsrc/CambiamentiRecenti,
+	locale/it/pgsrc/ComeUsareWiki,
+	locale/it/pgsrc/ConvertiGliSpaziInTab,
+	locale/it/pgsrc/MagicPhpWikiURLs, locale/it/pgsrc/ModificaIlTesto,
+	locale/it/pgsrc/NoteDiRilascio, locale/it/pgsrc/PaginaDiProva,
+	locale/it/pgsrc/PaginaPrincipale, locale/it/pgsrc/PhpWiki,
+	locale/it/pgsrc/PiuPopolari,
+	locale/it/pgsrc/RegoleDiFormattazioneDelTesto,
+	locale/it/pgsrc/ScatolaDiSabbia, locale/it/pgsrc/SteveWainstead,
+	locale/it/pgsrc/TrovaPagina, locale/it/pgsrc/UserPreferences,
+	locale/it/pgsrc/VarieSulFunzionamento,
+	locale/it/pgsrc/VisitatoriRecenti, locale/it/pgsrc/WabiSabi,
+	locale/it/pgsrc/WikiWikiWeb, locale/it/templates/browse.html,
+	locale/it/templates/editpage.html,
+	locale/it/templates/message.html, locale/po/it.po: Add Italian
+	translations by Marco Milanesi <kpanic@ada2.unipv.it>.
+	
+	I (GTD) munged the template files so that they more-or-less work
+	with the current alpha code.
+
+2001-05-21 13:25  dairiki
+
+	* locale/: po/de.po, po/es.po, po/nl.po, po/sv.po,
+	nl/LC_MESSAGES/phpwiki.mo, po/phpwiki.pot: Re-make in locale.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/ModificaIlTesto: file ModificaIlTesto was
+	initially added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/WabiSabi: file WabiSabi was initially added on
+	branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/PaginaDiProva: file PaginaDiProva was initially
+	added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/RegoleDiFormattazioneDelTesto: file
+	RegoleDiFormattazioneDelTesto was initially added on branch
+	release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/templates/message.html: file message.html was initially
+	added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/WikiWikiWeb: file WikiWikiWeb was initially added
+	on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/PiuPopolari: file PiuPopolari was initially added
+	on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/TrovaPagina: file TrovaPagina was initially added
+	on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/VarieSulFunzionamento: file VarieSulFunzionamento
+	was initially added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/NoteDiRilascio: file NoteDiRilascio was initially
+	added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/po/it.po: file it.po was initially added on branch
+	release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/templates/editpage.html: file editpage.html was
+	initially added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/templates/browse.html: file browse.html was initially
+	added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/VisitatoriRecenti: file VisitatoriRecenti was
+	initially added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/PaginaPrincipale: file PaginaPrincipale was
+	initially added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/templates/editlinks.html: file editlinks.html was
+	initially added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/SteveWainstead: file SteveWainstead was initially
+	added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/PhpWiki: file PhpWiki was initially added on
+	branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/ScatolaDiSabbia: file ScatolaDiSabbia was
+	initially added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/AggiungerePagine: file AggiungerePagine was
+	initially added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/AmministrazioneDiPhpWiki: file
+	AmministrazioneDiPhpWiki was initially added on branch
+	release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/ComeUsareWiki: file ComeUsareWiki was initially
+	added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/LC_MESSAGES/phpwiki.php: file phpwiki.php was initially
+	added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/ConvertiGliSpaziInTab: file ConvertiGliSpaziInTab
+	was initially added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/BuonStile: file BuonStile was initially added on
+	branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/pgsrc/CambiamentiRecenti: file CambiamentiRecenti was
+	initially added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* locale/it/LC_MESSAGES/phpwiki.mo: file phpwiki.mo was initially
+	added on branch release-1_2-branch.
+
+2001-05-21 12:10  dairiki
+
+	* CREDITS, locale/translate.sh, locale/it/LC_MESSAGES/phpwiki.mo,
+	locale/it/LC_MESSAGES/phpwiki.php,
+	locale/it/pgsrc/AggiungerePagine,
+	locale/it/pgsrc/AmministrazioneDiPhpWiki,
+	locale/it/pgsrc/BuonStile, locale/it/pgsrc/CambiamentiRecenti,
+	locale/it/pgsrc/ComeUsareWiki,
+	locale/it/pgsrc/ConvertiGliSpaziInTab,
+	locale/it/pgsrc/ModificaIlTesto, locale/it/pgsrc/NoteDiRilascio,
+	locale/it/pgsrc/PaginaDiProva, locale/it/pgsrc/PaginaPrincipale,
+	locale/it/pgsrc/PhpWiki, locale/it/pgsrc/PiuPopolari,
+	locale/it/pgsrc/RegoleDiFormattazioneDelTesto,
+	locale/it/pgsrc/ScatolaDiSabbia, locale/it/pgsrc/SteveWainstead,
+	locale/it/pgsrc/TrovaPagina, locale/it/pgsrc/VarieSulFunzionamento,
+	locale/it/pgsrc/VisitatoriRecenti, locale/it/pgsrc/WabiSabi,
+	locale/it/pgsrc/WikiWikiWeb, locale/it/templates/browse.html,
+	locale/it/templates/editlinks.html,
+	locale/it/templates/editpage.html,
+	locale/it/templates/message.html, locale/po/it.po: Added Italian
+	localizations by Marco Milanesi <kpanic@ada2.unipv.it>.
+
+2001-05-21 12:09  dairiki
+
+	* locale/: de/LC_MESSAGES/phpwiki.mo, de/LC_MESSAGES/phpwiki.php,
+	es/LC_MESSAGES/phpwiki.mo, es/LC_MESSAGES/phpwiki.php,
+	nl/LC_MESSAGES/phpwiki.mo, nl/LC_MESSAGES/phpwiki.php, po/de.po,
+	po/es.po, po/nl.po, po/phpwiki.pot, po/sv.po,
+	sv/LC_MESSAGES/phpwiki.mo, sv/LC_MESSAGES/phpwiki.php: Reran
+	local/translate.sh.
+
+2001-05-21 12:06  dairiki
+
+	* lib/config.php: Added call to setlocale().  In some PHP
+	installations, it seems, gettext() will not work without it.
+
+2001-04-09 15:31  dairiki
+
+	* lib/main.php: Restrict the conditions under which we try to load
+	initial page contents from pgsrc.
+	
+	Now we only load pgsrc iff the user is attempt to browse the
+	HomePage.
+	
+	This allows some hope of fixing things if the configured pgsrc,
+	e.g.  doesn't include a HomePage.  (Without this patch, one gets
+	stuck in a loop --- every attempt to do anything with the wiki
+	results in a load of pgsrc.)
+
+2001-04-09 15:28  dairiki
+
+	* lib/transform.php: Make tables left aligned, rather than
+	centered.
+
+2001-04-07 13:17  dairiki
+
+	* templates/browse.html: Removed extraneous parenthesis.
+
+2001-04-07 13:13  dairiki
+
+	* locale/: de/pgsrc/KonvertiereLeerzeichenZuTabs,
+	de/pgsrc/SeiteFinden, de/pgsrc/TextFormatierungsRegeln,
+	de/pgsrc/WabiSabi, de/pgsrc/WikiTechnik,
+	de/templates/editpage.html, de/templates/message.html,
+	es/pgsrc/BuscarP%e1gina, es/pgsrc/ComoUsarWiki,
+	es/pgsrc/ConvierteEspaciosEnTabs, es/pgsrc/MasAcercadeLaMecanica,
+	es/pgsrc/ReglasDeFormatoDeTexto, es/pgsrc/WabiSabi,
+	es/templates/editpage.html, es/templates/message.html,
+	nl/LC_MESSAGES/phpwiki.mo, nl/LC_MESSAGES/phpwiki.php,
+	nl/pgsrc/HoeWikiTeGebruiken, nl/pgsrc/MeerOverTechnieken,
+	nl/pgsrc/RecenteVeranderingen, nl/pgsrc/TekstFormatteringsRegels,
+	nl/pgsrc/VertaalSpatiesNaarTabs, nl/pgsrc/WabiSabi,
+	nl/pgsrc/ZoekPagina, nl/templates/browse.html,
+	nl/templates/editpage.html, nl/templates/message.html, po/de.po,
+	po/es.po, po/nl.po, po/phpwiki.pot, po/sv.po,
+	sv/LC_MESSAGES/phpwiki.mo, sv/LC_MESSAGES/phpwiki.php,
+	sv/pgsrc/SenasteÄndringar, sv/pgsrc/Textformateringsregler,
+	sv/templates/browse.html, sv/templates/editpage.html,
+	sv/templates/message.html: More munging of the translated pgsrc and
+	templates.
+	
+	Changes include:
+	
+	  Converting old markup (tab-delimited lists, triple-quote bold.)
+	
+	  Fixing templates so that they work with the current code.
+	
+	  Fixing/deleting/or munging (some of the) outdated or incorrect
+	  information contained in the page text.
+	
+	  Removing the 'RecentChanges' pages.  (They are now completely
+	  autogenerated.)
+	
+	The translations will need a good going over by someone who speaks
+	the languages at some point.
+
+2001-04-07 13:07  dairiki
+
+	* locale/: Makefile, make-php-trans.awk: New file: locale/Makefile
+	to replace locale/translate.sh
+
+2001-04-07 11:00  wainstead
+
+	* templates/editpage.html: Updated the edit hints at the bottom of
+	the page.
+
+2001-04-06 20:38  dairiki
+
+	* locale/: de/LC_MESSAGES/phpwiki.mo, de/LC_MESSAGES/phpwiki.php,
+	de/pgsrc/FrischeSeiten, de/templates/browse.html,
+	de/templates/editpage.html, de/templates/message.html,
+	es/LC_MESSAGES/phpwiki.mo, es/LC_MESSAGES/phpwiki.php,
+	es/pgsrc/BuscarP%e1gina, es/pgsrc/BuscarPagina,
+	es/pgsrc/CambiosRecientes, es/pgsrc/P%e1ginaPrincipal,
+	es/pgsrc/PaginaPrincipal, es/pgsrc/WikiWikiWeb,
+	es/templates/browse.html, es/templates/editpage.html,
+	es/templates/message.html, po/de.po, po/es.po: Munged for German
+	and Spanish templates and pgsrc so that they work with the current
+	code.
+
+2001-04-06 20:34  dairiki
+
+	* index.php, lib/config.php, lib/diff.php, lib/loadsave.php,
+	lib/main.php, lib/pageinfo.php, lib/stdlib.php: Use strftime() for
+	dates/times instead of date().	(Strftime() supports locales,
+	date() does not.)
+	
+	Also fixed a couple minor bugs having to do with the initial
+	creation of the RecentChanges page, and other miscellaneous wiki
+	setup.
+
+2001-04-06 17:18  dairiki
+
+	* locale/: de/LC_MESSAGES/phpwiki.mo, de/LC_MESSAGES/phpwiki.php,
+	es/LC_MESSAGES/phpwiki.mo, es/LC_MESSAGES/phpwiki.php,
+	nl/LC_MESSAGES/phpwiki.mo, nl/LC_MESSAGES/phpwiki.php, po/de.po,
+	po/es.po, po/nl.po, po/phpwiki.pot, po/sv.po,
+	sv/LC_MESSAGES/phpwiki.mo, sv/LC_MESSAGES/phpwiki.php: Re-ran
+	locale/translate.sh script to rebuild .mo files.  (Manual
+	search/replace of FrontPage -> HomePage had munged the files.)
+
+2001-04-06 17:12  dairiki
+
+	* locale/translate.sh: Updated translate.sh script to scan current
+	source code for gettext strings to be translated.
+
+2001-04-06 14:21  wainstead
+
+	* HISTORY, INSTALL.flatfile, UPGRADING, index.php, lib/config.php,
+	lib/main.php, locale/README, locale/de/LC_MESSAGES/phpwiki.mo,
+	locale/de/LC_MESSAGES/phpwiki.php,
+	locale/de/pgsrc/PhpWikiAdministration,
+	locale/es/LC_MESSAGES/phpwiki.mo,
+	locale/es/LC_MESSAGES/phpwiki.php,
+	locale/nl/LC_MESSAGES/phpwiki.mo,
+	locale/nl/LC_MESSAGES/phpwiki.php, locale/po/de.po,
+	locale/po/es.po, locale/po/nl.po, locale/po/phpwiki.pot,
+	locale/po/sv.po, locale/sv/LC_MESSAGES/phpwiki.mo,
+	locale/sv/LC_MESSAGES/phpwiki.php, pgsrc/MagicPhpWikiURLs,
+	pgsrc/PhpWikiAdministration, pgsrc/TestPage,
+	pgsrc/TextFormattingRules, templates/README, templates/browse.html,
+	templates/editpage.html, templates/message.html: Did find-grep to
+	replace all occurances of FrontPage to HomePage.
+
+2001-04-06 14:08  wainstead
+
+	* pgsrc/HomePage: Moved FrontPage to HomePage.
+
+2001-04-06 14:07  wainstead
+
+	* pgsrc/FrontPage: Moving FrontPage to HomePage.
+
+2001-03-14 14:48  dairiki
+
+	* lib/: config.php, transform.php: Attempt to fix the recognition
+	of international characters within WikiWords.
+	
+	Older (pre 3.x) PCRE libraries, which are used by some PHPs do not
+	support POSIX named character classes (e.g. [:alnum:]).
+	
+	I've added a new function, pcre_fix_posix_classes(), which (only if
+	necessary) will replace POSIX named classes in a regexp with an
+	enumerated equivalent.
+
+2001-03-14 14:45  dairiki
+
+	* lib/savepage.php: Remove extraneous <P> from HTML output.
+
+2001-03-14 14:45  dairiki
+
+	* lib/userauth.php: Minor typo fix.
+
+2001-03-11 12:56  wainstead
+
+	* lib/config.php: Just fixed a typo in a comment.
+
+2001-03-11 12:51  wainstead
+
+	* index.php: Added a flowerbox comment at the top of the file,
+	explaining the whole file in general.
+
+2001-03-07 11:45  dairiki
+
+	* index.php, lib/config.php, lib/transform.php: Recognize
+	international characters in WikiWords.
+	
+	We do this by using POSIX character classes (like [[:upper:]]) in
+	the perl regexps.  Getting this to work involves calling
+	setlocale().  (See comments in lib/config.php for more details.)
+	
+	I suspect my current hacks will not work in all PHP environments. 
+	I'd appreciate success/failure reports.
+
+2001-03-06 11:48  dairiki
+
+	* HISTORY: Updated.  All changes since 1.2.0 are now documented
+	(however cryptically) in HISTORY.
+
+2001-03-05 18:39  dairiki
+
+	* templates/: browse.html, editpage.html, message.html: Split
+	BumpyWords in page titles.
+
+2001-03-05 18:38  dairiki
+
+	* lib/diff.php: Minor code cleanup: don't htmlspecialchar page
+	title, since GeneratePage() does this for us.
+
+2001-03-05 18:37  dairiki
+
+	* lib/stdlib.php: Split BumpyWords in page title.
+	
+	Also minor code cleanup: ###BROWSE_PAGE### and ###ACTION### make no
+	sense for the MESSAGE template.
+
+2001-03-03 14:43  wainstead
+
+	* CREDITS, INSTALL.flatfile, INSTALL.pgsql, README,
+	locale/es/pgsrc/AgregarPaginas, locale/nl/pgsrc/PaginasToevoegen:
+	Changed my email address and the project homepage, where
+	appropriate.
+
+2001-03-03 14:29  dairiki
+
+	* lib/: interwiki.map, interwiki.php: Added new intermap entries
+	from http://usemod.com/intermap.txt.
+	
+	Also fixed bug: only urlencode "page" name when it's really a query
+	arg.  (If it's in PATH_INFO, it shouldn't be urlencoded.)
+
+2001-03-02 16:26  dairiki
+
+	* lib/stdlib.php: Fix for invalid HTML from doubly-indented list
+	elements.
+	
+	This: ** Item
+	
+	used to generate "<ul><ul><li>Item</ul></ul>" which is invalid. 
+	Now we generate "<dl><dd><ul><li>Item</ul></dl>" which is valid.
+
+2001-03-02 16:16  dairiki
+
+	* lib/transform.php: Fix for invalid HTML from doubly-indented list
+	elements.
+	
+	This: ** Item
+	
+	used to generate "<ul><ul><li>Item</ul></ul>" which is invalid. 
+	Now we generate "<dl><dd><ul><li>Item</ul></dl>" which is valid.
+
+2001-03-01 22:48  dairiki
+
+	* lib/: stdlib.php, transform.php: Some fixes to clean-up generated
+	HTML.  See comments made on SF Task# 26974 for details about
+	problems which remain.
+
+2001-03-01 19:42  wainstead
+
+	* templates/README: Stripped stuff about page references which are
+	now obsolete.
+
+2001-03-01 19:38  wainstead
+
+	* INSTALL.mSQL: Added note that mSQL will not be supported in 1.3
+	unless someone else wants to keep it up to date.
+
+2001-03-01 19:24  dairiki
+
+	* lib/transform.php: Attempts to clean up generated HTML.
+	
+	WikiTransform::SetHTMLMode():
+	
+	  Eliminate the $tagtype argument, since somewhere along the line
+	it
+	had lost all meaning.
+	
+	  Check when pushing nested elements that the top-level element is
+	of
+	a type which can contain other block-level elements. Elements of
+	type <p>, and <pre>, among others, are not allowed to contain other
+	block-level elements.
+	
+	wtm_list_dl:   Fix bug (which manifested itself only with non-empty
+	<dt>s).
+	
+	Some remaining problems which perhaps should be addressed:
+	
+	Wtm_title_search, wtm_fulltext_search, wtm_mostpopular as well as
+	some of the the magic phpwiki: links (the ones which generate
+	forms) all generate some sort of block-level HTML element (either
+	<form>s or <dl>s.)  As noted above, these are not allowed within
+	<p> elements (and others).
+	
+	Bold/italics:	 __Bold ''BoldItalic__ Italic''  ... it's
+	contrived, but it will generate improperly nested HTML.
+
+2001-03-01 19:16  dairiki
+
+	* lib/stdlib.php: StartTag(): minor beautification: get rid of
+	extra spaces in start tags.
+
+2001-02-28 20:59  dairiki
+
+	* locale/de/pgsrc/: EditiereText, GaesteBuch,
+	KonvertiereLeerzeichenZuTabs, MeistBesucht, PhpWiki, SandKiste,
+	SeiteFinden, SeitenErzeugen, StartSeite, TextFormatierungsRegeln,
+	WieManWikiBenutzt, WikiTechnik, WikiWikiWeb: SF Patch #404963:
+	Updated German pgsrc by Jörg Rathlev
+	<jrathlev@users.sourceforge.net>
+	
+	I've done some work to complete the german translation of the files
+	in locale/de/pgsrc/. I've also slightly modified some of the
+	already translated german pages.
+	
+	The only pages I've not (yet) translated are GuterStil (english
+	GoodStyle - hard to do since it's only a quotation),
+	PhpWikiAdministration and WabiSabi. All other pages are included in
+	the attached zip archive.
+	
+	Joerg
+
+2001-02-28 20:48  dairiki
+
+	* locale/de/pgsrc/: EditiereText, GaesteBuch,
+	KonvertiereLeerzeichenZuTabs, MeistBesucht, PhpWiki, SandKiste,
+	SeiteFinden, SeitenErzeugen, StartSeite, TextFormatierungsRegeln,
+	WieManWikiBenutzt, WikiTechnik, WikiWikiWeb: SF Patch #404963:
+	Updated German pgsrc by Jörg Rathlev
+	<jrathlev@users.sourceforge.net>
+	
+	I've done some work to complete the german translation of the files
+	in locale/de/pgsrc/. I've also slightly modified some of the
+	already translated german pages.
+	
+	The only pages I've not (yet) translated are GuterStil (english
+	GoodStyle - hard to do since it's only a quotation),
+	PhpWikiAdministration and WabiSabi. All other pages are included in
+	the attached zip archive.
+	
+	Joerg
+
+2001-02-28 15:54  dairiki
+
+	* lib/main.php: Minor type correction.
+
+2001-02-27 18:22  dairiki
+
+	* lib/editpage.php: Fix SF bug #404646.  Must quote
+	htmlspecialchars in <textarea>.
+
+2001-02-27 18:16  dairiki
+
+	* lib/editpage.php: Fix SF bug #404646.  Must quote
+	htmlspecialchars in <textarea>.
+
+2001-02-21 12:16  dairiki
+
+	* lib/main.php: Recursive bug fix.  (Ie. fix stupid bug introduced
+	in the last bug fix.)
+
+2001-02-20 08:44  dairiki
+
+	* lib/main.php: Fix SF bug #132843 some more.  Also add code to
+	properly glean the page name from obsolete 'index.php?PageName'
+	style URLS.
+
+2001-02-17 16:52  dairiki
+
+	* lib/main.php: Fix infinite redirect bug. (SF bug #132843.)
+
+2001-02-17 13:05  wainstead
+
+	* index.php: Missing semicolon on line 49, fixed.
+
+2001-02-17 00:36  dairiki
+
+	* lib/: dbalib.php, dbmlib.php: Fix typo.
+
+2001-02-17 00:35  dairiki
+
+	* DBLIB.txt: Remove notes about $pagehash['refs'].
+
+2001-02-16 19:47  dairiki
+
+	* lib/stdlib.php: Fixed my bug: date header in RecentChanges not
+	updating correctly.
+
+2001-02-16 00:10  dairiki
+
+	* lib/main.php: Small bug fix
+
+2001-02-15 23:43  dairiki
+
+	* index.php, lib/config.php, lib/logger.php, lib/main.php,
+	lib/stdlib.php, lib/userauth.php: Added support for creating our
+	own NCSA style access_log's.
+
+2001-02-15 16:37  dairiki
+
+	* lib/transform.php: wtm_table: Make LEFT, rather than CENTERED the
+	default alignment for table cells.  I just went and edited some
+	tables, and left justification was what I wanted most often.  Also
+	agrees with HTML.
+
+2001-02-15 16:35  dairiki
+
+	* lib/stdlib.php, templates/browse.html, templates/editpage.html,
+	templates/message.html: New template token ###ROBOTS_META### to
+	(attempt to) keep robots from indexing pages other than the
+	'action=browse' page.
+
+2001-02-15 16:33  dairiki
+
+	* lib/editpage.php: When creating default contents for non-existant
+	pages, put [brackets] around page names which aren't BumpyWords.
+
+2001-02-15 16:33  dairiki
+
+	* phpwiki.css: Remove alternate colors for links, per Steve's
+	request.
+
+2001-02-15 16:25  dairiki
+
+	* lib/editpage.php: When creating the default contents for
+	non-existant pages, put [brackets] around page names which aren't
+	BumpyWords.
+
+2001-02-15 14:32  dairiki
+
+	* admin/removepage.php, lib/stdlib.php, templates/editpage.html:
+	Minor bug/warning fixes.
+
+2001-02-15 14:32  dairiki
+
+	* lib/main.php: If we're expecting PATH_INFO, and don't get it,
+	redirect to REQUEST_URI with a trailing '/' added.   This is to
+	make the index.php script look more like a 'directory', for
+	consistencies sake.
+	
+	Also apparently $PATH_INFO gets magic-quoted, so un-magic that.
+
+2001-02-15 14:28  dairiki
+
+	* templates/editpage.html: Arguments to <input> tag should not be
+	urlencoded().
+
+2001-02-15 00:57  dairiki
+
+	* lib/config.php: Fixed (I think) SF bug #132469.  The problem was
+	that the value for VIRTUAL_PATH being auto-deduced by
+	lib/config.php was wrong.
+
+2001-02-14 17:02  dairiki
+
+	* index.php, lib/config.php, lib/diff.php, lib/interwiki.php,
+	lib/loadsave.php, lib/main.php, lib/prepend.php, lib/stdlib.php,
+	templates/browse.html, templates/editpage.html,
+	templates/message.html: Various minor bug fixes and cleanups.
+	
+	Also added the following new minor featurelets:   Comments in
+	index.php indicating how to set the PHP include_path if  
+	necessary.
+	
+	  New config variable $DisabledActions --- one can list actions
+	(eg.
+	  dumpserial) which should not be allowed, even by the
+	administrator.
+
+2001-02-14 01:32  dairiki
+
+	* admin/: dumpserial.php, loadserial.php: Added extra paranoid
+	security checks.
+	
+	Without these checks, if the admin directory is not protected (e.g.
+	via .htaccess) then loadserial.php and dumpserial.php can be run
+	directly and used to probe for and create directories on the http
+	server.
+
+2001-02-14 00:22  dairiki
+
+	* HISTORY, README, index.php, phpwiki.css, lib/editpage.php,
+	lib/interwiki.php, lib/loadsave.php, lib/prepend.php,
+	lib/savepage.php, lib/stdlib.php, lib/transform.php,
+	pgsrc/RecentChanges, pgsrc/TextFormattingRules,
+	templates/browse.html, templates/editpage.html,
+	templates/message.html: log
+
+2001-02-13 00:54  dairiki
+
+	* HISTORY, index.php, admin/lockpage.php, admin/removepage.php,
+	lib/config.php, lib/diff.php, lib/editpage.php, lib/loadsave.php,
+	lib/main.php, lib/msql.php, lib/pageinfo.php, lib/pgsql.php,
+	lib/prepend.php, lib/savepage.php, lib/stdlib.php,
+	lib/userauth.php, lib/ziplib.php, pgsrc/FrontPage,
+	pgsrc/HowToUseWiki, pgsrc/MagicPhpWikiURLs,
+	pgsrc/PhpWikiAdministration, pgsrc/ReleaseNotes,
+	pgsrc/UserPreferences, templates/browse.html,
+	templates/editpage.html, templates/message.html: log
+
+2001-02-11 20:43  dairiki
+
+	* HISTORY, index.php, admin/dumpserial.php, admin/loadserial.php,
+	admin/zip.php, lib/config.php, lib/db_filesystem.php,
+	lib/dbalib.php, lib/dbmlib.php, lib/diff.php, lib/display.php,
+	lib/editpage.php, lib/fullsearch.php, lib/interwiki.php,
+	lib/loadsave.php, lib/main.php, lib/msql.php, lib/mysql.php,
+	lib/pageinfo.php, lib/pgsql.php, lib/savepage.php, lib/search.php,
+	lib/setupwiki.php, lib/stdlib.php, lib/transform.php,
+	lib/userauth.php, lib/ziplib.php, pgsrc/PhpWikiAdministration,
+	templates/editpage.html: log
+
+2001-02-11 15:18  wainstead
+
+	* UPGRADING: Started new file to help users upgrade from previous
+	versions of PhpWiki.
+
+2001-02-10 17:41  dairiki
+
+	* pgsrc/PhpWikiAdministration: Fix 'dump serialized pages' link
+
+2001-02-10 17:15  dairiki
+
+	* HISTORY, admin.php, index.php, admin/dumpserial.php,
+	admin/loadserial.php, admin/lockpage.php, admin/removepage.php,
+	admin/zip.php, lib/config.php, lib/diff.php, lib/display.php,
+	lib/editlinks.php, lib/editpage.php, lib/fullsearch.php,
+	lib/mysql.php, lib/pageinfo.php, lib/savepage.php, lib/search.php,
+	lib/stdlib.php, lib/transform.php, lib/userauth.php,
+	lib/ziplib.php, pgsrc/MagicPhpWikiURLs,
+	pgsrc/PhpWikiAdministration, pgsrc/TextFormattingRules,
+	templates/README, templates/browse.html, templates/editpage.html,
+	templates/message.html: Jeff hacks again: LOT's of changes. 
+	Highlights:   * Pagename in PATH_INFO support added.	* Redid the
+	user (admin)  authentication stuff.	 All access now through
+	index.php.
+	
+	See HISTORY for (a few) more details.
+
+2001-02-10 00:26  dairiki
+
+	* lib/: diff.php, ziplib.php: Fixes for PHP4 E_NOTICE warnings
+
+2001-02-08 23:00  dairiki
+
+	* lib/transform.php: Fix type in wtm_fulltext_search()
+
+2001-02-08 13:28  dairiki
+
+	* HISTORY, admin/zip.php, lib/config.php, lib/diff.php,
+	lib/display.php, lib/savepage.php, lib/stdlib.php, lib/ziplib.php,
+	pgsrc/AddingPages, pgsrc/HowToUseWiki, pgsrc/PhpWikiAdministration,
+	pgsrc/TextFormattingRules: Propagate bug fixes from MAIN CVS branch
+	into the stable release branch.
+	
+	I have not added Arno's new transform.php code.  Should we?  (Is it
+	functionally equivalent to the old code?)
+
+2001-02-08 13:19  dairiki
+
+	* HISTORY, lib/config.php, lib/savepage.php: Don't display
+	$SignatureImg unless one is set in config.php Fix check for DB
+	files in /tmp
+
+2001-02-08 13:18  dairiki
+
+	* lib/stdlib.php: Render*() functions are no longer
+
+2001-02-08 10:11  dairiki
+
+	* lib/config.php: Remove unused variable
+
+2001-02-08 05:39  ahollosi
+
+	* lib/interwiki.php: added InterWiki linking based on patch by Gary
+	Benson <garyb@ee.bath.ac.uk>
+
+2001-02-08 05:29  ahollosi
+
+	* lib/: config.php, interwiki.map, stdlib.php, transform.php: added
+	InterWiki linking based on patch by Gary Benson
+	<garyb@ee.bath.ac.uk>
+
+2001-02-08 04:10  ahollosi
+
+	* pgsrc/TextFormattingRules: removed references, added footnotes
+
+2001-02-08 03:51  ahollosi
+
+	* locale/de/templates/editpage.html,
+	locale/es/templates/editpage.html,
+	locale/nl/templates/editpage.html,
+	locale/sv/templates/editpage.html, templates/editpage.html: removed
+	links to editlinks page
+
+2001-02-08 03:46  ahollosi
+
+	* templates/editlinks.html, locale/de/templates/editlinks.html,
+	locale/es/templates/editlinks.html,
+	locale/nl/templates/editlinks.html,
+	locale/sv/templates/editlinks.html: removed editlinks template --
+	references are no longer in use
+
+2001-02-08 03:43  ahollosi
+
+	* locale/de/templates/editpage.html: corrected "Minor Edit"
+	translation
+
+2001-02-07 22:02  dairiki
+
+	* locale/: de/templates/editpage.html, es/templates/editpage.html,
+	nl/templates/editpage.html, sv/templates/editpage.html: Added
+	"minor edit, don't archive" checkbox to the templates for the
+	non-english locales.
+	
+	(My wife speaks spanish, so that one is probably okay.	The German
+	translation might be okay.  The others (Dutch and Swedish) I left
+	in English.)
+
+2001-02-07 21:34  dairiki
+
+	* lib/: setupwiki.php, ziplib.php: Convert references to footnotes
+	when reading a zip dump
+
+2001-02-07 20:28  dairiki
+
+	* pgsrc/: AddingPages, HowToUseWiki, PhpWikiAdministration,
+	TextFormattingRules: Spelling fixes
+
+2001-02-07 17:14  dairiki
+
+	* lib/config.php, lib/editpage.php, lib/savepage.php,
+	lib/stdlib.php, templates/editpage.html: Added "Minor edit, do not
+	archive" checkbox on the edit form.  (Sourceforge task #25913)
+
+2001-02-07 16:11  dairiki
+
+	* lib/display.php: Minor security bug fix.  The URL
+	'index.php?zip=all' should not get you to the wiki page named
+	'zip=all'.
+
+2001-02-07 13:35  dairiki
+
+	* lib/diff.php: Fix bug #131372: diff hangs.
+	
+	The problem had to do with subtleties introduced by the code
+	cleanups to remove the PHP4 warnings.
+	
+	I've now added several assert()'s (only active under PHP4) to
+	perform further sanity checks.
+
+2001-02-07 12:21  ahollosi
+
+	* lib/: stdlib.php, transform.php: removed references, added
+	footnotes
+
+2001-02-07 11:38  ahollosi
+
+	* lib/transform.php: clean up of SetHTMLMode() -- patch from Neil
+	Brown
+
+2001-02-06 21:23  dairiki
+
+	* admin/zip.php: Fix bug #131024: full zip dump hangs when using
+	dbalib.php (and perhaps other) backends.
+
+2001-02-06 18:16  dairiki
+
+	* lib/ziplib.php: Jeff emerges from his hole long enough to fix a
+	trivial bug which causes trouble when trying to restore a wiki from
+	a zip archive which uses the 'binary' type MIME encoding.  This is
+	only pertinent for zip archives generated by certain old beta
+	versions of phpwiki.
+
+2001-02-04 13:22  ahollosi
+
+	* lib/transform.php: redesign of transfrom.php: modularization
+	markup functions are now registered to WikiTransform object first
+	working version.  removed HTML mode "|", tab markup, and %%ADMIN-%%
+	tokens.  (more functionality to be added)
+
+2001-02-04 13:19  ahollosi
+
+	* lib/stdlib.php: moved SetHTMLOutputMode(), RenderQuickSearch(),
+	RenderFullSearch(), and RenderMostPopular() to transform.php
+
+2001-02-01 22:51  wainstead
+
+	* pgsrc/RecentVisitors: Corrected Ari's name.
+
+2001-02-01 22:23  wainstead
+
+	* pgsrc/ConvertSpacesToTabs: Added note that this page is largely
+	obsolete.
+
+2001-02-01 22:21  wainstead
+
+	* pgsrc/RecentVisitors: Added Ari.
+
+2001-02-01 22:19  wainstead
+
+	* pgsrc/SteveWainstead: Minor update.
+
+2001-02-01 22:18  wainstead
+
+	* pgsrc/ReleaseNotes: Listed new features over version 1.0. There
+	are a lot. They are big too.
+
+2001-02-01 22:03  wainstead
+
+	* README: Updated: listed flat file Wiki as stable, included URL to
+	bug list on Sourceforge.
+
+2001-02-01 21:55  wainstead
+
+	* INSTALL.pgsql: Added comment about the warnings on loading;
+	updated the info about editing config.php, which was a little
+	dated.
+
+2001-02-01 02:12  ahollosi
+
+	* CREDITS: fixed some mailto: links, added Pablo to spanish
+	translation
+
+2001-02-01 02:06  ahollosi
+
+	* locale/: es/LC_MESSAGES/phpwiki.mo, es/LC_MESSAGES/phpwiki.php,
+	es/pgsrc/AgregarPaginas, es/pgsrc/BuenEstilo,
+	es/pgsrc/BuscarPagina, es/pgsrc/CajaDeArena,
+	es/pgsrc/CambiosRecientes, es/pgsrc/ComoUsarWiki,
+	es/pgsrc/ConvierteEspaciosEnTabs, es/pgsrc/EditarElTexto,
+	es/pgsrc/KBrown, es/pgsrc/MasAcercadeLaMecanica,
+	es/pgsrc/MasPopulares, es/pgsrc/PhpWiki,
+	es/pgsrc/ReglasDeFormatoDeTexto, es/pgsrc/VisitantesRecientes,
+	es/pgsrc/WabiSabi, es/pgsrc/WikiWikiWeb, es/templates/browse.html,
+	es/templates/editlinks.html, es/templates/editpage.html,
+	es/templates/message.html, po/es.po: update to spanish locale by
+	Pablo Roca Rozas
+
+2001-02-01 02:05  ahollosi
+
+	* locale/es/pgsrc/: PaginaPrincipal, PrimeraPlana: renamed
+	'PrimeraPlana' to 'PaginaPrincipal'
+
+2001-02-01 00:35  wainstead
+
+	* HISTORY: Wrote list of additions/changes for 1.2
+
+2001-01-31 23:34  wainstead
+
+	* INSTALL.flatfile: Minor addition of info, and a note on the
+	stability and features in the flat file version.
+
+2001-01-31 23:24  wainstead
+
+	* lib/msql.php: Commented out the GetAllWikiPageNames and
+	SetAllWikiPageNames functions. They don't work yet... and as long
+	as they are defined, the lists of related pages appear at the
+	bottom of all pages but have no values in them.
+
+2001-01-31 23:12  wainstead
+
+	* INSTALL.mSQL: Updated the opening statement (mSQL support isn't
+	very new anymore ;-) and explained why there are missing features
+	vs. the other database implementations.
+
+2001-01-31 21:50  wainstead
+
+	* INSTALL: Removed the notice that PhpWiki did not work with 4.0.4
+	out of the box.
+
+2001-01-31 02:56  ahollosi
+
+	* locale/: de/LC_MESSAGES/phpwiki.mo, de/LC_MESSAGES/phpwiki.php,
+	de/pgsrc/PhpWikiAdministration, po/de.po: updated German
+	translation
+
+2001-01-31 02:40  ahollosi
+
+	* CREDITS: added Jon Åslund
+
+2001-01-31 02:38  ahollosi
+
+	* lib/config.php: Added Swedish translation
+
+2001-01-31 02:36  ahollosi
+
+	* locale/: po/sv.po, sv/LC_MESSAGES/phpwiki.mo,
+	sv/LC_MESSAGES/phpwiki.php, sv/pgsrc/BraStil, sv/pgsrc/Framsida,
+	sv/pgsrc/Gästboken, sv/pgsrc/HurManAnvänderWiki,
+	sv/pgsrc/KonverteraMellanslagTillTabbar, sv/pgsrc/LäggaTillSidor,
+	sv/pgsrc/MerOmMekanismerna, sv/pgsrc/MestPopulär, sv/pgsrc/PhpWiki,
+	sv/pgsrc/PhpWikiAdministration, sv/pgsrc/RedigeraText,
+	sv/pgsrc/Sandlådan, sv/pgsrc/SenasteÄndringar,
+	sv/pgsrc/SökEfterSida, sv/pgsrc/Textformateringsregler,
+	sv/pgsrc/WabiSabi, sv/pgsrc/WikiWikiWeb, sv/templates/browse.html,
+	sv/templates/editlinks.html, sv/templates/editpage.html,
+	sv/templates/message.html: Added Swedish translation by Jon Åslund
+
+2001-01-31 02:26  ahollosi
+
+	* locale/translate.sh: added Swedish translation by Jon Åslund
+
+2001-01-30 22:11  wainstead
+
+	* lib/dbmlib.php: Going back to version 1.5, this time with the
+	signature Jan Hidder used for InsertPage() that I removed, thus
+	causing a bug. It feels slower now though.
+
+2001-01-30 21:18  wainstead
+
+	* lib/config.php: Fixed a bug in the loading of dbmlib.php; if the
+	$whichdatabase was set to 'dbm' a logic error always set it to
+	'dba', which had unpredictable results with PHP3.
+
+2001-01-30 21:01  wainstead
+
+	* lib/dbalib.php: Fixed some white space. No code changes.
+
+2001-01-24 13:36  ahollosi
+
+	* INSTALL.mysql: added hint about loading mysql php-module
+	(suggested by Jerritt)
+
+2001-01-21 06:00  ahollosi
+
+	* lib/config.php: corrected if-clause for 'dba' and 'default'
+	(pointed out by kc7dx)
+
+2001-01-20 16:52  wainstead
+
+	* lib/config.php: Added a new database configuration selection,
+	'default'. There is an if/else that determines whether the user is
+	running PHP3 or PHP4 and sets $WhichDatabase to either 'dbm' or
+	'dba', and then the corresponding library file (dbmlib.php or
+	dbalib.php) is loaded.
+
+2001-01-19 17:47  wainstead
+
+	* INSTALL: Added note at the top for users of PHP 4.0.4 or later
+	about needing to edit config.php first.
+
+2001-01-19 17:38  wainstead
+
+	* CREDITS: Updated the credits for Joel and Pablo
+
+2001-01-19 17:28  wainstead
+
+	* images/wikibase.png: Pablo Roca Rozas <proca@clavo.net>
+	contributed a good 50x50 black and white logo.
+
+2001-01-19 17:20  wainstead
+
+	* lib/: config.php, dbalib.php: Joel Uckelman
+	<uckelman@iastate.edu> contributed code changes including a new
+	database library file 'dbalib.php' that uses the new interface
+	library for DBM files. The changes in config.php still default to
+	the dbmlib.php library for now, and the user must set 'dba' in
+	config.php if they are using PHP 4.0.4 or later. Tested this (just
+	barely) on a newly built PHP 4.0.4p1 on my RH6.2 box.
+
+2001-01-15 07:32  ahollosi
+
+	* lib/stdlib.php: ExtractWikiPageLinks now recognizes references of
+	the form [\d+]
+
+2001-01-11 04:54  ahollosi
+
+	* locale/README: initial commit - text by Jan Nieuwenhuizen and me
+
+2001-01-09 14:02  wainstead
+
+	* lib/dbmlib.php: Reverted to version 1.4; there is a bug in Jan
+	Hidders' patch for dbmlib.  It causes a stack overflow in
+	stdlib.php line 318.
+
+2001-01-09 13:22  ahollosi
+
+	* lib/stdlib.php: added description to GeneratePage()
+
+2001-01-06 14:30  wainstead
+
+	* INSTALL.flatfile: Installation directions for flat file Wikis.
+
+2001-01-04 13:37  ahollosi
+
+	* lib/mysql.php: yet another E_NOTICED fixed and some comments
+	added.
+
+2001-01-04 13:34  ahollosi
+
+	* lib/transform.php: ZERO/SINGLE_DEPTH renamed into
+	ZERO/NESTED_LEVEL empty lines are now treated as tag '' (i.e. no
+	tag) instead of '<p>' normal text is now treated as '<p>' instead
+	of tag '' added and corrected some comments, some code cleanup
+
+2001-01-04 13:32  ahollosi
+
+	* lib/config.php: ZERO/SINGLE_DEPTH renamed into ZERO/NESTED_LEVEL
+
+2001-01-04 13:32  ahollosi
+
+	* lib/stdlib.php: moved UpdateRecentChanges() to savepage.php
+	ZERO/SINGLE_DEPTH renamed into ZERO/NESTED_LEVEL added and
+	corrected some comments, some code cleanup
+
+2001-01-04 13:30  ahollosi
+
+	* lib/savepage.php: moved UpdateRecentChanges() to savepage.php
+
+2001-01-01 19:10  wainstead
+
+	* lib/search.php: There were two concatenation operators in a row,
+	on lines 8 and 9. This caused a syntax error.
+
+2001-01-01 18:34  ahollosi
+
+	* lib/: mysql.php, stdlib.php: squashed some E_NOTICE messages
+	about unset variables
+
+2001-01-01 18:18  ahollosi
+
+	* lib/db_filesystem.php: changed two more calls to is_dir() and
+	is_file() to file_exists in order to avoid warnings
+
+2001-01-01 18:13  ahollosi
+
+	* lib/: db_filesystem.php, editpage.php, ziplib.php: cleaned up
+	some warnings reported by David LeBlanc
+
+2000-12-30 16:48  ahollosi
+
+	* lib/stdlib.php: ParseAndLink() didn't handle unnamed phpwiki:
+	links correctly - fixed.
+
+2000-12-30 16:42  ahollosi
+
+	* lib/stdlib.php: cleaned up ParseAndLink() function, consequences:
+	- link['type']='unknwon' no longer exists (never happened anyway) -
+	link['type']='wiki' is now link['type']='wiki-simple' - "phpwiki:"
+	may appear in unnamed links as well - LinkURL() function now takes
+	second argument
+
+2000-12-30 16:09  ahollosi
+
+	* lib/: config.php, display.php, fullsearch.php, search.php: some
+	code cleanup -- mostly cosmetic changes
+
+2000-12-22 16:10  ahollosi
+
+	* CREDITS: added Antti Kaihola and Jan Hidders
+
+2000-12-22 15:18  ahollosi
+
+	* locale/: es/LC_MESSAGES/phpwiki.mo, nl/LC_MESSAGES/phpwiki.mo,
+	nl/LC_MESSAGES/phpwiki.php, po/de.po, po/es.po, po/nl.po,
+	po/phpwiki.pot: ran translate.sh to update .mo & .php files
+
+2000-12-14 22:11  wainstead
+
+	* lib/dbmlib.php: Initial commit of Jan Hidders' changes to
+	dbmlib.php. He added the code needed for the incoming/outgoing/most
+	popular nearby features. The only change I made was to revert the
+	signature for InsertPage, which he added a fourth parameter to. In
+	fact it should have a (shudder) global variable $WikiPageStore,
+	which makes it consistent with SaveCopyToArchive.
+
+2000-12-12 17:06  wainstead
+
+	* lib/dbmlib.php: Brought the function list in the lead comment box
+	up to date.
+
+2000-12-12 16:53  wainstead
+
+	* DBLIB.txt: Updated against the mysql.php file. This should be
+	accurate and finished for 1.2.
+
+2000-12-12 16:24  wainstead
+
+	* README: Added a paragraph about the feature differences between
+	the different database implementations.
+
+2000-12-12 16:09  wainstead
+
+	* images/wikibase.png: New 50x50 logo in reverse color (white on
+	dark gray).
+
+2000-12-12 12:19  wainstead
+
+	* test_dbmlib.php3: I will never finish this, so I'm removing it
+	from the distribution.
+
+2000-12-12 12:11  wainstead
+
+	* README: Brought the manifest up to date. Some files were removed,
+	others added to the lists of files in the distribution.
+
+2000-12-11 09:00  ahollosi
+
+	* locale/po/nl.po: update to Dutch translation by Jan Nieuwenhuizen
+
+2000-12-06 18:12  ahollosi
+
+	* lib/stdlib.php: fixed bug in _iftoken() -
+	variable-in-string-brackets were used in a way that causes problems
+	for PHP3. Fix by Jan Hidders.
+
+2000-12-06 05:59  ahollosi
+
+	* lib/stdlib.php: fixed another bug in ExtractWikiPageLinks():
+	wiki_unknown-named was not recognized and named wiki links had the
+	wrong linktext inserted into the wikilinks table
+
+2000-11-24 17:07  wainstead
+
+	* lib/mysql.php: 
+	Added semicolon on line 153, which caused the file to not compile
+	correctly.  .
+
+2000-11-22 17:17  ahollosi
+
+	* lib/stdlib.php: fix newline bug in UpdateRecentChanges / fix
+	for-loop boundary
+
+2000-11-18 08:50  ahollosi
+
+	* pgsrc/FindPage, lib/fullsearch.php, lib/mysql.php: more
+	sophisticated search: match individual words, also excluding words
+	possible
+
+2000-11-16 22:04  wainstead
+
+	* CREDITS: Added Scott to the credits for patches.
+
+2000-11-16 22:01  wainstead
+
+	* lib/config.php: Patch from "Scott R. Anderson" <sra@diem.net>
+	which allows the use of $PHP_AUTH_USER if it's set; i.e. if a user
+	is logged in their name will appear in RecentChanges instead of
+	REMOTE_HOST or REMOTE_ADDR.
+
+2000-11-16 03:52  ahollosi
+
+	* lib/stdlib.php: fix for ExtractWikiPageLinks(): didn't care for
+	'[[' escapes and thus detected invalid links
+
+2000-11-13 16:52  ahollosi
+
+	* locale/de/templates/browse.html: corrected title link
+
+2000-11-13 09:54  ahollosi
+
+	* lib/: config.php, mysql.php: added config options for all mysql
+	table names
+
+2000-11-13 06:22  ahollosi
+
+	* locale/: translate.sh, de/LC_MESSAGES/phpwiki.mo,
+	de/LC_MESSAGES/phpwiki.php, de/templates/browse.html,
+	de/templates/editpage.html, es/LC_MESSAGES/phpwiki.mo,
+	es/LC_MESSAGES/phpwiki.php, es/templates/browse.html,
+	es/templates/editpage.html, nl/LC_MESSAGES/phpwiki.mo,
+	nl/LC_MESSAGES/phpwiki.php, nl/templates/browse.html,
+	nl/templates/editpage.html, po/de.po, po/es.po, po/nl.po,
+	po/phpwiki.pot: new run of translate.sh / updated templates
+
+2000-11-13 06:01  ahollosi
+
+	* locale/translate.sh: fixed bug which omitted last string in
+	*/LC_MESSAGE/phpwiki.php
+
+2000-11-13 05:59  ahollosi
+
+	* admin.php: localized remove function
+
+2000-11-13 05:37  ahollosi
+
+	* locale/po/de.po: fixed errors pointed out by Markus Guske
+
+2000-11-11 07:15  ahollosi
+
+	* lib/stdlib.php: bugfix in ExtractWikiPageLinks for
+	[text|WikiPage]
+
+2000-11-09 11:29  ahollosi
+
+	* admin.php, templates/browse.html: Added safety step for 'remove
+	page' feature
+
+2000-11-08 21:57  wainstead
+
+	* lib/mysql.php: Updated the list of functions in the header
+	comment.
+
+2000-11-08 12:07  ahollosi
+
+	* pgsrc/: TestPage, TextFormattingRules: update for new syntax:
+	!http and [named internal link|WikiPage]
+
+2000-11-08 11:52  ahollosi
+
+	* lib/stdlib.php: added named internal links e.g. [wow|FrontPage]
+	-- patch idea from Antti Kaihola
+
+2000-11-08 11:48  ahollosi
+
+	* admin.php: fix for RemovePage when get_magic_quotes_gpc()==1
+
+2000-11-08 11:19  ahollosi
+
+	* templates/README: explained new ###IF### syntax
+
+2000-11-08 10:54  ahollosi
+
+	* pgsrc/PhpWikiAdministration: added admin page -- should be locked
+	for normal users
+
+2000-11-08 10:50  ahollosi
+
+	* templates/editpage.html: updated to new ###IF### syntax
+
+2000-11-08 10:49  ahollosi
+
+	* templates/browse.html: included admin section
+
+2000-11-08 10:43  ahollosi
+
+	* admin.php: removed default user/pwd
+
+2000-11-08 10:40  ahollosi
+
+	* lib/mysql.php: added function RemovePage()
+
+2000-11-08 10:40  ahollosi
+
+	* lib/:

@@ -1,0 +1,166 @@
+Building a root Slackware filesystem from scratch for the User-Mode Linux through loopback devices
+--------------------------------------------------------------------------------------------------
+
+by Dallachiesa Michele, 
+   xenion (at) acidlife (dot) com
+   05/11/2002
+
+
+
+1. Overview
+2. Requirements
+3. Creating the root filesystem
+4. Installing Slackware packages
+5. root password, /etc/fstab and Slackware setup scripts
+6. Installing UML Utilities
+
+
+      
+1. Overview
+
+With the loopback device support we can mount filesystems not associated with block devices.
+To build an ext2 fs we need three tools: dd, mount and fdisk. Once built it, the remaining
+work is simple: we've just to mount our fs and to install Slackware packages or what we need
+on it. This way is fast, easy and requires less space :^)
+
+
+
+2. Requirements
+
+- UML Kernel *
+- UML Utilities *
+- Loopback device support (in your not-UML kernel)
+   
+* Download it from http://user-mode-linux.sourceforge.net
+
+
+
+3. Creating the root filesystem
+
+root@darkover:~# dd if=/dev/zero of=root_fs_slackware bs=$((1024*1024)) count=100
+100+0 records in
+100+0 records out
+root@darkover:~# du -h root_fs_slackware
+101M    root_fs_slackware
+root@darkover:~# mke2fs -F root_fs_slackware
+mke2fs 1.27 (8-Mar-2002)
+Filesystem label=
+OS type: Linux
+Block size=1024 (log=0)
+Fragment size=1024 (log=0)
+25688 inodes, 102400 blocks
+5120 blocks (5.00%) reserved for the super user
+First data block=1
+13 block groups
+8192 blocks per group, 8192 fragments per group
+1976 inodes per group
+Superblock backups stored on blocks:
+        8193, 24577, 40961, 57345, 73729
+
+Writing inode tables: done
+Writing superblocks and filesystem accounting information: done
+
+This filesystem will be automatically checked every 35 mounts or
+180 days, whichever comes first.  Use tune2fs -c or -i to override.
+root@darkover:~# mount -t ext2 -o loop root_fs_slackware /mnt/myslack
+root@darkover:~# fdisk /dev/loop0
+Device contains neither a valid DOS partition table, nor Sun, SGI or OSF disklabel
+Building a new DOS disklabel. Changes will remain in memory only,
+until you decide to write them. After that, of course, the previous
+content won't be recoverable.
+
+
+Command (m for help): o
+Building a new DOS disklabel. Changes will remain in memory only,
+until you decide to write them. After that, of course, the previous
+content won't be recoverable.
+
+
+Command (m for help): n
+Command action
+   e   extended
+   p   primary partition (1-4)
+p
+Partition number (1-4): 1
+First cylinder (1-12, default 1):
+Using default value 1
+Last cylinder or +size or +sizeM or +sizeK (1-12, default 12):
+Using default value 12
+
+Command (m for help): w
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+
+WARNING: Re-reading the partition table failed with error 22: Invalid argument.
+The kernel still uses the old table.
+The new table will be used at the next reboot.
+Syncing disks.
+root@darkover:~# mount -o remount /mnt/myslack
+root@darkover:~#
+
+
+
+4. Installing Slackware packages
+
+Mount your source media on /mnt/cdrom and follow my steps:
+
+root@darkover:~# mount -t iso9660 -o loop slackware-8.1-install.iso /mnt/cdrom
+root@darkover:~# cd /mnt/cdrom/slackware
+root@darkover:/mnt/cdrom/slackware# ls
+CHECKSUMS      FILE_LIST    README.TXT  ap/  e/  gnome/  kde/  n/  tcl/  xap/
+CHECKSUMS.md5  MANIFEST.gz  a/          d/   f/  k/      l/    t/  x/    y/
+root@darkover:~# export ROOT=/mnt/myslack/
+root@darkover:/mnt/cdrom/slackware# for i in `ls -F1 | grep /`; do cd $i && \
+./install-packages && cd ..; done
+[..]
+root@darkover:/mnt/cdrom/slackware# cd
+root@darkover:~# umount /mnt/cdrom && unset ROOT
+
+
+
+5. root password, /etc/fstab and Slackware setup scripts
+
+root@darkover:~# chroot /mnt/myslack /bin/bash
+root@darkover:/# echo "
+/dev/ubd/0      /               ext2    defaults   1   1
+/proc           /proc           proc    defaults
+" > /etc/fstab
+root@darkover:/# passwd root
+Changing password for root
+Enter the new password (minimum of 5, maximum of 127 characters)
+Please use a combination of upper and lower case letters and numbers.
+New password:
+Re-enter new password:
+Password changed.
+root@darkover:/# cd /var/adm/setup/
+root@darkover:/var/adm/setup# for i in setup.*; do ./$i; done
+[..]
+root@darkover:/var/adm/setup# exit
+exit
+root@darkover:~#
+
+
+
+6. Installing UML Utilities
+
+If we want an UML fs without compilers,.. we can compile UML Utilities as statically-linked 
+executables adding the linker option '-static'. If the shared libraries of the system used to
+compile the executables are the same you've installed on your UML Slackware fs, you can forget it.
+
+root@darkover:~# bunzip2 uml_utilities_20020906.tar.bz2 
+root@darkover:~# tar xvf uml_utilities_20020906.tar
+[..]
+root@darkover:~# cd tools
+root@darkover:~/tools# export DESTDIR=/mnt/myslack/
+root@darkover:~/tools# CC='cc -static' make && make install
+[..]
+root@darkover:~/tools# unset DESTDIR ; umount /mnt/myslack ; cd
+root@darkover:~#
+
+
+Your Slackware filesystem is ready, have fun!
+
+
+--------------------------------------------------------------------------------------------------
+EOF

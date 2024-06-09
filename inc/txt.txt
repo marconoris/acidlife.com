@@ -1,0 +1,12 @@
+
+<?
+/* Directory Structure
+/home/www/acidlife.com/www/subconscio/sub1.html
+/home/www/acidlife.com/www/subconscio/sub2.html
+*/
+srand((double)microtime()*1000000); 
+$num = rand(1,2);
+
+include ('sub'.$num.'.html');
+
+?>

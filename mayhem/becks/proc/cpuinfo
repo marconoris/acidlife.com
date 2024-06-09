@@ -1,0 +1,59 @@
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 8
+model name	: Pentium III (Coppermine)
+stepping	: 6
+cpu MHz		: 696.983
+cache size	: 256 KB
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 3
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 sep mtrr pge mca cmov pat pse36 mmx fxsr sse
+bogomips	: 1389.36
+
+-----------------------------------------------------------------------
+
+processor       : 0
+vendor_id       : GenuineIntel
+cpu family      : 5
+model           : 4
+model name      : Pentium MMX
+stepping        : 4
+cpu MHz         : 199.434
+fdiv_bug        : no
+hlt_bug         : no
+sep_bug         : no
+f00f_bug        : yes
+coma_bug        : no
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 1
+wp              : yes
+flags           : fpu vme de pse tsc msr mce cx8 mmx
+bogomips        : 398.13
+
+-----------------------------------------------------------------------
+
+processor       : 0
+cpu             : 486
+model           : 486 SX
+vendor_id       : GenuineIntel
+stepping        : 3
+fdiv_bug        : no
+hlt_bug         : no
+f00f_bug        : no
+fpu             : no
+fpu_exception   : no
+cpuid           : yes
+wp              : yes
+flags           : vme
+bogomips        : 12.42
+
+-----------------------------------------------------------------------
+

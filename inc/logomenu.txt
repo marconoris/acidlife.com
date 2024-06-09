@@ -1,0 +1,2 @@
+<a href="/"><img src="/zzzzz/logo_01.gif" width="105" height="92" border="0" alt="acidlife.com"></a>
+<div class="menu">  <a href="/" class="menu">index of</a> | <a href="/tnpp" class="menu">TNPP</a> | <a href="/thisworld/" class="menu">thisWorld</a><!-- | <a href="/contacts.php" class="menu">reports/list/contacts</a>--> | <a href="/imp" class="menu">webmail</a> | <a href="http://www.acidlife.com/awstats/awstats.pl" class="menu">stats</a></div>

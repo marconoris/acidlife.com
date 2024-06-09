@@ -1,0 +1,82 @@
+<new>
+fname          :slackinst
+description    :Building a root Slackware filesystem from scratch for the User-Mode Linux through loopback devices
+
+<new>
+fname          :BFi11-dev-13.tar.gz
+description    :PTRACE(2) F0R FUN AND PR0FiT
+
+<new>
+fname          :onelove.c
+description    :this is proof of concept code demostrating how we can inject commands on a ptraced telnet/ssh session
+
+<new>
+fname          :idioteque.c
+description    :logs the contents of inbound and outbound telnet and ssh sessions via ptrace
+
+<new>
+fname          :khideee.c
+description    :hiding tasks to KSTAT (2.4.x version) hijacking kernel symbols and functions used to load binary formats
+
+<new>
+fname          :1337WRITE.c
+description    :..a piece of code written after reading Smashing The Stack For Fun And Profit by aleph1 ;)
+
+<new>
+fname          :KSTAT-bug
+description    :problema in KSTAT (2.4.x version) che permette di nascondere processi
+
+<new>
+fname          :ska.c
+description    :string obfuscation utility, usueful with ELF encryption utilz
+
+<new>
+fname          :tfp.tgz
+description    :tfp v2.1, OS-Detection using telnet fingerprinting
+
+<new>
+fname          :BFi11-dev-09
+description    :kernel hacking: nuove tecniche per il detect e l'occultamento
+
+<new>
+fname          :optimistic.tgz
+description    :v1.0 - RUNTIME SELF MODIFYING CODE AND BINARY ENCRYPTION.<br>also aviable through cvs: cvs -z8 -d :pserver:anonymous@cvs.antifork.org/CVS co optimistic
+
+<new>
+fname          :kernel_stuff01.tgz
+description    :sources riguardanti kernel hacking, presentati e discussi su http://www.s0ftpj.org/bfi/dev/BFi11-dev-09
+
+<new>
+fname          :mikhail.c
+description    :v2.5beta12 - TCP proxy.<br>also aviable through cvs: cvs -z8 -d :pserver:anonymous@cvs.antifork.org/CVS co mikhail
+
+<new>
+fname          :c0n.c
+description    :host To host Connect0r
+
+<new>
+fname          :ech.c
+description    :ech + telnet + mikhail.. happy upload ;)
+
+<new>
+fname          :netsend.c
+description    :socket util
+
+<new>
+fname          :scripts
+description    :varie
+
+<new>
+fname          :sost.c
+description    :sostituisce stringhe.. comodo per falsare le versioni dei demoni
+
+<new>
+fname          :c
+description    :coders util
+
+
+
+
+<new>
+fname          :xengraph3.zip
+description    :13h graphic mode e .bmp files (cose vecchie e buggate..)

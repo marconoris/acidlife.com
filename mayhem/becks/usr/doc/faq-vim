@@ -1,0 +1,606 @@
+From ellidz@eridu.uchicago.edu Fri Jul 20 14:15:20 2001
+Path: server-b.cs.interbusiness.it!newsfeed.nettuno.it!enews.sgi.com!newshub2.rdc1.sfba.home.com!news.home.com!sjc1.nntp.concentric.net!newsfeed.concentric.net!newsfeed.stanford.edu!news.uchicago.edu!not-for-mail
+Message-ID: <WY657.160$Y4.7449@news.uchicago.edu>
+From: ellidz@eridu.uchicago.edu (E. Larry Lidz)
+Newsgroups: comp.unix.questions,comp.editors,comp.answers,news.answers
+Subject: vi editor FAQ (Frequently Asked Question List), Part 2/2
+Date: Wed, 18 Jul 2001 03:00:06 GMT
+Lines: 581
+Followup-To: comp.editors
+Reply-To: ellidz@eridu.uchicago.edu (E. Larry Lidz)
+Summary: This posting contains a list of Frequently Asked
+        Questions (and their answers) about the vi editor.  
+Approved: news-answers-request@MIT.EDU
+X-Last-Modified: 2001-01-23
+Originator: ellidz@eridu.uchicago.edu (E. Larry Lidz)
+NNTP-Posting-Host: 128.135.0.118
+X-Trace: news.uchicago.edu 995425206 128.135.0.118 (Tue, 17 Jul 2001 22:00:06 CDT)
+NNTP-Posting-Date: Tue, 17 Jul 2001 22:00:06 CDT
+Organization: The University of Chicago
+X-SessionID: UY657-17615-Y4-7682@news.uchicago.edu
+X-Hash-Info: post-filter,v:1.4
+X-Hash: b295cdbe c83291cf 2a600823 86c7c29f 2e66b5b7
+Xref: monster.becks.org.ia comp.answers:89
+
+Archive-name: editor-faq/vi/part2
+Posting-Frequency: 2nd and 17th of every month
+Last-modified: 2000-01-23
+Version: 1.85
+
+5.0 - What's online at the vi archives?
+
+  There is a FAQ posted frequently which gives a list of all the files
+that are online at the vi archive.  It also gives a list of addresses
+which mirror the vi archive.  The main address is ftp://alf.uib.no/pub/vi, but it is
+archived at many, many sites.  The vi-archive faq lists all of them.
+Please check that faq before ftping to it, as there is almost definitely
+a closer and therefore faster site to you than the one in Norway.
+  A few mirrors are:  ftp://ftp.uwp.edu/pub/vi
+                      ftp://ftp.uu.net/pub/text-processing/vi.
+                      ftp://ftp.cc.monash.edu.au/pub/vi
+                      ftp://ftp.s.u-tokyo.ac.jp/misc/vi-archive
+  The site has many, many files on vi, including a few clones.  It also
+has the UCB distribution of vi, and lots of useful macros.  Check it
+out.
+
+6.0 - Silly vi tricks, and silly macros
+
+  This section is for silly vi tricks, and silly macros.  Actually, any
+interesting vi tricks and macros are acceptable, as long as they are
+not too lengthy.  I will add any that are suggested to me that I think
+are reasonable.
+
+6.1 - Silly vi tricks
+  Note: Also check out the Silly macros down below. Many macros and
+tricks are interchangable.
+
+  xp     This will delete the character under the cursor, and put it
+afterwards.  In other words, it swaps the location of two characters.
+ 
+  ddp    Similar to xp, but swapping lines.
+ 
+  yyp    duplicate a line
+
+  uu     Undo and redo last change.  (This will take you to the last
+modification to the file without changing anything.)  You can also use
+this to compare the changes to a line.  Make the changes to the line,
+press U to undo the changes to the current line, and then press u to
+toggle between the two versions.
+
+  :g/.*/m0
+         This will reverse the order of the lines in the current file.
+m0 is the ex command to move the line to line 0.
+
+  :v/./d or :g/^$/d 
+         Removes all blank lines.
+
+  :g/^[ <ctrl-v><tab>]*$/d
+         Removes all lines that only have whitespace.
+
+  :v/./$s/$/<ctrl-v><enter>./|'';/./-1j|$d
+         Replaces multiple blank lines with just one blank line.
+
+6.2 - Silly macros
+  Note:  <ctrl-x> means hold down control, and hit x.
+
+  Swap character and one vertically above:
+    map * kxjphxkP
+
+  Fold a line that's too long
+    map g $80<ctrl-v><ctrl-v>|F r<ctrl-v><enter>
+
+  Change case on most words
+    map v ywmno<ctrl-v><esc>P:s/./\~/g<ctrl-v><enter>0"nDdd`n@n
+
+  Put `and' around the current word
+    map *` i`<ctrl-v><esc>ea'<ctrl-v><esc>
+
+  Put 'and' around the current word
+    map *' i'<ctrl-v><esc>ea'<ctrl-v><esc>
+
+  Put "and" around the current word
+    map *" i"<ctrl-v><esc>ea"<ctrl-v><esc>
+
+  Put `and' around the current word
+    map! `` <ctrl-v><esc>bi`<ctrl-v><esc>ea'
+
+  Split a line at the cursor, and put a > at the beginning of the next
+line.  (For quoting Usenet, etc). I had some trouble with my old
+version of this under some versions, so I've redone it, and I think
+that it should work.
+    map g may0O<ctrl-v><esc>P`ao<ctrl-v><esc>P:s/./ /g<ctrl-v><enter>0i><ctrl-v><esc>$mb`ay$`bP'add
+
+  Insert one character
+    map g i$<ctrl-v><esc>r
+
+  Format a paragraph without the fmt program.  (To use, use J a few
+times, then this a few times)
+    map K 072lBhr<ctrl-v><enter>
+
+  Or, a little less elegantly, but without the need to use J and K
+multiple times.
+    map K {wma}b:'a,.j<ctrl-v><enter>:s/\(.........................................................\)/\1<ctrl-v><ctrl-v><ctrl-v><enter>/g<ctrl-v><enter>
+
+  Make ctrl-x work as cut, ctrl-v as paste, ctrl-p as copy.  You should
+mark the beginning of the area as m (use mm).  (ctrl-c cannot be
+remapped when it is defined as the interrupt character in Unix.)
+    map <ctrl-v><ctrl-x> "zd`m
+    map <ctrl-v><ctrl-p> "zy`m
+    map <ctrl-v><ctrl-v><ctrl-v><ctrl-v> "zP`m
+
+  Save a read-only file.  Careful, it changes the permissions. When
+done, it changes them to read/write owner, read for everyone else. Note
+that this might not be the same as the original permissions.
+    map K :!chmod 666 %<ctrl-v><enter>:w!<ctrl-v><enter><ctrl-v><enter>
+    :!chmod 644 %<ctrl-v><enter>
+
+  vi status line (sort of...) [Note:  It's slow...]
+    map <ctrl-v><up-arrow> k<ctrl-v><ctrl-g>
+    map <ctrl-v><down-arrow> j<ctrl-v><ctrl-g>
+    map k k<ctrl-v><ctrl-g>
+    map j j<ctrl-v><ctrl-g>
+    map <ctrl-v><ctrl-f> <ctrl-v><ctrl-f><ctrl-v><ctrl-g>
+    map <ctrl-v><ctrl-b> <ctrl-v><ctrl-b><ctrl-v><ctrl-g>
+    map H H<ctrl-v><ctrl-g>
+    map M M<ctrl-v><ctrl-g>
+    map L L<ctrl-v><ctrl-g>
+    map G G<ctrl-v><ctrl-g>
+    map <ctrl-v><ctrl-u> <ctrl-v><ctrl-u><ctrl-v><ctrl-g>
+    map <ctrl-v><ctrl-d> <ctrl-v><ctrl-d><ctrl-v><ctrl-g>
+
+  center a line
+    map = 080i <ctrl-v><esc>$78hd0^D:s/  / /g<ctrl-v><enter>$p
+
+  redefine tab to insert 5 spaces instead of a tab marker
+    map! <ctrl-v><ctrl-i> <space><space><space><space><space>
+
+  switch current and last line (repeat to reverse a file)
+    map v Gdd''Pj
+
+  yank until end of line, run it in a shell and read in the result
+    map v y$o<ctrl-v><esc>pI:r!<ctrl-v><esc>"add@a
+
+  allow vi to backspace over text that was inserted in a previous
+insert mode
+   map! <ctrl-v><ctrl-?> $<ctrl-v><esc>Xs
+   map! <ctrl-v><ctrl-h> $<ctrl-v><esc>Xs
+
+  print the document to the default printer (for BSD replace lp with lpr).
+   map v 1G!Glp<ctrl-v><enter>u
+
+  set # to toggle line numbers on and off:
+   map \o# o:se nu<ctrl-v><enter>:se nonu<ctrl-v><esc>-:map \o# "wp<ctrl-v><enter>
+   map \d# "w2dd
+   map \x# "xdd@x"xpk
+   map # ma3L\o#\x#\d#`a:<ctrl-v><enter>
+ 
+  Quote the current paragraph with '>'s.
+   map Z> mc{jma}kmb:'a,'bs/^ /> /<ctrl-v><enter>'c
+
+  Allow <ctrl-z> to suspend processes within insert mode
+   map! <ctrl-v><ctrl-z> <ctrl-v<esc>:stop<ctrl-v><enter>
+  Make all tabs spaces
+   map! <ctrl-v><ctrl-v><ctrl-v><ctrl-i> <ctrl-v><ctrl-v><space>
+
+  Replace all tabs with the proper amount of spaces for the given
+  tabstop. Removing the last two character (4<enter>) will allow you to
+  specify the tabstop: #t4<enter>
+   map #t 1G!Gpr -t -e4<ctrl-v><enter>
+   map #T !}pr -t -e4<ctrl-v><enter>}
+
+  Insert a ruler above the current line
+   map #r O<ctrl-v><esc>i....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8<ctrl-v><esc>
+
+  This is a macro that redefines itself: (more for heuristic reasons
+than anything else) It inserts foo the first time it is run, and bar
+all subsequent times. 
+  map K ifoo<ctrl-v><esc>:map K ibar<ctrl-v><ctrl-v><ctrl-v><esc><ctrl-v><enter>
+
+  This makes a end notes. It will insert a [#] at the current location
+and put a [#] at the bottom of the document and let you type there.
+Hitting `a will take you back to the original location once you are
+done with your end note. [#] will be the number of the end note, not
+the literal # character. (Pretty crazy, huh?)
+   map K ma1GO[0]<ctrl-v><esc>G$?\[[0-9]*\]<ctrl-v><enter>lyt]`aa<ctrl-v><enter><ctrl-v><esc>O<ctrl-v><esc>pI:r!echo '1 <ctrl-v><esc>A + p' <ctrl-v><ctrl-v>| dc<ctrl-v><ctrl-v><ctrl-v><ctrl-v><ctrl-v><ctrl-v><ctrl-v><enter><ctrl-v><esc>0"yD@y0i[<ctrl-v><esc>A]<ctrl-v><esc>kkJJJmb1Gdd`bF[yf]Go<ctrl-v><esc>pA   
+
+7.0 - Alphabetical vi quick reference
+
+  ... means that something needs to be specified before or after the
+  command, as appropriate.  This is normally a cursor movement 
+  keys (h,j,k,l,w,b, etc.) or a line number.
+
+  #  (where # is a number) following command n times...  
+  :  go to ex-mode 
+  )  next sentence 
+  (  previous sentence 
+  }  next paragraph 
+  {  previous paragraph 
+ ]]  next section 
+ [[  previous section
+  0  beginning of line 
+  $  end of line 
+  ^  first non-whitespace character
+  +  first character of next line 
+  -  first character of previous line 
+(spacebar) next character 
+(return) next line 
+  /  search forward 
+  ? search backward 
+  %  find match of current parenthesis, brace, or bracket 
+  ,  reverse direction of last f, F, t, or T 
+  ;  repeat last f, F, t, or T
+  .  repeat last command
+  `  goto mark 
+  '  goto beginning of line with mark 
+ ``  return to previous mark or location before a search 
+ ''  go to start of line of previous mark or location before search
+  ~  switch case of current character
+  "  store in register 
+  @  execute command in register
+  !  send next to command, replace output (eg  !}fmt passes the current
+       paragraph to the command fmt, and replaces the output with
+       whatever fmt returns.) 
+ !!  send line to command
+ >>  shift line one shiftwidth to the right 
+ <<  shift line one shiftwidth to the left 
+ >%  shift until matching (, [, or { to the right 
+ <%  shift until matching (, [, or { to the left
+  a  append after the current location 
+  A  append at the end of the line
+ ^a  unused
+  b  beginning of previous word 
+  B  beginning of previous word, ignore punctuation 
+ ^b  scroll back one screen
+  c  change until...  
+  C  change to end of line 
+ ^c  ends insert mode, unused in command mode (if defined as interrupt)
+  d  delete until...  
+  D  delete to end of line 
+ ^d  scroll down half a window, moves to previous shiftwidth in insert
+       mode
+  e  end of word 
+  E  end of word, ignore punctuation 
+ ^e  scroll screen down one line
+  f  find...  
+  F  find backward...  
+ ^f  scroll forward one screen
+  g  unused 
+  G  ...Goto  [defaults to end of file] 
+ ^g  show status line
+  h  left 
+  H  first line on screen 
+ ^h  backspace in insert mode, left in command mode
+  i  insert before current location 
+  I  insert before first non-whitespace character on line 
+ ^i  tab in insert, unused in command
+  j  down 
+  J  join next line with current line 
+ ^j  down in command, create newline in insert
+  k  up 
+  K  unused 
+ ^k  unused
+  l  right 
+  L  last line on screen 
+ ^l  redraw screen
+  m  mark position into register 
+  M  middle of screen 
+ ^m  carriage return
+  n  repeat last search 
+  N  repeat last search, reverse direction 
+ ^n down in command
+  o  open line below current 
+  O  open line above current 
+ ^o  unused
+  p  put below current line 
+  P  put above current line 
+ ^p  up in command
+  q  unused 
+  Q  quit and run ex 
+ ^q  unused
+  r  replace current character 
+  R  replace characters until insert mode is left 
+ ^r  redraw screen in command mode
+  s  substitute 
+  S  substitute entire line 
+ ^s  unused
+  t  to...  
+  T  backward to...  
+ ^t  moves to next shiftwidth.
+  u  undo last change 
+  U  undo changes to current line 
+ ^u  scroll up half a window
+  v  unused 
+  V  unused 
+ ^v  unused in command, quotes next character in insert
+  w  beginning of next word 
+  W  beginning of next word, ignore punctuation 
+ ^w  unused in command, in insert move back to beginning of previous
+       word
+  x  delete current character 
+  X  delete previous character 
+ ^x  unused
+  y  yank...  
+  Y  yank current line 
+ ^y  scroll screen up one line
+  z  reposition screen around line (Return to top of screen, . to 
+       middle, - to bottom) 
+ ZZ  write (only if changes have been made) and quit 
+ ^z  unused
+
+7.1 - Command mode input options ( : commands)
+
+  (Note: this is not a canonical list, just some of the more important
+ones.)
+
+ :r <file>       read <file> into current text 
+ :r !<command>   read output from command <command> into current text 
+ :nr <file>      read in at line number 
+ :!<file>        run command, return 
+ :sh             goto shell 
+ :so <file>      read and execute commands from <file>
+ :x              write (only if changes have been made) and quit 
+ :wq             write and quit 
+ :l1,l2w <file>  write between lines l1 and l2 to <file>.  If <file> 
+                   is not specified, assume current.  If l1,l2 not 
+                   specified, assume entire file (making it :w)
+ :w >> <file>    append to <file>.  May use line numbers
+ :w!             overwrite current file 
+ :q              quit
+ :q!             quit, forget changes 
+ :e <file>       edit <file> without leaving vi 
+ :e!             forget changes since last write
+ :n              edit next file 
+ :e +n <file>    edit <file> at line n, if no end, assume end of file 
+ :n <files>      specify <files> as new list of files to edit 
+ :e#             edit alternate file (if :e <file> is used, alternate is
+		   the original file)
+ :args           show files to be edited 
+ :rew            rewind list of files to top 
+ :map m n        create a macro (make m do n) 
+ :map! m n       create an insert mode macro (make m do n) 
+ :unmap m        destroy macro m 
+ :unmap! m       destroy insert mode macro m 
+ :ab <1> <2>     abbreviate - replace <1> with <2> whenever typed as 
+                   a word
+ :unab <1>       unabbreviate <1> 
+ :cd <directory> cd to <directory>
+ :set <option>   set <option>...
+
+7.2 - set options
+
+The abbreviations in parenthesis may be used.  Syntax:
+
+  :set <option> <param>   (If <param> is expected) 
+  Multiple options may be specified on one line.  
+  :set <option>? displays the value of the <option> 
+  :set all displays the value of all the options.  
+For options without a value, set no<option> turns it off.
+
+Option:             Default:           What it does:
+
+autoindent (ai)     noai               Makes new lines automatically
+                                         indent to the position as the 
+                                         line above or below
+autoprint (ap)      ap                 Display changes after each 
+                                         command 
+autowrite (aw)      noaw               Automatically save file 
+                                         before :n, :!  
+beautify (bf)       nobf               Ignore all control characters
+                                         during input (except tab, 
+                                         newline, formfeed)
+directory= (dir=)   /tmp               Name of the directory to store 
+                                         buffer 
+edcompatible        noedcompatible     Use ed-like features on 
+                                         substitute 
+errorbells (eb)     errorbells         Sound bell on error
+exrc (ex)           noexrc             Allow .exrc files outside home 
+                                         dir 
+hardtabs= (ht=)     8                  Set boundary for hardware tabs 
+ignore case (ic)    noic               Ignore case in regex expressions 
+lisp                nolisp             Turn on lisp mode
+list                nolist             Display all tabs, end of lines
+magic               magic              Enable more regex expressions
+mesg                mesg               Allows mesgs to be sent to 
+                                         terminal 
+number (nu)         nonumber           Displays line numbers in file 
+open                open               Allows open and visual
+optimize (opt)      optimize           Optimizes throughput of text by 
+                                         not sending carriage returns 
+                                         when printing text
+paragraphs= (para=) IPLPPPQPPLIbp      Sets the delimiters for { & }
+prompt              prompt             Command mode input gives : prompt 
+readonly (ro)       noro               Cannot write unless ! is given  
+redraw              noredraw           Redraw screen when edits are made 
+remap               remap              Allows macros that point to other
+					 macros
+report=             5                  Report changes if they effect > x
+					 lines
+scroll              1/2 window         Amount of screen to scroll when
+					 scroll down is received in
+					 command mode.  Also, number of
+					 lines printer by z.  (z prints
+					 2*scroll)
+sections=           SHNHH HU           Defines end of section for [[ 
+                                         and ]] 
+shell= (sh=)        /bin/sh            Default shell.  Uses SHELL
+					 environment, if set
+shiftwidth= (sw=)   8                  Characters to shift when using
+					 shift commands
+showmatch (sm)      nosm               Show matching {, }, (, ), [, or ] 
+showmode            noshowmode         Shows which mode you are in.
+slowopen (slow)                        Do not update display 
+                                         immediately after insert
+tabstop= (ts=)      8                  Sets tabstop length 
+taglength= (tl=)    0                  Number of characters significant
+                                         for tags (0 means all 
+                                         characters)
+tags=               tag, /usr/lib/tags Define pathname of files 
+                                         containing tags.
+term=                                  Set the terminal type
+terse               noterse            Display shorter error messages
+timeout (to)        timeout            Keyboard maps timeout after one 
+                                         second 
+ttytype=                               Set the terminal type
+warn                warn               Display "No write since last 
+                                         change" messages
+window= (w=)                           Number of lines in window in visual
+					 mode
+wrapmargin= (wm=)   0                  Set the right margin.  Greater 
+                                         than 0 will word wrap n spaces
+                                         from the edge of the screen
+wrapscan (ws)       ws                 Searches wrap around end of file
+writeany (wa)       nowa               Allow saving to any file
+
+8.0 - Setting up .exrc file
+
+  Any commands that can be used in command input mode ( : commands),
+may be used in a .exrc, which will load automatically whenever you
+start vi.  In addition, the source command (so), abbreviations (ab),
+and macros may be used.  There may not be any blank lines in your
+.exrc.  A " in the first column may be used to tell vi that what
+follows is a comment.
+
+8.1 - Sample .exrc file
+
+  This .exrc file is a real one.  Mine.  Because of that, it doesn't
+set as many options as one might wish it did to get a good idea of what
+may be used.  However, it should get the basic idea down, and it is
+quite straightforward. 
+
+First, note that you do not need to specify the :, it is assumed.
+
+" Ignore case on search
+set ic
+" set wordwrap 9 characters from the right
+set wm=9
+" show matching parenthesis
+set sm
+" set the shell to be zsh
+set sh=/nfs/kimbark/k4/ellidz/bin/zsh
+" a few abbreviations for my email addresses
+ab zidlle E. Larry Lidz - ellidz@midway.uchicago.edu
+ab --l -Larry
+" uppercase V will run ispell -x (-x tells it not to save backups) on current
+" file
+map V :w<ctrl-v><enter>:!ispell -x %<ctrl-v><enter>:e!<ctrl-v><enter><ctrl-v><enter>
+" = will center the line...  if I can get it to work
+map = 80I <ctrl-v><esc>$78hd0:s/  / /g<ctrl-v><enter>$p
+" v will reformat the current paragraph
+map v {0!}fmt<ctrl-v><enter>
+" Splits a line in two at current cursor location, puts a > at the
+"beginning of the line
+map g may0O<ctrl-v><esc>P`ay$:s/./ /g<ctrl-v><enter>0i><ctrl-v><esc>`aPa <ctrl-v><esc>D
+" Change the case on the current word
+map K ywmno<ctrl-v><ctrl-v><ctrl-v><esc>P:s/./\~/g<ctrl-v><ctrl-v><ctrl-v><enter>0"nDdd`n@n
+
+9.0 - Bugs in vi
+
+  I'd like to say that vi is bug free, but unfortunateely, it's not.
+These bugs are bugs in the original vi, not necessarily in any of the
+different clones.
+  
+  Macros for _ do not always work properly.
+  #~ does not work under AIX
+
+10.0 - Glossary of terms
+
+  This glossary will be updated as people suggest terms that they do
+not understand.  Please let me know if you have any suggestions.
+
+  command mode 
+    Command mode is the mode within vi where the user gives commands to
+vi.  (Including cursor movement commands, editing commands, etc.)
+
+  ed 
+    A non-visual editor under Unix.
+
+ <Esc> 
+    The escape key.  A key on a keyboard normally marked by escape.
+Sometimes ^[ will work in its place.  If there is no escape key,
+sometimes the Meta key will work.
+
+  ex 
+    An editor under Unix, all commands preceded with : are passed to
+it.
+
+  insert mode 
+    Insert mode is the mode within vi where text is inserted into the
+document.
+
+  macro 
+    A macro is a shortcut key combination.  For example, a macro allows
+one to hit one letter and have it execute a few different commands.
+
+  open mode 
+    Open mode is the mode that vi will start in if it cannot determine
+your terminal type, or if it believes you have a hardware or glass-tube
+terminal.
+
+  regular expressions (RegEx) (RE)
+    Regular expressions, commonly known as "RegEx" or "REs" are a set
+of key combinations that are meant to allow people to have a large
+variety of control over what they are searching for.  RegEx is used a
+lot under Unix, and is common between many programs.
+
+  sed 
+    Stream editor.  An editor that has no interface.  All commands
+are given from the command line.
+
+  vi 
+    The editor to which this FAQ is dedicated.
+
+11.0 - Bibliography of Books that cover vi
+  VI QUICK REFERENCE/HELP CARDS
+  Specialized System Conultants, Inc.
+  (206)-367-8649
+  P.O. Box 55549
+  Seattle, WA 98155
+
+  Unix Programming Tools,
+  Eric Foster-Johnson
+  M and T Books, 1997.
+  ISBN 1-55851-482-1
+  Includes a CD-ROM containing vim.
+  http://www.pconline.com/~erc/Unixprog.htm
+
+  The ULTIMATE GUIDE to the VI and EX Text Editors
+  Hewlett Packard Company (authors)
+  The Benjamin/Cummings Publishing Company, Inc.
+  ISBN 0-8053-4460-8
+
+  A PRACTICAL GUIDE TO THE Unix SYSTEM
+  Mark G. Sobell
+  Benjamin Cummings Publisher
+
+  LEARNING THE VI EDITOR
+  Linda Lamb
+  O'Reilly & Associates
+  ISBN 0-937175-67-6
+
+  Unix POWER TOOLS  (particularly for macros)
+  O'Reilly & Associates
+
+  MASTERING REGULAR EXPRESSIONS (for RegEx)
+  Jeffrey Friedl
+  O'Reilly & Associates, 1997
+  ISBN 1-56592-257-3
+
+  Unix TEXT PROCESSING
+  Hayden Books, 1987
+  Dale Dougherty and Tim O'Reilly
+  ISBN 0-8104-6291-5
+
+  An Introduction to Display Editing with Vi' & 'EX reference Manual' in 
+  Unix programmers Manual vol. II
+  Bill Joy
+  Berkeley Software
+  
+  EL EDITOR VI. MANUAL DE REFERENCIA
+  RA-MA Editorial.
+
+  Please make suggestions as to what books are most useful for learning
+vi.  I will add books to this section as people suggest them to me.
+
+Copyright, E. Larry Lidz, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001.  
+All Rights Reserved.
+

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>acidlife - the net psychopomp</title>
+	<link rel="STYLESHEET" type="text/css" href="/archiviodiario/underattack/default.css">
+<SCRIPT language="Javascript" SRC="/inc/linkfade.js"></SCRIPT>
+<script language="javascript">
+<!--
+var content;
+function onlime(str) {
+	self.name='index';
+	if (!content) content =  window.open(str,'content','scrollbars=no,resizable=no,width=760,height=410,status=no,location=no,toolbar=no');
+	else {
+		content =  window.open('','content','scrollbars=no,resizable=no,width=760,height=410,status=no,location=no,toolbar=no');
+		content.location.href = str;
+		content.focus();
+	}
+}
+//-->
+</script>
+<script language="javascript">
+<!--
+var content2;
+function clock(str) {
+	self.name='index';
+	if (!content2) content2 =  window.open(str,'content2','scrollbars=no,resizable=no,width=400,height=430,status=no,location=no,toolbar=no');
+	else {
+		content2 =  window.open('','content2','scrollbars=no,resizable=no,width=400,height=430,status=no,location=no,toolbar=no');
+		content2.location.href = str;
+		content2.focus();
+	}
+}
+//-->
+</script>
+<script language="javascript">
+<!--
+var content3;
+function photo(str) {
+	self.name='index';
+	if (!content3) content3 =  window.open(str,'content3','scrollbars=no,resizable=no,width=500,height=375,status=no,location=no,toolbar=no');
+	else {
+		content3 =  window.open('','content3','scrollbars=no,resizable=no,width=500,height=375,status=no,location=no,toolbar=no');
+		content3.location.href = str;
+		content3.focus();
+	}
+}
+//-->
+</script>
+<script language="javascript">
+<!--
+var gh;
+function wghate(str) {
+	if (!gh) gh =  window.open(str,'gh','scrollbars=no,resizable=no,width=394,height=236,status=no,location=no,toolbar=no');
+	else {
+		gh =  window.open('','gh','scrollbars=no,resizable=no,width=394,height=236,status=no,location=no,toolbar=no');
+		gh.location.href = str;
+		gh.focus();
+	}
+}
+//-->
+</script>
+<script language="javascript">
+<!--
+var sciatto;
+function wsciattoprod(str) {
+	if (!sciatto) sciatto =  window.open(str,'sciatto','scrollbars=no,resizable=no,width=270,height=431,status=no,location=no,toolbar=no');
+	else {
+		sciatto =  window.open('','sciatto','scrollbars=no,resizable=no,width=270,height=431,status=no,location=no,toolbar=no');
+		sciatto.location.href = str;
+		sciatto.focus();
+	}
+}
+//-->
+</script>
+</head>
+
+<body text="#747C87" link="#876C81" vlink="#876C81" alink="#246598" bgcolor="#EAEAEB" background="/archiviodiario/underattack/tipi.gif" bgproperties="fixed">
+<a name="top"></a>
+<!---------- PRINCIPALE ---------->
+<table align="center" cellspacing="0" cellpadding="0" border="0" width="600" bgcolor="#EAEAEB" ackground="http://www.acidlife.com/bg.gif" height="100%">
+<tr>
+    <td valign="top" width="600" align="center">
+<!---------- CONTENTS ---------->
+<table align="center" cellspacing="0" cellpadding="0" border="0" width="600" bgcolor="#EAEAEB" >
+<tr>
+    <td valign="top" width="600" height="236" align="center" >

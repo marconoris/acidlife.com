@@ -1,0 +1,61 @@
+<HTML>
+<HEAD>
+<TITLE>..............</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (window.screen) {
+        window.resizeTo(400,430)
+        window.moveTo((screen.width-400)/2,(screen.height -430)/2);
+ }
+//-->
+</SCRIPT>
+
+<script>
+ d=new Date();
+ h=d.getHours();
+ m=d.getMinutes();
+ s=d.getSeconds();
+ if (h<10) h="0"+h;
+ if (m<10) m="0"+m;
+ if (s<10) s="0"+s;
+
+ window.status="it's never the right time - hirnlego@acidlife.com";
+
+ function setStatus() {
+  window.status="it's never the right time";
+ }
+
+ function setTitle() {
+  s++;
+  if (s>=60) {
+   s=0;
+   m++;
+   if (m>=60) {
+    m=0;
+    h++;
+    if (h>=24) h=0;
+    if (h<10) h="0"+h;
+   }
+   if (m<10) m="0"+m;
+  }
+  if (s<10) s="0"+s;  
+  //str=h+"."+m+":"+s;
+  //str="clock"+h+m;
+  str="it's never the right time";
+  document.title=str;
+ }
+ 
+ function clock() {
+  window.setInterval("setStatus()",1);
+  window.setInterval("setTitle()",1000);
+ }
+</script>
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" onLoad="clock();">
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
+ WIDTH=100% HEIGHT=100%>
+ <PARAM NAME=movie VALUE="calendar.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=scale VALUE=exactfit>  <PARAM NAME=bgcolor VALUE=#FFFFFF> <EMBED src="calendar.swf" quality=high bgcolor=#FFFFFF scale=exactfit  WIDTH=100% HEIGHT=100% TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>
+</BODY>
+</HTML>

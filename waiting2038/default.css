@@ -1,0 +1,56 @@
+	BODY {
+		margin-bottom : 0px;
+		margin-left : 0px;
+		margin-right : 0px;
+		margin-top : 0px;
+	}
+	A {
+		text-decoration : none;
+		font-weight: 700;
+	}
+	A:VISITED {
+		text-decoration : none;
+		font-weight: 700;
+	}
+	A:LINK {
+		text-decoration : none;
+		font-weight: 700;
+	}
+
+	A:HOVER {
+		color : #D04C18;
+		background-color : Gold;
+		font-weight: 700;
+	}
+	.tuiea
+	{
+		margin-top:6px;
+		font-size:8px;
+		letter-spacing:2px;
+		color:black;
+		font-family:helvetica, Arial;
+	}
+	.form
+	{
+		background-color:Gold;
+		color:#D04C18;
+		font-family:verdana, helvetica, Arial;
+		font-size:10px;
+	}
+	.margin
+	{
+		margin-left : 5px;
+	}
+	.link
+	{
+		color:#D04C18;
+		font-family:verdana, helvetica, Arial;
+		font-size:10px;
+	}
+	.linkover
+	{
+		background-color:#D04C18;
+		color:Gold;
+		font-family:verdana, helvetica, Arial;
+		font-size:10px;
+	}

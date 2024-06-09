@@ -1,0 +1,71 @@
+<HTML>
+<HEAD>
+<TITLE>..............</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (window.screen) {
+        window.resizeTo(400,410)
+        window.moveTo((screen.width-400)/2,(screen.height -410)/2);
+ }
+//-->
+</SCRIPT>
+
+<script>
+ d=new Date();
+ h=d.getHours();
+ m=d.getMinutes();
+ s=d.getSeconds();
+ if (h<10) h="0"+h;
+ if (m<10) m="0"+m;
+ if (s<10) s="0"+s;
+
+ window.status="it's never the right time";
+
+ function setStatus() {
+  window.status="it's never the right time";
+ }
+
+ function setTitle() {
+  s++;
+  if (s>=60) {
+   s=0;
+   m++;
+   if (m>=60) {
+    m=0;
+    h++;
+    if (h>=24) h=0;
+    if (h<10) h="0"+h;
+   }
+   if (m<10) m="0"+m;
+  }
+  if (s<10) s="0"+s;  
+  //str=h+"."+m+":"+s;
+  //str="clock"+h+m;
+  str="calendar";
+  document.title=str;
+ }
+ 
+ function clock() {
+  window.setInterval("setStatus()",1);
+  window.setInterval("setTitle()",1000);
+ }
+</script>
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" onLoad="clock();">
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table align="center" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
+ WIDTH=400 HEIGHT=400>
+ <PARAM NAME=movie VALUE="calendar.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#FFFFFF> <EMBED src="calendar.swf" quality=high bgcolor=#FFFFFF  WIDTH=400 HEIGHT=400 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</BODY>
+</HTML>

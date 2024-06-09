@@ -1,0 +1,29 @@
+A { text-decoration: none; 
+color: #444444} 
+
+A:visited { text-decoration: none } 
+
+A:hover { color: #AAAAAA; 
+background-color: #444444; 
+text-decoration: none; } 
+
+H1 { font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 22px; font-style: normal; line-height: normal; text-transform: lowercase; 
+color: #CCCCCC ; font-weight: lighter; text-align: left} 
+
+H2 { font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 18px; font-style: normal; line-height: normal; text-transform: lowercase; 
+color: #CCCCCC ; font-weight: lighter; text-align: center} 
+
+
+H6 { font-family: Verdana, 
+Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; line-height: 
+normal; text-transform: lowercase; color: #606060 ; font-weight: lighter} 
+
+H5 { 
+font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; font-style: 
+normal; line-height: normal; color: #606060; font-weight: lighter } 
+
+H4 { font-family: 
+Verdana, Arial, Helvetica, sans-serif; font-size: 15px; font-style: normal; line-height: 
+normal; text-transform: lowercase; color: #606060 } 
