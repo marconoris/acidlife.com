@@ -1,1 +1,0 @@
-<body text="#747C87" link="#876C81" vlink="#876C81" alink="#246598" bgcolor="#EAEAEB" background="/archiviodiario/underattack/tipi.gif" bgproperties="fixed">
